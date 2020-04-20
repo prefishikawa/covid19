@@ -2,7 +2,7 @@ type DataType = {
   date: Date,
   data: [
     {
-      'summarry': [
+      'summary': [
         {
           attr: '感染者'
           value: number
@@ -67,10 +67,10 @@ type ConfirmedCasesType = {
  */
 export default (data: DataType) => {
   const formattedData: ConfirmedCasesType = {
-    感染者: data.data[0].summarry[0].value,
-    退院: data.data[0].summarry[1].value,
-    死亡: data.data[0].summarry[2].value,
-    治療中: data.data[0].summarry[3].value,
+    感染者: data.data[0].summary[0].value,
+    退院: data.data[0].summary[1].value,
+    死亡: data.data[0].summary[2].value,
+    治療中: data.data[0].summary[3].value,
     // 軽症中等症: data.children[0].children[0].children[0].value,
     // 重症: data.children[0].children[0].children[1].value,
     // 死亡: data.children[0].children[2].value,
