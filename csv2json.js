@@ -166,6 +166,7 @@ function newsWriteFile(json, fileName) {
   const filePath = path.join(dir, fileName)
   fs.readFile(filePath, 'UTF-8', (err, data) => {
     if (err) throw err
+    // const oldJSON = JSON.parse(data)
     fs.writeFile(filePath, JSON.stringify(json, null, '    '), err => {
       if (err) throw err
     })
