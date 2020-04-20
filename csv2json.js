@@ -68,7 +68,7 @@ const openDataSource = [
 /**
  * jsonファイルの階層
  */
-const dir = '../data/'
+const dir = 'data/'
 
 /**
  * jsonのファイル名
