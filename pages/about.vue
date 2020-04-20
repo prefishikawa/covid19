@@ -6,13 +6,13 @@
     <static-card>
       {{
         $t(
-          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+          '当サイトは、石川県による公式情報と客観的な数値をわかりやすく伝えることで、石川県にお住まいの方や、石川県内に拠点を持つ企業の方、石川県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
         )
       }}<br />
       <br />
       {{
         $t(
-          '東京都による公式情報と客観的な数値をわかりやすく伝えることで、東京都にお住まいの方や、東京都内に拠点を持つ企業の方、東京都を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
+          '石川県による公式情報と客観的な数値をわかりやすく伝えることで、石川県にお住まいの方や、石川県内に拠点を持つ企業の方、石川県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
         )
       }}
     </static-card>
@@ -87,87 +87,11 @@
       </p>
     </static-card>
     <static-card>
-      <h3>{{ $t('Google Analyticsの利用について') }}</h3>
-      <p>
-        {{
-          $t(
-            '当サイトでは、サービス向上やサイトの改善のためにGoogle LLCの提供するアクセス分析のツールであるGoogle Analyticsを利用した計測を行っております。'
-          )
-        }}
-      </p>
-      <p>
-        {{
-          $t(
-            'Google Analyticsでは、当サイトが発行するクッキー (Cookie) 等を利用して、Webサイトの利用データ（アクセス状況、トラフィック、閲覧環境、IPアドレスなど）を収集しております。クッキーの利用に関してはGoogleのプライバシーポリシーと規約に基づいております。'
-          )
-        }}
-      </p>
-      <p>
-        {{
-          $t(
-            '取得したデータはWebサイト利用状況を分析しサービスの改善につなげるため、またはサイト運営者へのレポートを作成するため、その他のサービスの提供に関わる目的に限り、これを使用します。（サイト運営者へのレポートでは、クッキーはブラウザ単位で本サイトのユーザー数をカウントするため、IPアドレスはGoogle Analyticsの分析機能を通じてアクセス元の地域分布（国、州・都道府県、都市）を把握するために利用されています。）'
-          )
-        }}
-      </p>
-      <p>
-        {{
-          $t(
-            'Google Analyticsの利用規約及びプライバシーポリシーに関する説明については、Google Analyticsのサイトをご覧ください。'
-          )
-        }}
-      </p>
-      <ul>
-        <li>
-          <external-link
-            :url="
-              $t(
-                'https://marketingplatform.google.com/about/analytics/terms/jp/'
-              )
-            "
-            :icon-size="16"
-          >
-            {{ $t('Google Analytics利用規約') }}
-          </external-link>
-        </li>
-        <li>
-          <external-link
-            :url="$t('https://policies.google.com/privacy?hl=ja')"
-            :icon-size="16"
-          >
-            {{ $t('Googleのプライバシーポリシー') }}
-          </external-link>
-        </li>
-        <li>
-          <external-link
-            :url="
-              $t('https://support.google.com/analytics/answer/6004245?hl=ja')
-            "
-            :icon-size="16"
-          >
-            {{ $t('Google Analyticsに関する詳細情報') }}
-          </external-link>
-        </li>
-      </ul>
-      <i18n
-        tag="p"
-        path="Google Analyticsによる情報送信を回避する場合は、Google がサポートする{addon}をご利用ください。"
-      >
-        <template v-slot:addon>
-          <external-link
-            :url="$t('https://tools.google.com/dlpage/gaoptout?hl=ja')"
-            :icon-size="16"
-          >
-            {{ $t('測定を無効にするブラウザ アドオン') }}
-          </external-link>
-        </template>
-      </i18n>
-    </static-card>
-    <static-card>
       <h3>{{ $t('免責事項') }}</h3>
       <p>
         {{
           $t(
-            '当サイトに掲載されている情報の正確性については万全を期していますが、東京都は利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。'
+            '当サイトに掲載されている情報の正確性については万全を期していますが、石川県は利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。'
           )
         }}
       </p>
@@ -186,42 +110,6 @@
         }}
       </p>
     </static-card>
-    <static-card>
-      <h3>{{ $t('データについて') }}</h3>
-      <i18n
-        tag="p"
-        path="本サイトで公表しているデータは、{catalogWebsite}より誰でも自由にダウンロードが可能です。（データは順次追加予定です）"
-      >
-        <template v-slot:catalogWebsite>
-          <external-link
-            url="https://portal.data.metro.tokyo.lg.jp/"
-            :icon-size="16"
-          >
-            {{ $t('東京都オープンデータカタログサイト') }}
-          </external-link>
-        </template>
-      </i18n>
-    </static-card>
-    <static-card>
-      <h3>{{ $t('ソースコードについて') }}</h3>
-      <p>
-        {{
-          $t(
-            '当サイトのソースコードはMITライセンスで公開されており、誰でも自由に利用することができます。'
-          )
-        }}
-        <i18n path="詳しくは、{githubRepo}をご確認ください。">
-          <template v-slot:githubRepo>
-            <external-link
-              url="https://github.com/tokyo-metropolitan-gov/covid19"
-              :icon-size="16"
-            >
-              {{ $t('GitHub リポジトリ') }}
-            </external-link>
-          </template>
-        </i18n>
-      </p>
-    </static-card>
   </div>
 </template>
 
@@ -230,13 +118,11 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import PageHeader from '@/components/PageHeader.vue'
 import StaticCard from '@/components/StaticCard.vue'
-import ExternalLink from '@/components/ExternalLink.vue'
 
 export default Vue.extend({
   components: {
     PageHeader,
-    StaticCard,
-    ExternalLink
+    StaticCard
   },
   head(): MetaInfo {
     return {

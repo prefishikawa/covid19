@@ -51,21 +51,16 @@
 
     <div :class="[$style.SubtleBox, $style.Box2, $style.Center]">
       <div :class="$style.LargerText">
-        {{ $t('新型コロナコールセンター') }}
-      </div>
-      <div :class="$style.SmallerText">
-        {{ $t('午前9時から午後9時（土日祝含む）') }}
+        {{ $t('一般的な電話相談窓口') }}
       </div>
 
-      <div :class="$style.Tel">
-        <a :class="$style.TelLink" href="tel:0570550571">
-          <img
-            :class="$style.TelLinkIcon"
-            src="/flow/phone-24px.svg"
-            aria-hidden="true"
-            :alt="$t('電話番号')"
-          />
-          0570-550571
+      <div :class="$style.link">
+        <a
+          href="https://www.pref.ishikawa.lg.jp/kansen/corona.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ $t('各保健所の電話番号はこちら') }}
         </a>
       </div>
     </div>

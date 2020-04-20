@@ -5,28 +5,13 @@
     </page-header>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.kyoiku.metro.tokyo.lg.jp/school/content/learning_support.html"
-          :icon-size="24"
-          >{{ $t('学びの支援サイト') }}
-        </external-link>
+        <a
+          href="https://www.kyoiku.metro.tokyo.lg.jp/school/content/learning_support.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('学びの支援サイト') }}</a
+        >
       </h3>
-      <ul>
-        <li>
-          {{
-            $t(
-              '臨時休業期間における子供たちの学びを支援する様々なウェブサイトを紹介しています。'
-            )
-          }}
-        </li>
-        <li>
-          {{
-            $t(
-              '学習の基本的な内容を身に付けられる「東京・ベーシック・ドリル」や動画教材等があります。'
-            )
-          }}
-        </li>
-      </ul>
     </static-card>
     <static-card>
       <h3>{{ $t('感染予防・健康管理') }}</h3>
@@ -41,11 +26,12 @@
         <li>
           {{ $t('手洗い、咳エチケット等により、感染予防に努めてください。')
           }}<br />
-          <external-link
-            url="https://tokyodouga.jp/lViN9C_BS-0.html"
-            :icon-size="16"
-            >{{ $t('【参考】感染症予防のための正しい手洗い方法（動画）') }}
-          </external-link>
+          <a
+            href="https://tokyodouga.jp/lViN9C_BS-0.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ $t('【参考】感染症予防のための正しい手洗い方法（動画）') }}</a
+          >
         </li>
         <li>
           {{
@@ -63,11 +49,12 @@
         <li>
           {{ $t('各保健所の電話番号について') }}
           <br />
-          <external-link
-            url="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
-            :icon-size="16"
-            >{{ $t('「新型コロナウイルス感染症にかかる相談窓口について」') }}
-          </external-link>
+          <a
+            href="https://www.pref.ishikawa.lg.jp/kansen/corona.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ $t('「新型コロナウイルス感染症にかかる相談窓口について」') }}</a
+          >
         </li>
       </ul>
     </static-card>
@@ -83,13 +70,11 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import StaticCard from '@/components/StaticCard.vue'
 import PageHeader from '@/components/PageHeader.vue'
-import ExternalLink from '@/components/ExternalLink.vue'
 
 export default Vue.extend({
   components: {
     PageHeader,
-    StaticCard,
-    ExternalLink
+    StaticCard
   },
   head(): MetaInfo {
     return {

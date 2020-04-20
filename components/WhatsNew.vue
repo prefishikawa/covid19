@@ -12,10 +12,9 @@
           mdi-bullhorn
         </v-icon>
         <external-link
-          url="https://www.bousai.metro.tokyo.lg.jp/1007617/index.html"
-        >
-          {{ $t('東京都緊急事態措置について') }}
-        </external-link>
+          url="https://www.pref.ishikawa.lg.jp/library_documents/kjs200413.pdf"
+          :label="$t('新型コロナウイルス感染拡大に係る石川県緊急事態措置')"
+        />
       </span>
     </div>
     <ul class="WhatsNew-list">

@@ -4,52 +4,26 @@
       <div :class="$style.pillar">
         <div :class="$style.content">
           <span>
-            {{ $t('陽性者数') }}
+            {{ $t('感染者') }}
             <br />({{ $t('累計') }})
           </span>
           <span>
-            <strong>{{ 陽性者数.toLocaleString() }}</strong>
+            <strong>{{ 感染者.toLocaleString() }}</strong>
             <span :class="$style.unit">{{ $t('人') }}</span>
           </span>
         </div>
       </div>
       <ul :class="$style.group">
-        <li :class="[$style.box, $style.parent, $style.hospitalized]">
+        <li :class="[$style.box, $style.deceased]">
           <div :class="$style.pillar">
             <div :class="$style.content">
-              <span>{{ $t('入院中') }}</span>
+              <span>{{ $t('治療中') }}</span>
               <span>
-                <strong>{{ 入院中.toLocaleString() }}</strong>
+                <strong>{{ 治療中.toLocaleString() }}</strong>
                 <span :class="$style.unit">{{ $t('人') }}</span>
               </span>
             </div>
           </div>
-          <ul :class="$style.group">
-            <li :class="[$style.box, $style.short, $style.minor]">
-              <div :class="$style.pillar">
-                <div :class="$style.content">
-                  <!-- eslint-disable vue/no-v-html-->
-                  <span v-html="$t('軽症・<br />中等症')" />
-                  <!-- eslint-enable vue/no-v-html-->
-                  <span>
-                    <strong>{{ 軽症中等症.toLocaleString() }}</strong>
-                    <span :class="$style.unit">{{ $t('人') }}</span>
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li :class="[$style.box, $style.short, $style.severe]">
-              <div :class="$style.pillar">
-                <div :class="$style.content">
-                  <span>{{ $t('重症') }}</span>
-                  <span>
-                    <strong>{{ 重症.toLocaleString() }}</strong>
-                    <span :class="$style.unit">{{ $t('人') }}</span>
-                  </span>
-                </div>
-              </div>
-            </li>
-          </ul>
         </li>
         <li :class="[$style.box, $style.deceased]">
           <div :class="$style.pillar">
@@ -65,9 +39,7 @@
         <li :class="[$style.box, $style.recovered]">
           <div :class="$style.pillar">
             <div :class="$style.content">
-              <span
-                >{{ $t('退院') }}<br />{{ $t('（療養期間経過を含む）') }}</span
-              >
+              <span>{{ $t('退院') }}</span>
               <span>
                 <strong>{{ 退院.toLocaleString() }}</strong>
                 <span :class="$style.unit">{{ $t('人') }}</span>
@@ -86,23 +58,11 @@ import Vue from 'vue'
 /* eslint-disable vue/prop-name-casing */
 export default Vue.extend({
   props: {
-    検査実施人数: {
+    感染者: {
       type: Number,
       required: true
     },
-    陽性者数: {
-      type: Number,
-      required: true
-    },
-    入院中: {
-      type: Number,
-      required: true
-    },
-    軽症中等症: {
-      type: Number,
-      required: true
-    },
-    重症: {
+    治療中: {
       type: Number,
       required: true
     },
@@ -217,20 +177,20 @@ $default-boxdiff: 35px;
     width: 100%;
 
     > .pillar {
-      // [6列] 1/6
-      width: calc((100% + #{$default-bdw} * 2) / 6 - #{$default-bdw} * 3);
+      // [4列] 1/4
+      width: calc((100% + #{$default-bdw} * 2) / 4 - #{$default-bdw} * 3);
     }
 
     > .group {
-      // [6列] 5/6
-      width: calc((100% + #{$default-bdw} * 2) / 6 * 5 + #{$default-bdw});
+      // [4列] 3/4
+      width: calc((100% + #{$default-bdw} * 2) / 4 * 3 + #{$default-bdw});
     }
   }
 
   &.hospitalized {
     margin-left: $default-bdw;
-    // [5列] 3/5
-    width: calc(100% / 5 * 3 - #{$default-bdw});
+    // [3列] 3/3
+    width: calc(100% / 4 * 1 - #{$default-bdw});
 
     > .pillar {
       // [3列] 1/3
@@ -238,8 +198,8 @@ $default-boxdiff: 35px;
     }
 
     > .group {
-      // [3列] 2/3
-      width: calc((100% + #{$default-bdw} * 2) / 3 * 2 + #{$default-bdw});
+      // [3列] 1/3
+      width: calc((100% + #{$default-bdw} * 2) / 3 * 1 + #{$default-bdw});
     }
   }
 
@@ -254,7 +214,7 @@ $default-boxdiff: 35px;
   &.recovered {
     margin-left: $default-bdw;
     // [5列] 1/5
-    width: calc(100% / 5 - #{$default-bdw});
+    width: calc(100% / 3 - #{$default-bdw});
   }
 }
 
@@ -277,7 +237,7 @@ $default-boxdiff: 35px;
     }
 
     &:not(:last-child) {
-      overflow-wrap: break-word;
+      word-break: break-all;
     }
   }
   span strong {
@@ -383,35 +343,35 @@ $default-boxdiff: 35px;
 }
 
 // variables.scss Breakpoints: huge (1440)
-@include lessThan(1440) {
-  @include override(1440, 3, 15, 150, 35);
-}
+// @include lessThan(1440) {
+//   @include override(1440, 3, 15, 150, 35);
+// }
 
 // Vuetify Breakpoints: Large (1264)
-@include lessThan(1263) {
-  @include override(1263, 2, 13, 107, 24);
-}
+// @include lessThan(1263) {
+//   @include override(1263, 2, 13, 107, 24);
+// }
 
 // variables.scss Breakpoints: large (1170)
-@include lessThan(1170) {
-  @include override(1170, 2, 13, 107, 24);
-}
+// @include lessThan(1170) {
+//   @include override(1170, 2, 13, 107, 24);
+// }
 
 // Vuetify Breakpoints: Small (960)
-@include lessThan(959) {
-  @include override(960, 4, 14, 180, 40);
-}
+// @include lessThan(959) {
+//   @include override(960, 4, 14, 180, 40);
+// }
 
-@include lessThan(767) {
-  @include override(960, 3, 14, 180, 40);
-}
+// @include lessThan(767) {
+//   @include override(960, 3, 14, 180, 40);
+// }
 
 // Vuetify Breakpoints: Extra Small (600)
-@include lessThan(600) {
-  @include override(600, 3, 14, 150, 35);
-}
+// @include lessThan(600) {
+//   @include override(600, 3, 14, 150, 35);
+// }
 
-@include lessThan(420) {
-  @include override(600, 2, 12, 150, 35);
-}
+// @include lessThan(420) {
+//   @include override(600, 2, 12, 150, 35);
+// }
 </style>

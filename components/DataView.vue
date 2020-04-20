@@ -1,5 +1,5 @@
 <template>
-  <v-card ref="dataView" class="DataView" :loading="loading">
+  <v-card class="DataView" :loading="loading">
     <div class="DataView-Inner">
       <div class="DataView-Header">
         <h3
@@ -19,32 +19,6 @@
       <div class="DataView-CardText">
         <slot />
       </div>
-      <div v-if="this.$slots.dataTable" class="DataView-Details">
-        <v-expansion-panels v-if="showDetails" flat>
-          <v-expansion-panel>
-            <v-expansion-panel-header
-              :hide-actions="true"
-              :style="{ transition: 'none' }"
-              @click="toggleDetails"
-            >
-              <template slot:actions>
-                <div class="v-expansion-panel-header__icon">
-                  <v-icon left>mdi-chevron-right</v-icon>
-                </div>
-              </template>
-              <span class="expansion-panel-text">{{
-                $t('テーブルを表示')
-              }}</span>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              <slot name="dataTable" />
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
-        <template v-else>
-          <slot name="dataTable" />
-        </template>
-      </div>
       <div class="DataView-Description">
         <slot name="footer-description" />
       </div>
@@ -53,9 +27,9 @@
           <slot name="footer" />
           <div>
             <a class="Permalink" :href="permalink()">
-              <time :datetime="formattedDate">{{
-                $t('{date} 更新', { date })
-              }}</time>
+              <time :datetime="formattedDate">
+                {{ $t('{date} 更新', { date }) }}
+              </time>
             </a>
           </div>
         </div>
@@ -85,9 +59,9 @@
             @click="stopClosingShareMenu"
           >
             <div class="Close-Button">
-              <v-icon :aria-label="$t('閉じる')" @click="closeShareMenu"
-                >mdi-close</v-icon
-              >
+              <v-icon :aria-label="$t('閉じる')" @click="closeShareMenu">
+                mdi-close
+              </v-icon>
             </div>
 
             <h4>{{ $t('埋め込み用コード') }}</h4>
@@ -98,8 +72,9 @@
                 class="EmbedCode-Copy"
                 :aria-label="$t('クリップボードにコピー')"
                 @click="copyEmbedCode"
-                >mdi-clipboard-outline</v-icon
               >
+                mdi-clipboard-outline
+              </v-icon>
               {{ graphEmbedValue }}
             </div>
 
@@ -161,7 +136,7 @@
 
     <div v-if="showOverlay" class="overlay">
       <div class="overlay-text">
-        {{ $t('埋め込み用コードをコピーしました') }}
+        {{ $t('埋め込みコードをコピーしました') }}
       </div>
       <v-footer class="DataView-Footer">
         <time :datetime="date">{{ $t('{date} 更新', { date }) }}</time>
@@ -174,7 +149,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
-import { EventBus, TOGGLE_EVENT } from '@/utils/card-event-bus'
 
 export default Vue.extend({
   props: {
@@ -200,9 +174,7 @@ export default Vue.extend({
     return {
       openGraphEmbed: false,
       displayShare: false,
-      showOverlay: false,
-      showDetails: false,
-      openDetails: false
+      showOverlay: false
     }
   },
   computed: {
@@ -228,9 +200,6 @@ export default Vue.extend({
         )
       }
     }
-  },
-  mounted() {
-    this.showDetails = true
   },
   methods: {
     toggleShareMenu(e: Event) {
@@ -274,7 +243,7 @@ export default Vue.extend({
         'https://twitter.com/intent/tweet?text=' +
         this.title +
         ' / ' +
-        this.$t('東京都') +
+        this.$t('石川県') +
         this.$t('新型コロナウイルス感染症') +
         this.$t('対策サイト') +
         '&url=' +
@@ -293,10 +262,6 @@ export default Vue.extend({
         'https://social-plugins.line.me/lineit/share?url=' +
         this.permalink(true)
       window.open(url)
-    },
-    toggleDetails() {
-      this.openDetails = !this.openDetails
-      EventBus.$emit(TOGGLE_EVENT, { dataView: this.$refs.dataView })
     }
   }
 })
@@ -376,6 +341,7 @@ export default Vue.extend({
   &-Inner {
     display: flex;
     flex-flow: column;
+    justify-content: space-between;
     padding: 22px;
     height: 100%;
   }
@@ -383,7 +349,7 @@ export default Vue.extend({
   &-Title {
     width: 100%;
     margin-bottom: 10px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 1.5;
     font-weight: normal;
     color: $gray-2;
@@ -412,21 +378,6 @@ export default Vue.extend({
     }
   }
 
-  &-Details {
-    margin: 10px 0;
-
-    .v-data-table .text-end {
-      text-align: right;
-    }
-  }
-
-  &-DetailsSummary {
-    @include font-size(14);
-
-    color: $gray-2;
-    cursor: pointer;
-  }
-
   &-CardTextForXS {
     margin-bottom: 46px;
     margin-top: 70px;
@@ -442,11 +393,9 @@ export default Vue.extend({
     padding: 0 !important;
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
     color: $gray-3 !important;
     text-align: right;
     background-color: $white !important;
-
     .Permalink {
       color: $gray-3 !important;
     }
@@ -470,8 +419,7 @@ export default Vue.extend({
 
       .DataView-Share-Opener {
         cursor: pointer;
-        margin: -14px;
-        padding: 14px;
+        margin-right: 6px;
 
         > svg {
           width: auto !important;
@@ -610,21 +558,5 @@ textarea {
   font: 400 11px system-ui;
   width: 100%;
   height: 2.4rem;
-}
-
-.v-expansion-panel-header__icon {
-  margin-left: -5px !important;
-
-  & .v-icon--left {
-    margin-right: 5px;
-  }
-
-  .v-expansion-panel--active & .v-icon {
-    transform: rotate(90deg) !important;
-  }
-}
-
-.expansion-panel-text {
-  color: $gray-1;
 }
 </style>

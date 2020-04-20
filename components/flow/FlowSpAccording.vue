@@ -1,9 +1,9 @@
 <template>
   <div :class="[$style.container, $style.according]">
-    <i18n tag="h4" :class="$style.heading" path="{advisory}による相談結果">
+    <i18n tag="div" :class="$style.heading" path="{advisory}による相談結果">
       <template v-slot:advisory>
         <span :class="[$style.fzLarge, $style.break]">
-          {{ $t('新型コロナ受診相談窓口') }}
+          {{ $t('帰国者・接触者 電話相談センター') }}
         </span>
       </template>
     </i18n>
@@ -75,19 +75,12 @@
       <span :class="$style.break">
         <!-- 改行によって空白が入らないように-->
         <!-- eslint-disable -->
-        <span :class="$style.fzXLLarge">{{ $t('PCR検査') }}</span>{{ $t('※') }}
+        <span :class="$style.fzXLLarge">{{ $t('PCR検査') }}</span>
         <!-- eslint-enable -->
       </span>
       <span :class="$style.break">
-        {{ $t('東京都健康安全研究センター等') }}
+        {{ $t('石川県健康安全研究センター等') }}
       </span>
-      <small :class="[$style.note, $style.fzSmall, $style.break]">
-        {{
-          $t(
-            '※保険適用となる検査は、当面の間、院内感染防止等の観点から、「帰国者・接触者外来」等の医療機関で実施'
-          )
-        }}
-      </small>
     </p>
     <div :class="[$style.rectContainer, $style.double]">
       <a
