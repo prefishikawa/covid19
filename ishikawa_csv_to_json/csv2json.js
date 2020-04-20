@@ -1,6 +1,5 @@
 /**
- * Fukui covid-19 open data getting script
- * include feature downloading news spreadsheet
+ * Tanks Fukui covid-19 open data getting script
  * Copyright © HyodaKazuaki
  */
 
@@ -55,17 +54,6 @@ const openDataSource = [
 ]
 
 /**
- * ニュースデータ取得先
- */
-// const newsURL =
-//   'https://script.googleusercontent.com/macros/echo?user_content_key=PYdskn-DTyGWV-opQBIPMai2hf_fFAN4QEmRbzTslY_Wk87YfJO9j9H3ity-FUaFPy1pksmbx2n_xtdxmYsKNAQ8OsCGB2Tbm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnIEfRmCr39HTGQrTUSiWR0O7CYjXcSKXdkQgDZghk6tW42sA2IpyDGOwsQ9LRFT_DlHTmz_2mixm&lib=MA39SnUYxoNd8lbNHqVdiBtdTRtZCTy75'
-
-/**
- * 福井新聞RSS取得先
- */
-// const fukuiShimbunURL = 'https://www.fukuishimbun.co.jp/list/feed/rss'
-
-/**
  * jsonファイルの階層
  */
 const dir = '../data/'
@@ -74,10 +62,6 @@ const dir = '../data/'
  * jsonのファイル名
  */
 const files = {
-  // breakingNews: 'breakingNews.json', // 速報
-  // fukuiNews: 'fukui_news.json', // 県内のお知らせ
-  // japanNews: 'japan_news.json', // 国内のお知らせ
-  // fukuiShimbun: 'fukuishimbun.json', // 福井新聞のニュース
   contacts: 'contacts.json', // コールセンター相談件数
   inspectionPersons: '170003_ishikawa_covid19_test_count.json', // 検査実施人数
   patientsSummary: 'patients_summary.json', // 陽性患者数
