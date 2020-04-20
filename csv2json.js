@@ -16,7 +16,7 @@ const cheerio = require('cheerio')
  * Shift-JISフラグ
  * falseの場合はUTF-8として処理
  */
-const ISSHIFTJIS = false
+const ISSHIFTJIS = true
 
 /**
  * オープンデータ取得先
