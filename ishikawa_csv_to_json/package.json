@@ -1,0 +1,19 @@
+{
+  "name": "covid19_fukui_data_getters",
+  "version": "0.0.1",
+  "main": "csv2json.js",
+  "private": true,
+  "scripts": {
+    "fetch": "node csv2json.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "csvtojson": "^2.0.10",
+    "iconv-lite": "^0.5.1",
+    "linq": "^3.2.2",
+    "moment-timezone": "^0.5.28",
+    "node-fetch": "^2.6.0",
+    "xml2js": "^0.4.23"
+  }
+}

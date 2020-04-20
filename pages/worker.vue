@@ -5,11 +5,12 @@
     </page-header>
     <static-card>
       <h3>
-        <external-link
-          url="http://www.sangyo-rodo.metro.tokyo.jp/chushou/kinyu/yuushi/yuushi/new"
-          :icon-size="24"
-          >{{ $t('新型コロナウイルス感染症に対応した制度融資') }}
-        </external-link>
+        <a
+          href="http://www.sangyo-rodo.metro.tokyo.jp/chushou/kinyu/yuushi/yuushi/new"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('新型コロナウイルス感染症に対応した制度融資') }}</a
+        >
       </h3>
       <p>
         {{
@@ -21,11 +22,12 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.tokyo-kosha.or.jp/topics/2003/0001.html"
-          :icon-size="24"
-          >{{ $t('新型コロナウイルスによる経営課題に関する専門家派遣') }}
-        </external-link>
+        <a
+          href="https://www.tokyo-kosha.or.jp/topics/2003/0001.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('新型コロナウイルスによる経営課題に関する専門家派遣') }}</a
+        >
       </h3>
       <p>
         {{
@@ -37,27 +39,31 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.tokyo-kosha.or.jp/support/josei/jigyo/kinkyu.html"
-          :icon-size="24"
-          >{{ $t('緊急販路開拓助成事業（新型コロナウイルス感染症緊急対策）') }}
-        </external-link>
+        <a
+          href="https://www.tokyo-kosha.or.jp/support/josei/jigyo/kinkyu.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{
+            $t('緊急販路開拓助成事業（新型コロナウイルス感染症緊急対策）')
+          }}</a
+        >
       </h3>
       <p>
         {{
           $t(
-            '感染症の影響を受け、売上が減少した都内中小企業の展示会出展費用の一部を助成します（限度額：150万円 / 助成率：5分の4 / 助成対象期間：交付決定日から1年1カ月 / 受付期間：5月11日～20日〈予定〉）。'
+            '感染症の影響を受け、売上が減少した県内中小企業の展示会出展費用の一部を助成します（限度額：150万円 / 助成率：5分の4 / 助成対象期間：交付決定日から1年1カ月 / 受付期間：5月11日～20日〈予定〉）。'
           )
         }}
       </p>
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.hataraku.metro.tokyo.jp/kansensyo/index.html"
-          :icon-size="24"
-          >{{ $t('中小企業従業員融資') }}
-        </external-link>
+        <a
+          href="https://www.hataraku.metro.tokyo.jp/kansensyo/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('中小企業従業員融資') }}</a
+        >
       </h3>
       <p>
         {{
@@ -69,13 +75,14 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.hataraku.metro.tokyo.jp/kansensyo/index.html"
-          :icon-size="24"
+        <a
+          href="https://www.hataraku.metro.tokyo.jp/kansensyo/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
           >{{
             $t('新型コロナウイルス感染症に係る休業等支援事業（専門家派遣）')
-          }}
-        </external-link>
+          }}</a
+        >
       </h3>
       <p>
         {{
@@ -87,27 +94,29 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.hataraku.metro.tokyo.jp/kansensyo/index.html"
-          :icon-size="24"
-          >{{ $t('新型コロナウイルス感染症対策雇用環境整備促進事業') }}
-        </external-link>
+        <a
+          href="https://www.hataraku.metro.tokyo.jp/kansensyo/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('新型コロナウイルス感染症対策雇用環境整備促進事業') }}</a
+        >
       </h3>
       <p>
         {{
           $t(
-            '感染症の拡大を理由として、国の雇用調整助成金等を活用し、非常時における勤務体制づくりなど職場環境整備に取り組む都内中小企業に奨励金を支給します（1事業所10万円）。'
+            '感染症の拡大を理由として、国の雇用調整助成金等を活用し、非常時における勤務体制づくりなど職場環境整備に取り組む県内中小企業に奨励金を支給します（1事業所10万円）。'
           )
         }}
       </p>
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.hataraku.metro.tokyo.jp/kansensyo/index.html"
-          :icon-size="24"
-          >{{ $t('テレワーク導入モデル体験事業') }}
-        </external-link>
+        <a
+          href="https://www.hataraku.metro.tokyo.jp/kansensyo/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('テレワーク導入モデル体験事業') }}</a
+        >
       </h3>
       <p>
         {{
@@ -119,25 +128,29 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.shigotozaidan.or.jp/koyo-kankyo/joseikin/kinkyutaisaku.html"
-          :icon-size="24"
-          >{{ $t('事業継続緊急対策（テレワーク）助成金') }}
-        </external-link>
+        <a
+          href="https://www.shigotozaidan.or.jp/koyo-kankyo/joseikin/kinkyutaisaku.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('事業継続緊急対策（テレワーク）助成金') }}</a
+        >
       </h3>
       <p>
         {{
           $t(
-            '都内中堅・中小企業に対し、テレワークの導入に必要な機器やソフトウェア等の経費を助成します（限度額250万円、助成率10/10）。ぜひご活用ください。'
+            '県内中堅・中小企業に対し、テレワークの導入に必要な機器やソフトウェア等の経費を助成します（限度額250万円、助成率10/10）。ぜひご活用ください。'
           )
         }}
       </p>
     </static-card>
     <static-card>
       <h3>
-        <external-link url="https://tokyo-telework.jp/" :icon-size="24"
-          >{{ $t('テレワークオンラインセミナー開催') }}
-        </external-link>
+        <a
+          href="https://tokyo-telework.jp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('テレワークオンラインセミナー開催') }}</a
+        >
       </h3>
       <p>
         {{
@@ -149,11 +162,12 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="http://www.sangyo-rodo.metro.tokyo.jp/attention/2020/0305_13201.html"
-          :icon-size="24"
-          >{{ $t('中小企業者等特別相談窓口') }}
-        </external-link>
+        <a
+          href="http://www.sangyo-rodo.metro.tokyo.jp/attention/2020/0305_13201.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('中小企業者等特別相談窓口') }}</a
+        >
       </h3>
       <p>
         {{ $t('資金繰りに関する相談、経営に関する相談') }}
@@ -161,11 +175,12 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="http://www.sangyo-rodo.metro.tokyo.jp/attention/2020/0305_13201.html"
-          :icon-size="24"
-          >{{ $t('フリーランスを含む個人事業主特別相談窓口') }}
-        </external-link>
+        <a
+          href="http://www.sangyo-rodo.metro.tokyo.jp/attention/2020/0305_13201.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('フリーランスを含む個人事業主特別相談窓口') }}</a
+        >
       </h3>
       <p>
         {{
@@ -175,11 +190,12 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://www.hataraku.metro.tokyo.lg.jp/sodan/sodan/index.html"
-          :icon-size="24"
-          >{{ $t('緊急労働相談ダイヤル') }}
-        </external-link>
+        <a
+          href="https://www.hataraku.metro.tokyo.lg.jp/sodan/sodan/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ $t('緊急労働相談ダイヤル') }}</a
+        >
       </h3>
       <p>
         {{
@@ -191,18 +207,19 @@
     </static-card>
     <static-card>
       <h3>
-        <external-link
-          url="https://smooth-biz.metro.tokyo.lg.jp/"
-          :icon-size="24"
+        <a
+          href="https://smooth-biz.metro.tokyo.lg.jp/"
+          target="_blank"
+          rel="noopener noreferrer"
           >{{
-            $t('新しいワークスタイルや企業活動の東京モデル「スムーズビズ」')
-          }}
-        </external-link>
+            $t('新しいワークスタイルや企業活動の石川モデル「スムーズビズ」')
+          }}</a
+        >
       </h3>
       <p>
         {{
           $t(
-            'テレワーク・時差出勤などスムーズビズの取組は、新型コロナウイルス感染症の対策としても効果的です。感染症対策として、東京2020大会時の交通混雑緩和に向けた取組の前倒しをお願いします。'
+            'テレワーク・時差出勤などスムーズビズの取組は、新型コロナウイルス感染症の対策としても効果的です。感染症対策として、石川2020大会時の交通混雑緩和に向けた取組の前倒しをお願いします。'
           )
         }}
       </p>
@@ -215,13 +232,11 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import StaticCard from '@/components/StaticCard.vue'
 import PageHeader from '@/components/PageHeader.vue'
-import ExternalLink from '@/components/ExternalLink.vue'
 
 export default Vue.extend({
   components: {
     PageHeader,
-    StaticCard,
-    ExternalLink
+    StaticCard
   },
   head(): MetaInfo {
     return {

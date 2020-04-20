@@ -4,11 +4,11 @@
       <div :class="$style.AdvisoryContents">
         <div>
           <span :class="$style.AdvisoryContentsTitle">{{
-            $t('新型コロナ受診相談窓口（日本語のみ）')
+            $t('帰国者・接触者 相談センター')
           }}</span>
         </div>
-        <div :class="[$style.AdvisoryContentsColsSentense, 'mt-4']">
-          {{ $t('帰国者・接触者 電話相談センター') }}
+        <div :class="[$style.AdvisoryContentsColsSentense_17Ilp, 'mt-4']">
+          {{ $t('新型コロナ受診相談窓口（日本語のみ）') }}
         </div>
         <div>
           <div :class="[$style.AdvisoryBoxContainer, $style.AdvisoryWhiteBox]">
@@ -21,22 +21,18 @@
 
       <div :class="$style.AdvisoryContents">
         <div class="py-8">
-          <div :class="$style.AdvisoryContentsTitle2">
-            {{ $t('平日（日中）') }}
-          </div>
           <div
             :class="[
               $style.AdvisoryLink,
-              $style.AdvisoryBlockCentering,
-              'mt-4'
+              $style.AdvisoryBlockCentering
             ]"
           >
             <a
-              href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+              href="https://www.pref.ishikawa.lg.jp/kansen/corona.html"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>{{ $t('各保健所の電話番号は福祉保健局HPへ') }}</span>
+              <span>{{ $t('各保健所の電話番号はこちら') }}</span>
               <v-icon size="18">
                 mdi-open-in-new
               </v-icon>
@@ -46,34 +42,6 @@
       </div>
 
       <div :class="$style.AdvisoryContents">
-        <div class="pt-8">
-          <div :class="$style.AdvisoryContentsTitle2">
-            {{ $t('平日（夜間）') }}
-          </div>
-          <span>{{ $t('午後5時から翌朝午前9時') }}</span>
-        </div>
-        <div class="mt-1">
-          <span :class="$style.AdvisoryContentsSubTitle">
-            {{ $t('土日祝 終日') }}
-          </span>
-        </div>
-        <div
-          :class="[
-            $style.AdvisoryTelephoneArea,
-            $style.AdvisoryBlockCentering,
-            'mt-1'
-          ]"
-        >
-          <a :class="$style.AdvisoryTelephone" href="tel:0353204592">
-            <img
-              :class="$style.AdvisoryTelephoneIcon"
-              src="/flow/phone-24px.svg"
-              aria-hidden="true"
-              :alt="$t('電話番号')"
-            />
-            03-5320-4592
-          </a>
-        </div>
         <div v-if="!['ja', 'ja-basic'].includes($i18n.locale)" class="pt-8">
           <span>{{ $t('ひまわり') }}</span>
         </div>

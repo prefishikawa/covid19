@@ -22,20 +22,12 @@
             <td class="text-start">{{ item['居住地'] }}</td>
             <td class="text-start">{{ item['年代'] }}</td>
             <td class="text-start">{{ item['性別'] }}</td>
-            <td class="text-center">{{ item['退院'] }}</td>
           </tr>
         </tbody>
       </template>
     </v-data-table>
     <div class="note">
-      <ul>
-        <li>
-          {{ $t('※退院は、保健所から報告があり、確認ができているものを反映') }}
-        </li>
-        <li>
-          {{ $t('※死亡退院を含む') }}
-        </li>
-      </ul>
+      {{ $t('※退院には、死亡退院を含む') }}
     </div>
     <template v-slot:infoPanel>
       <data-view-basic-info-panel
@@ -58,6 +50,7 @@
       padding: 8px 10px;
       height: auto;
       border-bottom: 1px solid $gray-4;
+      white-space: nowrap;
       color: $gray-2;
       font-size: 12px;
 
@@ -90,6 +83,12 @@
             background: rgba($gray-4, 0.3);
           }
         }
+
+        &:not(:last-child) {
+          td:not(.v-data-table__mobile-row) {
+            border: none;
+          }
+        }
       }
     }
     &:focus {
@@ -99,15 +98,9 @@
 }
 
 .note {
-  margin: 8px 0 0;
+  padding: 8px;
   font-size: 12px;
   color: $gray-3;
-
-  ul,
-  ol {
-    list-style-type: none;
-    padding: 0;
-  }
 }
 </style>
 

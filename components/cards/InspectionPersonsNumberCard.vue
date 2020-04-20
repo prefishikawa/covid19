@@ -4,8 +4,8 @@
       :title="$t('検査実施人数')"
       :title-id="'number-of-inspection-persons'"
       :chart-id="'number-of-inspection-persons'"
-      :chart-data="graphData"
-      :date="data.date"
+      :chart-data="inspectionPersonsGraph"
+      :date="inspectionPersonsDate"
       :unit="$t('人')"
     >
       <template v-slot:description>
@@ -32,7 +32,8 @@
 </template>
 
 <script>
-import Data from '@/data/data.json'
+// import Data from '@/data/data.json'
+import InspectionPersons from '@/data/170003_ishikawa_covid19_test_count.json'
 import formatGraph from '@/utils/formatGraph'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 
@@ -41,20 +42,14 @@ export default {
     TimeBarChart
   },
   data() {
-    const formatData = Data.inspection_persons.labels.map((date, i) => {
-      return {
-        日付: date,
-        小計: Data.inspection_persons.datasets[0].data[i]
-      }
-    })
-
     // 検査実施人数グラフ
-    const graphData = formatGraph(formatData)
-
-    return {
-      data: Data.inspection_persons,
-      graphData
+    const inspectionPersonsGraph = formatGraph(InspectionPersons.data)
+    const inspectionPersonsDate = InspectionPersons.date
+    const data = {
+      inspectionPersonsDate,
+      inspectionPersonsGraph
     }
+    return data
   }
 }
 </script>

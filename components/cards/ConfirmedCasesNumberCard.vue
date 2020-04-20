@@ -5,28 +5,15 @@
       :title-id="'number-of-confirmed-cases'"
       :chart-id="'time-bar-chart-patients'"
       :chart-data="patientsGraph"
-      :date="Data.patients.date"
+      :date="Data.date"
       :unit="$t('人')"
       :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'"
-    >
-      <template v-slot:description>
-        <ul>
-          <li>
-            {{ $t('（注）医療機関が保険適用で行った検査も含む') }}
-          </li>
-          <li>
-            {{
-              $t('（注）チャーター機帰国者、クルーズ船乗客等は含まれていない')
-            }}
-          </li>
-        </ul>
-      </template>
-    </time-bar-chart>
+    />
   </v-col>
 </template>
 
 <script>
-import Data from '@/data/data.json'
+import Data from '@/data/patients_summary.json'
 import formatGraph from '@/utils/formatGraph'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 
@@ -36,7 +23,7 @@ export default {
   },
   data() {
     // 感染者数グラフ
-    const patientsGraph = formatGraph(Data.patients_summary.data)
+    const patientsGraph = formatGraph(Data.data)
 
     const data = {
       Data,

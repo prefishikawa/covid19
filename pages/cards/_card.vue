@@ -9,16 +9,8 @@
     <confirmed-cases-number-card
       v-else-if="this.$route.params.card == 'number-of-confirmed-cases'"
     />
-    <confirmed-cases-by-municipalities-card
-      v-else-if="
-        this.$route.params.card == 'number-of-confirmed-cases-by-municipalities'
-      "
-    />
     <confirmed-cases-attributes-card
       v-else-if="this.$route.params.card == 'attributes-of-confirmed-cases'"
-    />
-    <tested-number-card
-      v-else-if="this.$route.params.card == 'number-of-tested'"
     />
     <inspection-persons-number-card
       v-else-if="this.$route.params.card == 'number-of-inspection-persons'"
@@ -35,31 +27,19 @@
           'number-of-reports-to-covid19-consultation-desk'
       "
     />
-    <metro-card
-      v-else-if="
-        this.$route.params.card == 'predicted-number-of-toei-subway-passengers'
-      "
-    />
-    <agency-card v-else-if="this.$route.params.card == 'agency'" />
   </div>
 </template>
 
 <script>
 import Data from '@/data/data.json'
-import MetroData from '@/data/metro.json'
-import agencyData from '@/data/agency.json'
-import patientData from '@/data/patient.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
-import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
 import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
-import MetroCard from '@/components/cards/MetroCard.vue'
-import AgencyCard from '@/components/cards/AgencyCard.vue'
 
 export default {
   components: {
@@ -67,13 +47,10 @@ export default {
     TestedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-    ConfirmedCasesByMunicipalitiesCard,
     TestedNumberCard,
     InspectionPersonsNumberCard,
     TelephoneAdvisoryReportsNumberCard,
-    ConsultationDeskReportsNumberCard,
-    MetroCard,
-    AgencyCard
+    ConsultationDeskReportsNumberCard
   },
   data() {
     let title, updatedAt
@@ -90,10 +67,6 @@ export default {
         title = this.$t('陽性患者数')
         updatedAt = Data.patients.date
         break
-      case 'number-of-confirmed-cases-by-municipalities':
-        title = this.$t('陽性患者数（区市町村別）')
-        updatedAt = patientData.date
-        break
       case 'attributes-of-confirmed-cases':
         title = this.$t('陽性患者の属性')
         updatedAt = Data.patients.date
@@ -107,20 +80,12 @@ export default {
         updatedAt = Data.inspection_persons.date
         break
       case 'number-of-reports-to-covid19-telephone-advisory-center':
-        title = this.$t('新型コロナコールセンター相談件数')
+        title = this.$t('帰国者・接触者相談センター相談件数')
         updatedAt = Data.contacts.date
         break
       case 'number-of-reports-to-covid19-consultation-desk':
-        title = this.$t('新型コロナ受診相談窓口相談件数')
+        title = this.$t('新型コロナウイルス感染症に関する一般相談件数')
         updatedAt = Data.querents.date
-        break
-      case 'predicted-number-of-toei-subway-passengers':
-        title = this.$t('都営地下鉄の利用者数の推移')
-        updatedAt = MetroData.date
-        break
-      case 'agency':
-        title = this.$t('都庁来庁者数の推移')
-        updatedAt = agencyData.date
         break
     }
 
@@ -138,7 +103,7 @@ export default {
         ? `${url}/ogp/${this.$route.params.card}.png?t=${timestamp}`
         : `${url}/ogp/${this.$i18n.locale}/${this.$route.params.card}.png?t=${timestamp}`
     const description = `${this.updatedAt} | ${this.$t(
-      '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+      '当サイトは、石川県による公式情報と客観的な数値をわかりやすく伝えることで、石川県にお住まいの方や、石川県内に拠点を持つ企業の方、石川県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
     )}`
 
     return {
@@ -155,7 +120,7 @@ export default {
           content:
             this.title +
             ' | ' +
-            this.$t('東京都') +
+            this.$t('石川県') +
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             this.$t('対策サイト')

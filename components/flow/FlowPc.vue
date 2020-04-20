@@ -30,25 +30,10 @@
         >
           <div :class="[$style.CardBlockInner]">
             <flow-pc-suspect />
-            <img
-              :class="$style.CardBlockIcon"
-              src="/flow/flow_arrow.svg"
-              aria-hidden="true"
-              alt=" "
-            />
           </div>
         </div>
         <div :class="$style.Advisory">
           <flow-pc-advisory />
-          <img
-            :class="$style.AdvisoryIcon"
-            src="/flow/flow_arrow.svg"
-            aria-hidden="true"
-            alt=" "
-          />
-        </div>
-        <div :class="$style.Advisory2">
-          <flow-pc-advisory2 />
         </div>
       </div>
     </div>
@@ -61,7 +46,7 @@
         >
           <template v-slot:advisory>
             <span :class="$style.TitleLarge">
-              {{ $t('新型コロナ受診相談窓口') }}
+              {{ $t('帰国者・接触者 電話相談センター') }}
             </span>
           </template>
         </i18n>
@@ -110,13 +95,6 @@
           <flow-pc-hospitalized />
         </div>
       </div>
-      <p :class="$style.Note">
-        {{
-          $t(
-            '※保険適用となる検査は、当面の間、院内感染防止等の観点から、「帰国者・接触者外来」等の医療機関で実施'
-          )
-        }}
-      </p>
     </div>
   </div>
 </template>
@@ -126,7 +104,6 @@ import FlowPcPast from './FlowPcPast.vue'
 import FlowPcDays from './FlowPcDays.vue'
 import FlowPcSuspect from './FlowPcSuspect.vue'
 import FlowPcAdvisory from './FlowPcAdvisory.vue'
-import FlowPcAdvisory2 from './FlowPcAdvisory2.vue'
 import FlowPcRequired from './FlowPcRequired.vue'
 import FlowPcPcr from './FlowPcPcr.vue'
 import FlowPcNotRequired from './FlowPcNotRequired.vue'
@@ -138,7 +115,6 @@ export default {
     FlowPcDays,
     FlowPcSuspect,
     FlowPcAdvisory,
-    FlowPcAdvisory2,
     FlowPcRequired,
     FlowPcPcr,
     FlowPcNotRequired,

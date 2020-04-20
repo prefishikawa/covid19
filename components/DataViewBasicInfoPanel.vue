@@ -1,10 +1,10 @@
 <template>
   <div class="DataView-DataInfo">
-    <span v-if="lText !== ''" class="DataView-DataInfo-summary">
+    <span class="DataView-DataInfo-summary">
       {{ lText }}
       <small class="DataView-DataInfo-summary-unit">{{ unit }}</small>
     </span>
-    <br v-if="lText !== ''" />
+    <br />
     <small class="DataView-DataInfo-date">{{ sText }}</small>
   </div>
 </template>
@@ -47,8 +47,7 @@ export default Vue.extend({
   props: {
     lText: {
       type: String,
-      required: false,
-      default: ''
+      required: true
     },
     sText: {
       type: String,
@@ -56,8 +55,7 @@ export default Vue.extend({
     },
     unit: {
       type: String,
-      required: false,
-      default: ''
+      required: true
     }
   }
 })

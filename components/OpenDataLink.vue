@@ -15,6 +15,7 @@
 
 <style lang="scss">
 .OpenDataLink {
+  display:none;
   text-decoration: none;
   .ExternalLinkIcon {
     vertical-align: text-bottom;

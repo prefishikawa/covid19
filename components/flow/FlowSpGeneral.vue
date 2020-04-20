@@ -1,11 +1,11 @@
 <template>
   <div :class="$style.container">
-    <h4 :class="$style.heading">
+    <p :class="$style.heading">
       <span :class="[$style.icon, $style.top]" aria-hidden="true">
         <human-icon />
       </span>
       <span :class="$style.fzMedium">{{ $t('一般の方') }}</span>
-    </h4>
+    </p>
     <ul :class="[$style.rectContainer, $style.double]">
       <li :class="$style.symptom">
         <span>

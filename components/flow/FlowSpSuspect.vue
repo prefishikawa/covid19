@@ -1,11 +1,11 @@
 <template>
   <div :class="$style.container">
-    <h4 :class="$style.heading">
+    <p :class="$style.heading">
       <span :class="[$style.icon, $style.top]">
         <sentiment-icon aria-hidden="true" />
       </span>
       <span :class="$style.fzMedium">{{ $t('不安に思う方') }}</span>
-    </h4>
+    </p>
 
     <ul :class="[$style.rectContainer, $style.triple]">
       <li :class="$style.symptom">
@@ -21,16 +21,19 @@
 
     <div :class="$style.callcenter">
       <p :class="$style.fzLarge">
-        {{ $t('新型コロナコールセンター') }}
+        {{ $t('一般的な電話相談窓口') }}
       </p>
-      <p :class="$style.open">
-        {{ $t('午前9時から午後9時（土日祝含む）') }}
-      </p>
-      <p :class="[$style.phone, $style.fzNumeric]">
-        <span :class="$style.icon">
-          <phone-icon alt="Phone" />
-        </span>
-        <a href="tel:0570550571">0570-550571</a>
+      <p :class="[$style.link, $style.fzNumeric]">
+        <a
+          href="https://www.pref.ishikawa.lg.jp/kansen/corona.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ $t('各保健所の電話番号はこちら') }}
+          <v-icon size="16">
+            mdi-open-in-new
+          </v-icon>
+        </a>
       </p>
     </div>
 

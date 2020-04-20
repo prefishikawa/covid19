@@ -5,12 +5,8 @@
         <div :class="$style.content">
           <!-- eslint-disable vue/no-v-html-->
           <span>
-            {{ $t('検査実施人数') }}<br />
-            <span :class="$style.note">
-              ({{ $t('健康安全研究センターによる実施分') }})
-            </span>
-            <br />
-            ({{ $t('累計') }})
+            {{ $t('検査実施人数') }}
+            <br />({{ $t('累計') }})
           </span>
           <!-- eslint-enable vue/no-v-html-->
           <span>
@@ -38,9 +34,9 @@
         <li :class="[$style.box, $style.inside]">
           <div :class="$style.pillar">
             <div :class="$style.content">
-              <span>{{ $t('都内発生') }}</span>
+              <span>{{ $t('県内発生') }}</span>
               <span>
-                <strong>{{ 都内発生件数.toLocaleString() }}</strong>
+                <strong>{{ 県内発生件数.toLocaleString() }}</strong>
                 <span :class="$style.unit">{{ $t('件.tested') }}</span>
               </span>
             </div>
@@ -79,7 +75,7 @@ export default Vue.extend({
       type: Number,
       required: true
     },
-    都内発生件数: {
+    県内発生件数: {
       type: Number,
       required: true
     },
@@ -177,16 +173,12 @@ $default-boxh: 150px;
     }
 
     &:not(:last-child) {
-      overflow-wrap: break-word;
+      word-break: break-all;
     }
   }
 
   span strong {
     @include font-size(18);
-  }
-
-  span.note {
-    @include font-size(11);
   }
 
   span.unit {
