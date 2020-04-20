@@ -36,6 +36,7 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import ScaleLoader from 'vue-spinner/src/ScaleLoader.vue'
 import Data from '@/data/data.json'
+import News from '@/data/news.json'
 import SideNavigation from '@/components/SideNavigation.vue'
 import NoScript from '@/components/NoScript.vue'
 import DevelopmentModeMark from '@/components/DevelopmentModeMark.vue'
@@ -121,7 +122,7 @@ export default Vue.extend({
           hid: 'description',
           name: 'description',
           content:
-            convertDateToSimpleFormat(Data.lastUpdate) +
+            convertDateToSimpleFormat(News.date) +
             ' 更新：　' +
             this.$tc(
               '当サイトは、石川県による公式情報と客観的な数値をわかりやすく伝えることで、石川県にお住まいの方や、石川県内に拠点を持つ企業の方、石川県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
@@ -157,7 +158,7 @@ export default Vue.extend({
           hid: 'og:description',
           property: 'og:description',
           content:
-            convertDateToSimpleFormat(Data.lastUpdate) +
+            convertDateToSimpleFormat(News.date) +
             ' 更新：　' +
             this.$tc(
               '当サイトは、石川県による公式情報と客観的な数値をわかりやすく伝えることで、石川県にお住まいの方や、石川県内に拠点を持つ企業の方、石川県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
