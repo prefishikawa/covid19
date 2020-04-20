@@ -1,5 +1,6 @@
 /**
- * Tanks Fukui covid-19 open data getting script
+ * Thanks Fukui covid-19 open data getting script
+ * include feature downloading news spreadsheet
  * Copyright © HyodaKazuaki
  */
 
@@ -15,7 +16,7 @@ const cheerio = require('cheerio')
  * Shift-JISフラグ
  * falseの場合はUTF-8として処理
  */
-const ISSHIFTJIS = false
+const ISSHIFTJIS = true
 
 /**
  * オープンデータ取得先
@@ -56,7 +57,7 @@ const openDataSource = [
 /**
  * jsonファイルの階層
  */
-const dir = './../data/'
+const dir = './data/'
 
 /**
  * jsonのファイル名
@@ -78,20 +79,15 @@ const main = async () => {
     const json = await csv2json().fromString(csv)
     source.json = json
   }
-  // ニュースデータ取得
-  // const newsJson = (await axios.get(newsURL)).data
-  // const breakingNewsJson = newsJson.breaking_news
-  // const fukuiNewsJson = newsJson.fukui_news
-  // const japanNewsJson = newsJson.japan_news
 
   // オープンデータ
   const today = new Date()
   today.setHours(today.getHours() + 9)
-  
+
   const jsonObjectBase = {
     date: dateFormat.format(today, 'yyyy/MM/dd hh:mm')
   }
-  
+
   // 各JSONを作成
   const contactsJson = Object.assign({}, jsonObjectBase)
   const inspectionPersonsJson = Object.assign({}, jsonObjectBase)
@@ -123,9 +119,6 @@ const main = async () => {
   )
   news(linq.where(x => x.name === 'news').first().json, newsJson)
   // 書き出し
-  // writeFile(breakingNewsJson, files.breakingNews)
-  // writeFile(fukuiNewsJson, files.fukuiNews)
-  // writeFile(japanNewsJson, files.japanNews)
   writeFile(contactsJson, files.contacts)
   writeFile(inspectionPersonsJson, files.inspectionPersons)
   writeFile(patientsJson, files.patients)
@@ -399,51 +392,10 @@ const main2 = () => {
     return false
   }
 
-  // const getFukuiShimbun = () => {
-  //   const moment = require('moment-timezone')
-  //   const xml2js = require('xml2js')
-  //   moment.tz.setDefault('Asia/Tokyo')
-
-  //   return new Promise(async (resolve, reject) => {
-  //     try {
-  //       const res = await axios.get(fukuiShimbunURL)
-  //       const xml = res.data
-  //       const json = {
-  //         timestamp: moment().unix(),
-  //         info: null
-  //       }
-  //       xml2js.parseString(xml, (_, xmlres) => {
-  //         json.info = xmlres.rss.channel[0].item.map(i => {
-  //           return {
-  //             title: i.title[0],
-  //             link: i.link[0],
-  //             published_at: moment(i.pubDate[0]).format('YYYY/MM/DD HH:mm')
-  //           }
-  //         })
-  //       })
-  //       resolve(json)
-  //     } catch (error) {
-  //       reject(error)
-  //     }
-  //   })
-  // }
-
   async function asyncFilter(array, asyncCallback) {
     const bits = await Promise.all(array.map(asyncCallback))
     return array.filter((_, i) => bits[i])
   }
-
-  // const storeFukuiShimbun = async () => {
-  //   try {
-  //     // const json = await getFukuiShimbun()
-  //     json.info = await asyncFilter(json.info, el => isCovidArticle(el))
-  //     writeFile(json, files.fukuiShimbun)
-  //   } catch (error) {
-  //     console.error(error)
-  //   }
-  // }
-
-  // storeFukuiShimbun()
 }
 
 main2()
