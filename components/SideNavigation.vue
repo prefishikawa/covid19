@@ -137,6 +137,10 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html'
         },
         {
+          title: this.$t('健康福祉部長記者会見'),
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/kaiken.html'
+        },
+        {
           title: this.$t('石川県緊急事態措置について（2020-4-19）'),
           link: 'https://www.pref.ishikawa.lg.jp/kikaku/kinkyujitaisoti.html'
         },
@@ -171,6 +175,10 @@ export default Vue.extend({
         {
           title: this.$t('運転免許更新手続きが困難な方へ'),
           link: 'http://www2.police.pref.ishikawa.lg.jp/topics/topics089.html'
+        },
+        {
+          title: this.$t('看護職員の臨時雇用求職者登録について'),
+          link: 'https://www.pref.ishikawa.lg.jp/documents/kango_rinji.pdf'
         },
         {
           title: this.$t('軽症者向け宿泊療養を開始しました'),
