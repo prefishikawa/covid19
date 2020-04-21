@@ -162,6 +162,7 @@ function writeFile(json, fileName) {
   })
 }
 
+
 function newsWriteFile(json, fileName) {
   const filePath = path.join(dir, fileName)
   fs.readFile(filePath, 'UTF-8', (err, data) => {
@@ -265,6 +266,9 @@ function patientsSummary(json, jsonObject) {
   // 最初の日
   const initDay = new Date('2020-02-16')
   const today = new Date()
+  if(today.getHours() < 21) {
+    today.setDate(today.getDate() - 1)
+  }
   const diffDay = parseInt((today - initDay) / (1000 * 60 * 60 * 24)) // 日の差分
   for (let i = 0; i <= diffDay; i++) {
     const targetDay = new Date(initDay.toDateString())

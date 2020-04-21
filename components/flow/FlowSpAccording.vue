@@ -3,14 +3,14 @@
     <i18n tag="div" :class="$style.heading" path="{advisory}による相談結果">
       <template v-slot:advisory>
         <span :class="[$style.fzLarge, $style.break]">
-          {{ $t('帰国者・接触者 電話相談センター') }}
+          {{ $t('帰国者・接触者 相談センター') }}
         </span>
       </template>
     </i18n>
     <i18n
       tag="p"
       :class="$style.diag"
-      path="新型コロナ外来 {advice} と判断された場合"
+      path="帰国者・接触者外来 {advice} と判断された場合"
     >
       <template v-slot:advice>
         <span :class="[$style.fzXLLarge, $style.break]">
@@ -21,7 +21,7 @@
     <p :class="$style.decision">
       <template v-if="!langsWithoutOutpatient.includes($i18n.locale)">
         <span :class="$style.fzSmall">
-          {{ $t('新型コロナ外来（帰国者・接触者外来）') }}
+          {{ $t('帰国者・接触者外来') }}
         </span>
         <span :class="[$style.fzLarge, $style.break]">{{
           $t('医師による判断')
@@ -79,7 +79,7 @@
         <!-- eslint-enable -->
       </span>
       <span :class="$style.break">
-        {{ $t('石川県健康安全研究センター等') }}
+        {{ $t('石川県保健環境センター等') }}
       </span>
     </p>
     <div :class="[$style.rectContainer, $style.double]">
@@ -112,7 +112,7 @@
       id="not_required"
       tag="p"
       :class="[$style.diag, $style.hr]"
-      path="新型コロナ外来 {advice} と判断された場合"
+      path="帰国者・接触者外来 {advice} と判断された場合"
     >
       <template v-slot:advice>
         <span :class="[$style.break, $style.fzXLLarge]">
@@ -143,7 +143,7 @@
             </template>
             <template v-slot:advisory>
               <strong :class="$style.advisory">
-                {{ $t('新型コロナ受診相談窓口（日本語のみ）') }}
+                {{ $t('帰国者・接触者相談センター（新型コロナ受診相談窓口）') }}
               </strong>
             </template>
           </i18n>
@@ -259,7 +259,7 @@ export default {
     }
 
     .advisory {
-      font-size: px2vw(38);
+      font-size: px2vw(30);
       display: block;
       margin-top: px2vw(10);
       margin-bottom: px2vw(10);

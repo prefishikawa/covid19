@@ -5,7 +5,7 @@
         <div :class="$style.content">
           <!-- eslint-disable vue/no-v-html-->
           <span>
-            {{ $t('検査実施人数') }}
+            {{ $t('検査実施件数') }}
             <br />({{ $t('累計') }})
           </span>
           <!-- eslint-enable vue/no-v-html-->

@@ -12,8 +12,8 @@
           mdi-bullhorn
         </v-icon>
         <external-link
-          url="https://www.pref.ishikawa.lg.jp/library_documents/kjs200413.pdf"
-          :label="$t('新型コロナウイルス感染拡大に係る石川県緊急事態措置')"
+          url="https://www.pref.ishikawa.lg.jp/kikaku/documents/gaiyou.pdf"
+          :label="$t('石川県緊急事態措置概要')"
         />
       </span>
     </div>

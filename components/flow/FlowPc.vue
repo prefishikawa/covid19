@@ -46,7 +46,7 @@
         >
           <template v-slot:advisory>
             <span :class="$style.TitleLarge">
-              {{ $t('帰国者・接触者 電話相談センター') }}
+              {{ $t('帰国者・接触者 相談センター') }}
             </span>
           </template>
         </i18n>

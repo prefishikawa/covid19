@@ -120,16 +120,23 @@ export default Vue.extend({
           divider: true
         },
         {
-          icon: 'ParentIcon',
-          title: this.$t('お子様をお持ちの皆様へ'),
-          link: this.localePath('/parent')
+          title: this.$t('知事からのメッセージ（2020-4-20）（動画版）'),
+          link: 'https://www.videog.jp/player/1zd-s1WOQ2lo'
+        },
+        {
+          title: this.$t('知事からのメッセージ（2020-4-20）（テキスト版）'),
+          link: 'https://www.pref.ishikawa.lg.jp/documents/text.pdf'
         },
         {
           title: this.$t('知事記者会見'),
           link: 'https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html'
         },
         {
-          title: this.$t('石川県緊急事態宣言'),
+          title: this.$t('石川県緊急事態措置について（2020-4-13）'),
+          link: 'https://www.pref.ishikawa.lg.jp/kikaku/kinkyujitaisoti.html'
+        },
+        {
+          title: this.$t('石川県緊急事態宣言（2020-4-13）'),
           link: 'https://www.pref.ishikawa.lg.jp/library_documents/kjs200413.pdf'
         },
         {
@@ -137,7 +144,6 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html'
         },
         {
-          icon: 'mdi-account-multiple',
           title: this.$t('県民のみなさまへ'),
           link: 'https://www.pref.ishikawa.lg.jp/kansen/corona.html#1'
         },
@@ -166,7 +172,7 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/eventcancel.html'
         },
         {
-          title: this.$t('お問い合わせ先一覧'),
+          title: this.$t('相談窓口一覧'),
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf'
         },
         {

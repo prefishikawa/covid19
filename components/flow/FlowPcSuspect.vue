@@ -51,7 +51,7 @@
 
     <div :class="[$style.SubtleBox, $style.Box2, $style.Center]">
       <div :class="$style.LargerText">
-        {{ $t('一般的な電話相談窓口') }}
+        {{ $t('一般相談窓口') }}
       </div>
 
       <div :class="$style.link">
@@ -63,11 +63,31 @@
           {{ $t('各保健所の電話番号はこちら') }}
         </a>
       </div>
+      <dl :class="$style.telCenter">
+        <dt>南加賀保健福祉センター</dt>
+        <dd>0761-22-0796</dd>
+        <dt>石川中央保健福祉センター</dt>
+        <dd>076-275-2250</dd>
+        <dt>能登中部保健福祉センター</dt>
+        <dd>0767-53-2482</dd>
+        <dt>能登北部保健福祉センター</dt>
+        <dd>0768-22-2011</dd>
+        <dt>金沢市保健所</dt>
+        <dd>076-234-5116</dd>
+        <dt>石川県健康福祉部健康推進課</dt>
+        <dd>076-225-1438</dd>
+      </dl>
     </div>
   </div>
 </template>
 
 <style module lang="scss">
+.telCenter {
+  font-weight: bold;
+  dt {
+    margin-top: 20px;
+  }
+}
 .FlowComponent {
   color: $gray-2;
   display: flex;

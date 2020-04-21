@@ -18945,7 +18945,7 @@
         ],
         "datasets": [
             {
-                "label": "検査実施人数",
+                "label": "検査実施件数",
                 "data": [
                     0,
                     1,
@@ -19030,7 +19030,7 @@
     },
     "inspection_status_summary": {
         "date": "2020\/04\/10 11:00",
-        "attr": "検査実施人数（累計）",
+        "attr": "検査実施件数（累計）",
         "value": 5821,
         "children": [
             {
@@ -19051,7 +19051,7 @@
     },
     "lastUpdate": "2020\/04\/13 11:00",
     "main_summary": {
-        "attr": "検査実施人数",
+        "attr": "検査実施件数",
         "value": 5821,
         "children": [
             {

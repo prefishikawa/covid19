@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.flowContainer">
     <h3 :class="$style.sectionTitle">
-      <i18n path="新型コロナ外来 {advice} と判断された場合" tag="p">
+      <i18n path="帰国者・接触者外来 {advice} と判断された場合" tag="p">
         <template v-slot:advice>
           <strong>
             {{ $t('受診が不要') }}
@@ -36,7 +36,8 @@
             <span>{{ $t('症状が良くならない場合は') }}</span>
           </template>
           <template v-slot:advisory>
-            <strong>{{ $t('新型コロナ受診相談窓口（日本語のみ）') }}</strong>
+            <strong>{{ $t('帰国者・接触者相談センター') }}<br>
+            <span>{{ $t('（新型コロナ受診相談窓口）') }}</span></strong>
           </template>
         </i18n>
       </div>
@@ -69,7 +70,7 @@
 
   strong {
     margin: 0 0.2em;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
   }
 }
@@ -121,7 +122,10 @@
   }
 
   strong {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    span {
+      font-size: 0.75rem;
+    }
   }
 }
 </style>

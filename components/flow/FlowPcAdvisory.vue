@@ -3,12 +3,12 @@
     <div :class="$style.AdvisoryContainer">
       <div :class="$style.AdvisoryContents">
         <div>
-          <span :class="$style.AdvisoryContentsTitle">{{
+          <span :class="$style.AdvisoryContentsTitleSmall">{{
             $t('帰国者・接触者 相談センター')
           }}</span>
         </div>
         <div :class="[$style.AdvisoryContentsColsSentense_17Ilp, 'mt-4']">
-          {{ $t('新型コロナ受診相談窓口（日本語のみ）') }}
+          {{ $t('（新型コロナ受診相談窓口）') }}
         </div>
         <div>
           <div :class="[$style.AdvisoryBoxContainer, $style.AdvisoryWhiteBox]">
@@ -20,7 +20,7 @@
       </div>
 
       <div :class="$style.AdvisoryContents">
-        <div class="py-8">
+        <div>
           <div
             :class="[
               $style.AdvisoryLink,
@@ -39,6 +39,18 @@
             </a>
           </div>
         </div>
+        <dl>
+          <dt>南加賀保健福祉センター</dt>
+          <dd>0761-22-0796</dd>
+          <dt>石川中央保健福祉センター</dt>
+          <dd>076-275-2250</dd>
+          <dt>能登中部保健福祉センター</dt>
+          <dd>0767-53-2482</dd>
+          <dt>金沢市保健所</dt>
+          <dd>076-234-5106</dd>
+          <dt>石川県健康福祉部健康推進課</dt>
+          <dd>076-225-1670</dd>
+        </dl>
       </div>
 
       <div :class="$style.AdvisoryContents">
@@ -70,13 +82,16 @@
   &Contents {
     font-weight: bold;
 
-    &:not(:first-child) {
-      border-top: 0.5px solid $gray-4;
-    }
+    // &:not(:first-child) {
+    //   border-top: 0.5px solid $gray-4;
+    // }
 
     &Title {
       font-size: 26px;
       line-height: 28px;
+      &Small {
+        font-size: 20px;
+      }
     }
 
     &Title2 {
@@ -102,7 +117,7 @@
     text-align: left;
 
     a {
-      color: rgba(0, 0, 0, 0.87);
+      // color: rgba(0, 0, 0, 0.87);
       text-decoration: none;
 
       &:hover {
@@ -158,12 +173,17 @@
   &WhiteBox {
     background-color: $white;
     max-width: 160px;
-    padding: 10px;
+    padding: 8px;
 
     &Sentense {
       color: $green-1;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: bold;
+    }
+  }
+  dl {
+    dt {
+      margin-top: 20px;
     }
   }
 }

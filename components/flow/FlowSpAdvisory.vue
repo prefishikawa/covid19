@@ -3,10 +3,10 @@
     <h4 id="consult" :class="[$style.heading, $style.fzXLarge]">
       {{ $t('帰国者・接触者 相談センター') }}
       <small :class="[$style.break, $style.fzRegular, $style.mt5]">{{
-        $t('新型コロナ受診相談窓口（日本語のみ）')
+        $t('（新型コロナ受診相談窓口）')
       }}</small>
     </h4>
-    <p :class="[$style.open, $style.fzMedium]">
+    <p :class="[$style.open, $style.fzSmall]">
       <span>{{ $t('24時間対応') }}</span>
     </p>
     <dl>
@@ -25,6 +25,18 @@
         </dd>
       </div>
     </dl>
+    <dl :class="$style.telCenter">
+      <dt>南加賀保健福祉センター</dt>
+      <dd>0761-22-0796</dd>
+      <dt>石川中央保健福祉センター</dt>
+      <dd>076-275-2250</dd>
+      <dt>能登中部保健福祉センター</dt>
+      <dd>0767-53-2482</dd>
+      <dt>金沢市保健所</dt>
+      <dd>076-234-5106</dd>
+      <dt>石川県健康福祉部健康推進課</dt>
+      <dd>076-225-1670</dd>
+    </dl>
   </div>
 </template>
 
@@ -40,6 +52,13 @@ export default {
 @import '@/components/flow/flow_sp.scss';
 
 // advisory
+.telCenter {
+  padding: 0 px2vw(10) px2vw(20);
+  text-align: center;
+  dt {
+    padding-top: 20px;
+  }
+}
 .open {
   margin-top: px2vw(20);
   display: flex;
@@ -59,11 +78,9 @@ export default {
 .daytime {
   margin-top: px2vw(20);
   display: flex;
-  border-top: 1px solid $gray-4;
-  border-bottom: 1px solid $gray-4;
 
   > * {
-    padding: px2vw(30) px2vw(10);
+    padding: px2vw(20) px2vw(10);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +92,6 @@ export default {
   }
 
   .link {
-    flex-basis: 60%;
 
     > a {
       text-decoration: none;

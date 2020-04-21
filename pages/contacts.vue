@@ -1,7 +1,7 @@
 <template>
   <div class="Contacts">
     <page-header class="mb-3">
-      {{ $t('お問い合わせ先一覧') }}
+      {{ $t('相談窓口一覧') }}
     </page-header>
     <div class="Contacts-Card">
       <table class="Contacts-Card-Table" v-bind="tableAttrs">
@@ -170,7 +170,7 @@ export default Vue.extend({
   },
   head(): MetaInfo {
     return {
-      title: this.$t('お問い合わせ先一覧') as string
+      title: this.$t('相談窓口一覧') as string
     }
   }
 })
