@@ -3,7 +3,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9a8952b2-4514-4dd1-88e6-751c364b3df7/deploy-status)]((https://app.netlify.com/sites/happy-roentgen-86f936/deploys))
 
-[![石川県 新型コロナウイルス感染症対策サイト](https://raw.githubusercontent.com/kulvon/covid-test/master/static/ogp.png)](https://stopcovid19.pref.shiga.jp/)
+[![石川県 新型コロナウイルス感染症対策サイト](https://raw.githubusercontent.com/prefishikawa/covid19/master/static/ogp.png)](https://stopcovid19.pref.ishikawa.jp/)
 
 
 <!-- ## 貢献の仕方 -->
@@ -18,9 +18,9 @@
 ## ライセンス
 本ソフトウェアは、[MITライセンス](./LICENSE.txt)の元提供されています。
 
-## 本家東京版から派生したサイト
+<!-- ## 本家東京版から派生したサイト
 
-[Link先](./forkedSites.md)を御覧ください。
+[Link先](./forkedSites.md)を御覧ください。 -->
 
 
 ## 石川版独自の情報
