@@ -120,19 +120,24 @@ export default Vue.extend({
           divider: true
         },
         {
-          title: this.$t('知事からのメッセージ（2020-4-20）（動画版）'),
+          title: this.$t('知事からのメッセージ（2020-4-20）'),
+          link: ''
+        },
+        {
+          title: this.$t('動画版'),
           link: 'https://www.videog.jp/player/1zd-s1WOQ2lo'
         },
         {
-          title: this.$t('知事からのメッセージ（2020-4-20）（テキスト版）'),
-          link: 'https://www.pref.ishikawa.lg.jp/documents/text.pdf'
+          title: this.$t('テキスト版'),
+          link: 'https://www.pref.ishikawa.lg.jp/documents/text.pdf',
+          divider: true
         },
         {
           title: this.$t('知事記者会見'),
           link: 'https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html'
         },
         {
-          title: this.$t('石川県緊急事態措置について（2020-4-13）'),
+          title: this.$t('石川県緊急事態措置について（2020-4-19）'),
           link: 'https://www.pref.ishikawa.lg.jp/kikaku/kinkyujitaisoti.html'
         },
         {
@@ -172,7 +177,7 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/library_documents/sy_ry.pdf'
         },
         {
-          title: this.$t('消費者トラブルが発生しています'),
+          title: this.$t('消費者トラブルが発生しています（外部リンク）'),
           link: 'http://www.kokusen.go.jp/soudan_now/data/coronavirus.html'
         },
         {

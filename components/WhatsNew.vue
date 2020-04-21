@@ -13,7 +13,7 @@
         </v-icon>
         <external-link
           url="https://www.pref.ishikawa.lg.jp/kikaku/documents/gaiyou.pdf"
-          :label="$t('石川県緊急事態措置概要')"
+          :label="$t('石川県緊急事態措置概要（2020-4-19）')"
         />
       </span>
     </div>

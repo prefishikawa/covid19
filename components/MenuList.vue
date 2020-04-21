@@ -118,6 +118,13 @@ export default Vue.extend({
     padding-bottom: 12px;
     border-bottom: 1px solid $gray-4;
   }
+
+  &:nth-child(3) {
+    a {
+      pointer-events: none;
+      color: #333 !important;
+    }
+  }
 }
 
 .MenuList-Link {
