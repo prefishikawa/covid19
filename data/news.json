@@ -1,20 +1,20 @@
 {
-    "date": "2020/04/21 17:05",
+    "date": "2020/04/21 17:34",
     "newsItems": [
         {
-            "date": "2020/4/16",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
-            "text": "新型コロナウイルス感染症対策本部会議の開催状況について"
+            "date": "2020/4/21",
+            "url": "https://stopcovid19.pref.ishikawa.jp/",
+            "text": "新型コロナウイルス感染症対策サイトを開設しました"
         },
         {
-            "date": "2020/4/18",
+            "date": "",
             "url": "",
-            "text": "感染者情報を更新しました"
+            "text": ""
         },
         {
-            "date": "2020/4/19",
-            "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
-            "text": "知事記者会見を更新しました"
+            "date": "",
+            "url": "",
+            "text": ""
         }
     ]
 }
