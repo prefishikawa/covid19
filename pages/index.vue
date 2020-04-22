@@ -6,7 +6,7 @@
       </page-header>
       <div class="UpdatedAt">
         <span>{{ $t('最終更新') }} </span>
-        <time :datetime="updatedAt">{{ News.date }}</time>
+        <time :datetime="updatedAt">{{ UpdateDate }}</time>
       </div>
       <div
         v-show="!['ja', 'ja-basic'].includes($i18n.locale)"
@@ -42,6 +42,7 @@ import WhatsNew from '@/components/WhatsNew.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 // import Data from '@/data/data.json'
 import News from '@/data/news.json'
+import PatientsSummary from '@/data/patients_summary.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
@@ -65,9 +66,15 @@ export default Vue.extend({
     ConsultationDeskReportsNumberCard
   },
   data() {
+    let UpdateDate = News.date
+    if (UpdateDate < PatientsSummary.date) {
+      UpdateDate = PatientsSummary.date
+    }
     const data = {
       // Data,
       News,
+      UpdateDate,
+      PatientsSummary,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
         title: this.$t('県内の最新感染動向')
