@@ -49,19 +49,6 @@
       </nav>
 
       <footer class="SideNavigation-Footer">
-        <div class="SideNavigation-Social">
-          <a
-            href="https://github.com/prefishikawa/covid19"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="SideNavigation-SocialLink"
-          >
-            <picture>
-              <source srcset="/github.webp" type="image/webp" />
-              <img src="/github.png" alt="GitHub" />
-            </picture>
-          </a>
-        </div>
         <small class="SideNavigation-Copyright">
           {{ $t('このサイトの内容物は') }}
           <a
@@ -74,7 +61,7 @@
           </a>
           {{ $t('の下に提供されています。') }}
           <br />
-          2020 Tokyo Metropolitan Government
+          2020 Ishikawa Prefecture
         </small>
       </footer>
     </div>
