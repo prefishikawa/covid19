@@ -28,7 +28,7 @@
             ]"
           >
             <a
-              href="https://www.pref.ishikawa.lg.jp/kansen/corona.html"
+              href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#center"
               target="_blank"
               rel="noopener noreferrer"
             >
