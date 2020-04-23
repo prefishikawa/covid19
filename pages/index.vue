@@ -25,6 +25,7 @@
     <v-row class="DataBlock">
       <confirmed-cases-details-card />
       <confirmed-cases-attributes-card />
+      <patients-by-residence-card />
       <confirmed-cases-number-card />
       <inspection-persons-number-card />
       <telephone-advisory-reports-number-card />
@@ -45,6 +46,7 @@ import News from '@/data/news.json'
 import PatientsSummary from '@/data/patients_summary.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+import PatientsByResidenceCard from '@/components/cards/PatientsByResidenceCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
@@ -59,6 +61,7 @@ export default Vue.extend({
     StaticInfo,
     ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
+    PatientsByResidenceCard,
     ConfirmedCasesAttributesCard,
     TestedNumberCard,
     InspectionPersonsNumberCard,

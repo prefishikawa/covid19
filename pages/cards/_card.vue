@@ -6,6 +6,9 @@
     <tested-cases-details-card
       v-else-if="this.$route.params.card == 'details-of-tested-cases'"
     />
+    <patients-by-residence-card
+      v-else-if="this.$route.params.card == 'number-of-confirmed-cases-by-residence'"
+    />
     <confirmed-cases-number-card
       v-else-if="this.$route.params.card == 'number-of-confirmed-cases'"
     />
@@ -35,6 +38,7 @@ import Data from '@/data/data.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+import PatientsByResidenceCard from '@/components/cards/PatientsByResidenceCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
@@ -46,6 +50,7 @@ export default {
     ConfirmedCasesDetailsCard,
     TestedCasesDetailsCard,
     ConfirmedCasesNumberCard,
+    PatientsByResidenceCard,
     ConfirmedCasesAttributesCard,
     TestedNumberCard,
     InspectionPersonsNumberCard,
@@ -62,6 +67,10 @@ export default {
       case 'details-of-tested-cases':
         title = this.$t('検査実施状況')
         updatedAt = Data.inspection_status_summary.date
+        break
+      case 'patients-by-residence':
+        title = this.$t('陽性患者数(居住地別)')
+        updatedAt = Data.patients_by_residence.date
         break
       case 'number-of-confirmed-cases':
         title = this.$t('陽性患者数')
