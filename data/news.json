@@ -1,6 +1,11 @@
 {
-    "date": "2020/04/22 21:43",
+    "date": "2020/04/23 09:43",
     "newsItems": [
+        {
+            "date": "2020/4/22",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/kaiken.html",
+            "text": "健康福祉部長記者会見を更新しました"
+        },
         {
             "date": "2020/4/22",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
@@ -10,11 +15,6 @@
             "date": "2020/4/21",
             "url": "",
             "text": "新型コロナウイルス感染症対策サイトを開設しました"
-        },
-        {
-            "date": "2020/4/20",
-            "url": "https://www.videog.jp/player/1zd-s1WOQ2lo",
-            "text": "知事からのメッセージを掲載しました"
         }
     ]
 }
