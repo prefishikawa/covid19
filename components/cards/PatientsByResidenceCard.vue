@@ -9,17 +9,6 @@
       :unit="$t('人')"
       :show-button="false"
     >
-      <template v-slot:description>
-        <ul>
-          <li>
-            {{
-              $t(
-                '（注）A：金沢市，B：七尾市，C：小松市，D：輪島市，E：珠洲市，F：加賀市，G：羽咋市，H：かほく市，I：白山市，J：能美市，K：野々市市，L：川北町，M：津幡町，N：志賀町，O：内灘町，P：宝達志水町, Q：中能登町, R：穴水町, S：能登町, T：県外 を示している'
-              )
-            }}
-          </li>
-        </ul>
-      </template>
     </time-bar-chart>
   </v-col>
 </template>

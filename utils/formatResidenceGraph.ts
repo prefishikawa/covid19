@@ -19,7 +19,7 @@ export default (data: DataType[]) => {
   const graphData: GraphDataType[] = []
   let patSum = 0
   data.forEach(d => {
-    const residence = d['地区ID']
+    const residence = d['居住地']
     const subTotal = Number(d['感染者'])
     if (!isNaN(subTotal)) {
       patSum += subTotal
