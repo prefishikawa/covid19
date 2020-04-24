@@ -179,7 +179,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
             ? `${this.$t('実績値')}（${this.$t('前日比')}: ${
                 this.displayTransitionRatio
               } ${this.unit}）`
-            : `累計値`,
+            : `累計`,
           unit: this.unit
         }
       }
