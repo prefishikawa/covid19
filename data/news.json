@@ -1,25 +1,20 @@
 {
-    "date": "2020/04/26 13:43",
+    "date": "2020/04/27 14:04",
     "newsItems": [
-        {
-            "date": "2020/4/26",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/kaiken.html",
-            "text": "健康福祉部長記者会見を更新しました"
-        },
         {
             "date": "2020/4/25",
             "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
             "text": "知事記者会見を更新しました"
         },
         {
-            "date": "2020/4/25",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/kaiken.html",
-            "text": "健康福祉部長記者会見を更新しました"
+            "date": "2020/4/24",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/others.html",
+            "text": "スーパーマーケットや公園等の利用について掲載しました"
         },
         {
-            "date": "2020/4/23",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/kaiken.html",
-            "text": "健康福祉部長記者会見を更新しました"
+            "date": "2020/4/24",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/others.html",
+            "text": "公園利用にあたってのお願いを更新しました"
         }
     ]
 }
