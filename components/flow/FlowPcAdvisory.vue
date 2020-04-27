@@ -20,7 +20,21 @@
       </div>
 
       <div :class="$style.AdvisoryContents">
-        <div>
+        <dl>
+          <dt>南加賀保健福祉センター</dt>
+          <dd>0761-22-0796</dd>
+          <dt>石川中央保健福祉センター</dt>
+          <dd>076-275-2250</dd>
+          <dt>能登中部保健福祉センター</dt>
+          <dd>0767-53-2482</dd>
+          <dt>能登北部保健福祉センター</dt>
+          <dd>0768-22-2011</dd>
+          <dt>金沢市保健所</dt>
+          <dd>076-234-5106</dd>
+          <dt>石川県健康福祉部健康推進課</dt>
+          <dd>076-225-1670</dd>
+        </dl>
+        <div :class="$style.AdvisoryContentsDiv">
           <div
             :class="[
               $style.AdvisoryLink,
@@ -39,20 +53,6 @@
             </a>
           </div>
         </div>
-        <dl>
-          <dt>南加賀保健福祉センター</dt>
-          <dd>0761-22-0796</dd>
-          <dt>石川中央保健福祉センター</dt>
-          <dd>076-275-2250</dd>
-          <dt>能登中部保健福祉センター</dt>
-          <dd>0767-53-2482</dd>
-          <dt>能登北部保健福祉センター</dt>
-          <dd>0768-22-2011</dd>
-          <dt>金沢市保健所</dt>
-          <dd>076-234-5106</dd>
-          <dt>石川県健康福祉部健康推進課</dt>
-          <dd>076-225-1670</dd>
-        </dl>
       </div>
 
       <div :class="$style.AdvisoryContents">
@@ -107,6 +107,10 @@
     &ColsSentense {
       line-height: 18px;
     }
+
+    &Div {
+      margin-top: 20px
+    }
   }
 
   &BlockCentering {
@@ -117,6 +121,7 @@
   &Link {
     line-height: 22px;
     text-align: left;
+    text-decoration: none;
 
     a {
       // color: rgba(0, 0, 0, 0.87);

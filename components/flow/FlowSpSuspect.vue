@@ -23,18 +23,6 @@
       <p :class="$style.fzLarge">
         {{ $t('一般相談窓口') }}
       </p>
-      <p :class="[$style.link, $style.fzNumeric]">
-        <a
-          href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#contacts"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ $t('各保健所の電話番号はこちら') }}
-          <v-icon size="16">
-            mdi-open-in-new
-          </v-icon>
-        </a>
-      </p>
       <dl :class="$style.telCenter">
         <dt>南加賀保健福祉センター</dt>
         <dd>0761-22-0796</dd>
@@ -49,6 +37,18 @@
         <dt>石川県健康福祉部健康推進課</dt>
         <dd>076-225-1438</dd>
       </dl>
+      <p :class="[$style.link, $style.fzNumeric, $style.windowLink]">
+        <a
+          href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#contacts"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ $t('各保健所の電話番号はこちら') }}
+          <v-icon size="16">
+            mdi-open-in-new
+          </v-icon>
+        </a>
+      </p>
     </div>
 
     <a
@@ -79,6 +79,9 @@ export default {
 
 <style module lang="scss">
 @import '@/components/flow/flow_sp.scss';
+.windowLink {
+  margin-top: 20px;
+}
 .telCenter {
   dt {
     padding-top:20px;

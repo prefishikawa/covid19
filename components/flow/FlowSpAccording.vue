@@ -143,7 +143,12 @@
             </template>
             <template v-slot:advisory>
               <strong :class="$style.advisory">
+              <a href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#center" target="_blank">
                 {{ $t('帰国者・接触者相談センター（新型コロナ受診相談窓口）') }}
+                <v-icon size="16">
+                  mdi-open-in-new
+                </v-icon>
+              </a>
               </strong>
             </template>
           </i18n>

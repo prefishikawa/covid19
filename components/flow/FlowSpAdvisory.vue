@@ -9,22 +9,6 @@
     <p :class="[$style.open, $style.fzSmall]">
       <span>{{ $t('24時間対応') }}</span>
     </p>
-    <dl>
-      <div :class="$style.daytime">
-        <dd :class="$style.link">
-          <a
-            href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#center"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {{ $t('各保健所の電話番号はこちら') }}
-            <v-icon size="16">
-              mdi-open-in-new
-            </v-icon>
-          </a>
-        </dd>
-      </div>
-    </dl>
     <dl :class="$style.telCenter">
       <dt>南加賀保健福祉センター</dt>
       <dd>0761-22-0796</dd>
@@ -38,6 +22,22 @@
       <dd>076-234-5106</dd>
       <dt>石川県健康福祉部健康推進課</dt>
       <dd>076-225-1670</dd>
+    </dl>
+    <dl>
+      <div :class="$style.daytime">
+        <dd :class="[$style.link, $style.fzNumeric, $style.AdvisoryLink]">
+          <a
+            href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ $t('各保健所の電話番号はこちら') }}
+            <v-icon size="16">
+              mdi-open-in-new
+            </v-icon>
+          </a>
+        </dd>
+      </div>
     </dl>
   </div>
 </template>
@@ -74,6 +74,13 @@ export default {
     color: $green-1;
     padding: px2vw(20) px2vw(40);
     border-radius: px2vw(6);
+  }
+}
+
+.AdvisoryLink {
+  text-align: center;
+  a {
+    text-decoration: underline !important;
   }
 }
 

@@ -53,16 +53,6 @@
       <div :class="$style.LargerText">
         {{ $t('一般相談窓口') }}
       </div>
-
-      <div :class="$style.link">
-        <a
-          href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#contacts"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ $t('各保健所の電話番号はこちら') }}
-        </a>
-      </div>
       <dl :class="$style.telCenter">
         <dt>南加賀保健福祉センター</dt>
         <dd>0761-22-0796</dd>
@@ -77,6 +67,19 @@
         <dt>石川県健康福祉部健康推進課</dt>
         <dd>076-225-1438</dd>
       </dl>
+
+      <div :class="$style.windowLink">
+        <a
+          href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#contacts"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>{{ $t('各保健所の電話番号はこちら') }}</span>
+          <v-icon size="18">
+            mdi-open-in-new
+          </v-icon>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -86,6 +89,9 @@
   font-weight: bold;
   dt {
     margin-top: 20px;
+    &:first-child {
+      margin-top: 10px;
+    }
   }
 }
 .FlowComponent {
@@ -98,6 +104,23 @@
 .Tel {
   @include largerThan($medium) {
     font-size: larger;
+  }
+}
+
+.windowLink {
+  line-height: 22px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 20px !important;
+
+  a {
+    // color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

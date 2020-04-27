@@ -145,7 +145,7 @@ export default Vue.extend({
         },
         {
           title: this.$t('事業者のみなさまへ'),
-          link: 'https://www.pref.ishikawa.lg.jp/kinyuu/kinyuu/korona.html'
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/biz.html'
         },
         {
           title: this.$t('農林漁業者のみなさまへ'),
@@ -164,24 +164,16 @@ export default Vue.extend({
           link: 'http://www2.police.pref.ishikawa.lg.jp/application/application01/application01.html'
         },
         {
-          title: this.$t('看護職員の臨時雇用求職者登録について'),
-          link: 'https://www.pref.ishikawa.lg.jp/library_documents/kango_rinji.pdf'
-        },
-        {
-          title: this.$t('軽症者向け宿泊療養を開始しました'),
-          link: 'https://www.pref.ishikawa.lg.jp/library_documents/sy_ry.pdf'
-        },
-        {
-          title: this.$t('消費者トラブルが発生しています（外部リンク）'),
-          link: 'http://www.kokusen.go.jp/soudan_now/data/coronavirus.html'
-        },
-        {
           title: this.$t('臨時休館・休園する県有施設'),
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/shisetsu.html'
         },
         {
           title: this.$t('延期・中止する県主催イベント'),
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/eventcancel.html'
+        },
+        {
+          title: this.$t('その他の新型コロナウイルス感染症関連情報'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/others.html'
         },
         {
           title: this.$t('相談窓口一覧'),
