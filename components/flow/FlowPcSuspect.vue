@@ -74,7 +74,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>{{ $t('各保健所の電話番号はこちら') }}</span>
+          <span>{{ $t('各保健所の電話番号等はこちら') }}</span>
           <v-icon size="18">
             mdi-open-in-new
           </v-icon>

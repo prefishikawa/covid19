@@ -1,33 +1,35 @@
 <template>
   <div :class="$style.Flow">
     <div :class="$style.FlowRow">
-      <div :class="$style.FlowRowRowThree">
-        <p :class="$style.FlowRowRowThreeGeneral">
-          <img
-            :class="$style.FlowRowRowThreeGeneralIcon"
-            src="/flow/accessibility-24px.svg"
-            aria-hidden="true"
-            alt=" "
-          />
-          {{ $t('一般の方') }}
-        </p>
+      <div :class="$style.FlowRowRowTwo">
+        <div>
+          <p :class="$style.FlowRowRowTwoGeneral">
+            <img
+              :class="$style.FlowRowRowTwoGeneralIcon"
+              src="/flow/accessibility-24px.svg"
+              aria-hidden="true"
+              alt=" "
+            />
+            {{ $t('一般の方') }}
+          </p>
+          <p>
+            <i18n path="{duration}続いている">
+              <template v-slot:duration>
+                <i18n
+                  tag="span"
+                  path="{day}日以上"
+                  :class="$style.FlowRowEmphasis"
+                >
+                  <template v-slot:day>
+                    <span :class="$style.FlowRowEmphasisDay">4</span>
+                  </template>
+                </i18n>
+              </template>
+            </i18n>
+          </p>
+        </div>
       </div>
-      <div>
-        <p>
-          <i18n path="{duration}続いている">
-            <template v-slot:duration>
-              <i18n
-                tag="span"
-                path="{day}日以上"
-                :class="$style.FlowRowEmphasis"
-              >
-                <template v-slot:day>
-                  <span :class="$style.FlowRowEmphasisDay">4</span>
-                </template>
-              </i18n>
-            </template>
-          </i18n>
-        </p>
+      <div :class="$style.FlowRowRowTwo">
       </div>
     </div>
     <div :class="[$style.FlowRow, $style.FlowRowRowCheck]">
@@ -97,53 +99,55 @@
       </div>
     </div>
     <div :class="$style.FlowRow">
-      <div :class="$style.FlowRowRowThree">
-        <ul :class="$style.FlowRowRowThreeCareTargetList">
-          <li :class="$style.FlowRowRowThreeCareTargetListItem">
-            <img
-              :class="$style.FlowRowRowThreeCareTargetListItemIcon"
-              src="/flow/directions_walk-24px.svg"
-              aria-hidden="true"
-              alt=" "
-            />
-            {{ $t('ご高齢な方') }}
-          </li>
-          <li :class="$style.FlowRowRowThreeCareTargetListItem">
-            <img
-              :class="$style.FlowRowRowThreeCareTargetListItemIcon"
-              src="/flow/accessible-24px.svg"
-              aria-hidden="true"
-              alt=" "
-            />
-            {{ $t('基礎疾患のある方') }}
-          </li>
-          <li :class="$style.FlowRowRowThreeCareTargetListItem">
-            <img
-              :class="$style.FlowRowRowThreeCareTargetListItemIcon"
-              src="/flow/pregnant_woman-24px.svg"
-              aria-hidden="true"
-              alt=" "
-            />
-            {{ $t('妊娠中の方') }}
-          </li>
-        </ul>
+      <div :class="$style.FlowRowRowTwo">
+        <div>
+          <ul :class="$style.FlowRowRowTwoCareTargetList">
+            <li :class="$style.FlowRowRowTwoCareTargetListItem">
+              <img
+                :class="$style.FlowRowRowTwoCareTargetListItemIcon"
+                src="/flow/directions_walk-24px.svg"
+                aria-hidden="true"
+                alt=" "
+              />
+              {{ $t('ご高齢な方') }}
+            </li>
+            <li :class="$style.FlowRowRowTwoCareTargetListItem">
+              <img
+                :class="$style.FlowRowRowTwoCareTargetListItemIcon"
+                src="/flow/accessible-24px.svg"
+                aria-hidden="true"
+                alt=" "
+              />
+              {{ $t('基礎疾患のある方') }}
+            </li>
+            <li :class="$style.FlowRowRowTwoCareTargetListItem">
+              <img
+                :class="$style.FlowRowRowTwoCareTargetListItemIcon"
+                src="/flow/pregnant_woman-24px.svg"
+                aria-hidden="true"
+                alt=" "
+              />
+              {{ $t('妊娠中の方') }}
+            </li>
+          </ul>
+          <p>
+            <i18n path="{duration}続いている">
+              <template v-slot:duration>
+                <i18n
+                  tag="span"
+                  path="{day}日程度"
+                  :class="$style.FlowRowEmphasis"
+                >
+                  <template v-slot:day>
+                    <span :class="$style.FlowRowEmphasisDay">2</span>
+                  </template>
+                </i18n>
+              </template>
+            </i18n>
+          </p>
+        </div>
       </div>
-      <div>
-        <p>
-          <i18n path="{duration}続いている">
-            <template v-slot:duration>
-              <i18n
-                tag="span"
-                path="{day}日程度"
-                :class="$style.FlowRowEmphasis"
-              >
-                <template v-slot:day>
-                  <span :class="$style.FlowRowEmphasisDay">2</span>
-                </template>
-              </i18n>
-            </template>
-          </i18n>
-        </p>
+      <div :class="$style.FlowRowRowTwo">
       </div>
     </div>
   </div>
@@ -189,7 +193,6 @@
       }
 
       &CareTargetList {
-        margin: 16px 0;
         text-align: left;
         list-style: none;
 
@@ -207,6 +210,47 @@
         &Item + &Item {
           margin-top: 14px;
         }
+      }
+    }
+
+    &RowTwo {
+      flex-grow: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // margin-top: 20px;
+
+      &General {
+        &Icon {
+          display: block;
+          margin: auto;
+          width: 44px;
+          height: 44px;
+        }
+      }
+
+      &CareTargetList {
+        // margin: 16px 0;
+        text-align: left;
+        list-style: none;
+
+        &Item {
+          display: flex;
+          align-items: center;
+
+          &Icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        &Item + &Item {
+          margin-top: 4px;
+        }
+      }
+      p {
+        margin-bottom: 0;
       }
     }
 
@@ -274,6 +318,13 @@
         font-size: 41px;
       }
     }
+  }
+}
+
+
+@media all and (min-width: 1350px) {
+  .FlowRowRowTwo {
+    align-items: flex-start;
   }
 }
 </style>

@@ -31,7 +31,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            {{ $t('各保健所の電話番号はこちら') }}
+            {{ $t('各保健所の電話番号等はこちら') }}
             <v-icon size="16">
               mdi-open-in-new
             </v-icon>
