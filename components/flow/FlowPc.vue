@@ -207,9 +207,9 @@ export default {
     }
 
     & > *:nth-child(4) {
-      -ms-grid-column: 3;
+      -ms-grid-column: 4;
       -ms-grid-row: 1;
-      -ms-grid-row-span: 3;
+      -ms-grid-row-span: 4;
     }
 
     & > *:nth-child(5) {
