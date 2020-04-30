@@ -13,6 +13,9 @@
       <flow-sp-elder />
     </div>
     <div :class="$style.FlowCard">
+      <flow-sp-general2 />
+    </div>
+    <div :class="$style.FlowCard">
       <flow-sp-suspect />
     </div>
     <div :class="[$style.FlowCard, $style.FlowCardGrayBg]">
@@ -32,6 +35,7 @@ import VueScrollTo from 'vue-scrollto'
 
 import FlowSpPast from './FlowSpPast.vue'
 import FlowSpGeneral from './FlowSpGeneral.vue'
+import FlowSpGeneral2 from './FlowSpGeneral2.vue'
 import FlowSpElder from './FlowSpElder.vue'
 import FlowSpSuspect from './FlowSpSuspect.vue'
 import FlowSpAdvisory from './FlowSpAdvisory.vue'
@@ -42,6 +46,7 @@ export default {
   components: {
     FlowSpPast,
     FlowSpGeneral,
+    FlowSpGeneral2,
     FlowSpElder,
     FlowSpSuspect,
     FlowSpAdvisory,

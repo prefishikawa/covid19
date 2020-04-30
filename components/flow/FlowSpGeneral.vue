@@ -31,12 +31,6 @@
           </template>
         </i18n>
       </li>
-      <li :class="$style.symptom">
-        {{ $t('強いだるさ') }}
-      </li>
-      <li :class="$style.symptom">
-        {{ $t('息苦しさ') }}
-      </li>
     </ul>
     <p :class="$style.duration">
       <i18n path="{duration}続いている">
