@@ -1,5 +1,5 @@
 {
-    "date": "2020/04/30 09:43",
+    "date": "2020/04/30 14:23",
     "newsItems": [
         {
             "date": "2020/4/30",
@@ -7,14 +7,14 @@
             "text": "石川県新型コロナウイルス感染拡大防止協力金の申請受付を開始しました"
         },
         {
+            "date": "2020/4/30",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
+            "text": "対策本部会議の開催状況を更新しました"
+        },
+        {
             "date": "2020/4/25",
             "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
             "text": "知事記者会見を更新しました"
-        },
-        {
-            "date": "2020/4/24",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/others.html",
-            "text": "スーパーマーケットや公園等の利用について掲載しました"
         }
     ]
 }
