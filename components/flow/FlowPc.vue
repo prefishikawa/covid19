@@ -208,6 +208,7 @@ export default {
 
     & > *:nth-child(4) {
       -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
       -ms-grid-row: 7;
     }
 
@@ -342,7 +343,7 @@ export default {
 }
 
 .Suspect {
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
   grid-row: 4 / 5;
 }
 

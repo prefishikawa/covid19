@@ -202,7 +202,7 @@
   position: relative;
   flex-grow: 0;
   flex-shrink: 0;
-  width: 60%;
+  width: calc(70% - 8px);
   flex-direction: row;
 
   &Icon {
@@ -219,7 +219,7 @@
 .Box2 {
   flex-grow: 0;
   flex-shrink: 0;
-  width: 38%;
+  width: calc(30% - 6px);
   flex-direction: column;
   justify-content: center;
 
@@ -232,6 +232,12 @@
   flex-grow: 1;
   text-align: center;
   margin: 0 4px;
+  &:first-of-type {
+    width: 26%;
+  }
+  &:last-of-type {
+    width: 74%;
+  }
 
   @include largerThan($large) {
     margin: 0 2em;
