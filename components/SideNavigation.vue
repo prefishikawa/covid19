@@ -143,12 +143,12 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/nousei/sikin/index.html'
         },
         {
-          title: this.$t('休業や失業で生活資金にお悩みのみなさまへ'),
-          link: 'https://www.pref.ishikawa.lg.jp/kousei/seikatsufukushi/seikatsufukushi.html'
-        },
-        {
           title: this.$t('医療機関のみなさまへ'),
           link: 'https://www.pref.ishikawa.lg.jp/kansen/corona.html#2'
+        },
+        {
+          title: this.$t('個人向け支援制度について'),
+          link: 'https://www.pref.ishikawa.lg.jp/zaisei/covid19/shien.html'
         },
         {
           title: this.$t('運転免許関連の手続等について'),
