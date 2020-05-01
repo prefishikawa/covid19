@@ -1,6 +1,11 @@
 {
-    "date": "2020/04/30 17:23",
+    "date": "2020/05/01 11:07",
     "newsItems": [
+        {
+            "date": "2020/5/1",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/biz.html",
+            "text": "事業者向け支援メニューについて掲載しました"
+        },
         {
             "date": "2020/4/30",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/biz.html",
@@ -10,11 +15,6 @@
             "date": "2020/4/30",
             "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
             "text": "対策本部会議の開催状況を更新しました"
-        },
-        {
-            "date": "2020/4/30",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/others.html",
-            "text": "オンライン診療等についての情報を掲載しました"
         }
     ]
 }
