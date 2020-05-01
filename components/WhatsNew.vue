@@ -7,15 +7,6 @@
         </v-icon>
         {{ $t('最新のお知らせ') }}
       </h3>
-      <span class="WhatsNew-link-to-emergency-page">
-        <v-icon size="20" class="WhatsNew-link-to-emergency-page-icon">
-          mdi-bullhorn
-        </v-icon>
-        <external-link
-          url="https://www.pref.ishikawa.lg.jp/kikaku/documents/gaiyou.pdf"
-          :label="$t('石川県緊急事態措置概要（2020-4-19）')"
-        />
-      </span>
     </div>
     <ul class="WhatsNew-list">
       <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">

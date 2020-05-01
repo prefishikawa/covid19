@@ -107,17 +107,8 @@ export default Vue.extend({
           divider: true
         },
         {
-          title: this.$t('知事からのメッセージ（2020-4-20）'),
-          link: ''
-        },
-        {
-          title: this.$t('動画版'),
-          link: 'https://www.videog.jp/player/1zd-s1WOQ2lo'
-        },
-        {
-          title: this.$t('テキスト版'),
-          link: 'https://www.pref.ishikawa.lg.jp/documents/text.pdf',
-          divider: true
+          title: this.$t('知事からのメッセージ'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/governor_msg.html'
         },
         {
           title: this.$t('知事記者会見'),
@@ -128,12 +119,12 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/kansen/kaiken.html'
         },
         {
-          title: this.$t('石川県緊急事態措置について（2020-4-19）'),
-          link: 'https://www.pref.ishikawa.lg.jp/kikaku/kinkyujitaisoti.html'
+          title: this.$t('石川県緊急事態措置（特措法に基づく措置）'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/sochi.html'
         },
         {
-          title: this.$t('石川県緊急事態宣言（2020-4-13）'),
-          link: 'https://www.pref.ishikawa.lg.jp/library_documents/kjs200413.pdf'
+          title: this.$t('石川県緊急事態宣言'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/sengen.html'
         },
         {
           title: this.$t('対策本部会議の開催状況'),
