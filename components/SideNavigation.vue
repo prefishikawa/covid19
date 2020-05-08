@@ -132,7 +132,7 @@ export default Vue.extend({
         },
         {
           title: this.$t('県民のみなさまへ'),
-          link: 'https://www.pref.ishikawa.lg.jp/kansen/corona.html#1'
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/citizen.html'
         },
         {
           title: this.$t('事業者のみなさまへ'),
