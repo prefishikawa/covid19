@@ -1,6 +1,11 @@
 {
-    "date": "2020/05/11 09:08",
+    "date": "2020/05/11 10:11",
     "newsItems": [
+        {
+            "date": "2020/5/11",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/biz.html",
+            "text": "テレワーク導入に向けた専門家派遣について掲載しました"
+        },
         {
             "date": "2020/5/11",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/citizen.html",
@@ -10,11 +15,6 @@
             "date": "2020/5/10",
             "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
             "text": "知事記者会見を更新しました"
-        },
-        {
-            "date": "2020/5/9",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/biz.html",
-            "text": "事業者向け支援制度について掲載しました"
         }
     ]
 }
