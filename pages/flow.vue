@@ -3,7 +3,7 @@
     <div class="Flow-Heading">
       <covid-icon aria-hidden="true" />
       <page-header class="Flow-Heading-Title">
-        {{ $t('新型コロナウイルス感染症の相談受診の目安') }}
+        {{ $t('新型コロナウイルス感染症の相談・受診の目安') }}
       </page-header>
       <printer-button :wrapper-class="'Flow-PullRight'" to="/print/flow" />
     </div>
@@ -37,7 +37,7 @@ export default Vue.extend({
   },
   head(): any {
     const title: TranslateResult = this.$t(
-      '新型コロナウイルス感染症の相談受診の目安'
+      '新型コロナウイルス感染症の相談・受診の目安'
     )
     return {
       title

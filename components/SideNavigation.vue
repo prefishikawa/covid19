@@ -102,7 +102,7 @@ export default Vue.extend({
         },
         {
           icon: 'CovidIcon',
-          title: this.$t('新型コロナウイルス感染症の相談受診の目安'),
+          title: this.$t('新型コロナウイルス感染症の相談・受診の目安'),
           link: this.localePath('/flow'),
           divider: true
         },
