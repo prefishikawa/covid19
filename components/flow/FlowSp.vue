@@ -32,7 +32,6 @@
 
 <script>
 import VueScrollTo from 'vue-scrollto'
-
 import FlowSpPast from './FlowSpPast.vue'
 import FlowSpGeneral from './FlowSpGeneral.vue'
 import FlowSpGeneral2 from './FlowSpGeneral2.vue'
