@@ -1,6 +1,11 @@
 {
-    "date": "2020/05/11 20:06",
+    "date": "2020/05/12 11:23",
     "newsItems": [
+        {
+            "date": "2020/5/12",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
+            "text": "事業者向け支援制度について更新しました"
+        },
         {
             "date": "2020/5/11",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
@@ -8,18 +13,13 @@
         },
         {
             "date": "2020/5/11",
-            "url": "https://www.pref.ishikawa.lg.jp/fukusi/syuroushien/syuroushien.html#masuku",
-            "text": "障害者就労支援事業所による布製マスク等の製作・販売について掲載しました"
-        },
-        {
-            "date": "2020/5/11",
-            "url": "https://www.pref.ishikawa.lg.jp/roudou/kikaku-roufuku/oshirase/20200508/20200508.html",
-            "text": "テレワーク導入に向けた専門家派遣について掲載しました"
-        },
-        {
-            "date": "2020/5/11",
             "url": "https://www.pref.ishikawa.lg.jp/syoko/mask.html",
             "text": "マスク購入のあっせんについて掲載しました"
+        },
+        {
+            "date": "2020/5/11",
+            "url": "https://www.pref.ishikawa.lg.jp/fukusi/syuroushien/syuroushien.html#masuku",
+            "text": "障害者就労支援事業所による布製マスク等の製作・販売について掲載しました"
         }
     ]
 }
