@@ -1,15 +1,15 @@
 {
-    "date": "2020/05/12 11:23",
+    "date": "2020/05/12 14:23",
     "newsItems": [
+        {
+            "date": "2020/5/12",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
+            "text": "相談窓口一覧を更新しました"
+        },
         {
             "date": "2020/5/12",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
             "text": "事業者向け支援制度について更新しました"
-        },
-        {
-            "date": "2020/5/11",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
-            "text": "相談窓口一覧を更新しました"
         },
         {
             "date": "2020/5/11",
