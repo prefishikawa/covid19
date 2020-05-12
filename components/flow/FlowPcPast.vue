@@ -126,17 +126,7 @@
         </em>
         <span :class="$style.FlowText">{{ $t('かつ') }}</span>
         <em :class="$style.FlowSymptom">
-          <i18n tag="span" :class="$style.FlowTextSm" path="発熱{temperature}">
-            <template v-slot:temperature>
-              <i18n tag="span" path="{tempNum}以上">
-                <template v-slot:tempNum>
-                  <span :class="$style.FlowTemperature">
-                    {{ $t('37.5℃') }}
-                  </span>
-                </template>
-              </i18n>
-            </template>
-          </i18n>
+          <span>発熱<br><span>37.5℃<br>以上</span></span>
           <img
             :class="$style.FlowSymptomIcon"
             src="/flow/check_circle-24px.svg"
@@ -302,6 +292,12 @@ export default {
     @include largerThan($large) {
       max-width: 190px;
       font-size: 18px;
+    }
+
+    span {
+      span {
+        font-size: 15px;;
+      }
     }
   }
 

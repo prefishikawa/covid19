@@ -101,19 +101,7 @@
         {{ $t('かつ') }}
       </p>
       <p :class="$style.symptom">
-        <i18n tag="span" path="発熱{temperature}" :class="$style.fzSmall">
-          <template v-slot:temperature>
-            <i18n
-              tag="span"
-              path="{tempNum}以上"
-              :class="[$style.break, $style.fzRegular]"
-            >
-              <template v-slot:tempNum>
-                <span :class="$style.temp">{{ $t('37.5℃') }}</span>
-              </template>
-            </i18n>
-          </template>
-        </i18n>
+        <span>発熱<br><span :class="$style.fzSmall">37.5℃以上</span></span>
       </p>
     </div>
     <a
