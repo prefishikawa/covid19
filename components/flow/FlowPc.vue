@@ -306,7 +306,6 @@ export default {
   &Days2 {
     .CardBlockIcon {
       bottom: 40%;
-      transform: rotate(-45deg);
     }
   }
 

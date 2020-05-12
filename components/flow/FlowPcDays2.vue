@@ -52,7 +52,7 @@
 
 <style module lang="scss">
 .Flow {
-  @include card-container($withDivider: true);
+  @include card-container($withDivider: false);
 
   display: flex;
   flex-direction: row;
@@ -235,5 +235,10 @@
   .FlowRowRowTwo {
     align-items: flex-start;
   }
+}
+
+
+.Flow_2tHSe::before {
+  display: none !important;
 }
 </style>

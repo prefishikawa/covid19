@@ -33,7 +33,7 @@
         </div>
       </div>
       <div :class="$style.RowItems">
-        <p :class="$style.explanation"><span>などの</span><span>強い症状の</span><span>いずれかがある</span></p>
+        <p :class="$style.explanation"><span>などの相談</span></p>
       </div>
     </div>
 

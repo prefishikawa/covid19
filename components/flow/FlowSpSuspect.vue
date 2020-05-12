@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <p :class="$style.heading">
-      <span :class="$style.fzMedium">{{ $t('不安に思う方') }}</span>
+      <span :class="$style.fzMedium">{{ $t('その他') }}</span>
     </p>
 
     <ul :class="[$style.rectContainer, $style.triple]">
@@ -45,18 +45,6 @@
         </a>
       </p>
     </div>
-
-    <a
-      v-scroll-to="{
-        el: '#consult',
-        onDone: onDoneScroll
-      }"
-      href="#consult"
-      :class="[$style.button, $style.clickable]"
-    >
-      <span :class="$style.text">{{ $t('専門的な助言が必要な場合') }}</span>
-      <arrow-forward-icon :class="$style.icon" />
-    </a>
   </div>
 </template>
 

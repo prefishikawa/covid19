@@ -58,7 +58,7 @@
 
 <style module lang="scss">
 .Flow {
-  @include card-container($withDivider: true);
+  @include card-container($withDivider: false);
 
   display: flex;
   flex-direction: row;

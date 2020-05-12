@@ -22,7 +22,10 @@
     </div>
     <ul :class="[$style.rectContainer, $style.double]">
       <li :class="$style.symptom">
-        {{ $t('発熱や咳') }}
+        {{ $t('発熱') }}
+      </li>
+      <li :class="$style.symptom">
+        {{ $t('咳') }}
       </li>
     </ul>
 
