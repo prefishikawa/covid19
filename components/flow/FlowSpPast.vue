@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <p :class="$style.heading">
-      <i18n path="{past}の出来ごとと症状" tag="span">
+      <i18n path="{past}の「できごと」と「症状」" tag="span">
         <template v-slot:past>
           <i18n :class="$style.fzLarge" tag="span" path="発症前{two}週間以内">
             <template v-slot:two>

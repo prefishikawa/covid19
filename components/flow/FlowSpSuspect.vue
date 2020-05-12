@@ -1,23 +1,18 @@
 <template>
   <div :class="$style.container">
     <p :class="$style.heading">
-      <span :class="[$style.icon, $style.top]">
-        <sentiment-icon aria-hidden="true" />
-      </span>
       <span :class="$style.fzMedium">{{ $t('不安に思う方') }}</span>
     </p>
 
     <ul :class="[$style.rectContainer, $style.triple]">
       <li :class="$style.symptom">
-        {{ $t('微熱') }}
-      </li>
-      <li :class="$style.symptom">
-        {{ $t('軽い咳') }}
-      </li>
-      <li :class="$style.symptom">
         {{ $t('感染の不安') }}
       </li>
+      <li :class="$style.symptom">
+        {{ $t('感染の予防法') }}
+      </li>
     </ul>
+    <p :class="$style.duration">などの相談</p>
 
     <div :class="$style.callcenter">
       <p :class="$style.fzLarge">

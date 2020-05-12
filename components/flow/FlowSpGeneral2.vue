@@ -13,7 +13,12 @@
       <li :class="$style.symptom">
         {{ $t('息苦しさ') }}
       </li>
+      <li :class="$style.symptom">
+        {{ $t('高熱') }}
+      </li>
     </ul>
+
+    <p :class="$style.duration">などの強い症状のいずれかがある</p>
     <a
       v-scroll-to="{
         el: '#consult',

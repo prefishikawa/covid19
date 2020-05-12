@@ -7,13 +7,13 @@
       <flow-sp-past />
     </div>
     <div :class="$style.FlowCard">
-      <flow-sp-general />
+      <flow-sp-general2 />
     </div>
     <div :class="$style.FlowCard">
       <flow-sp-elder />
     </div>
     <div :class="$style.FlowCard">
-      <flow-sp-general2 />
+      <flow-sp-general />
     </div>
     <div :class="$style.FlowCard">
       <flow-sp-suspect />

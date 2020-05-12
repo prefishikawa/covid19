@@ -9,13 +9,7 @@
       />
       <div :class="$style.RowItems">
         <div :class="$style.RowItemsHeader">
-          <img
-            :class="$style.RowItemsHeaderIcon"
-            src="/flow/sentiment_very_dissatisfied-24px.svg"
-            aria-hidden="true"
-            alt=" "
-          />
-          {{ $t('不安に思う方') }}
+          その他
         </div>
       </div>
       <div :class="$style.RowItems">
@@ -26,26 +20,20 @@
             aria-hidden="true"
             alt=" "
           />
-          {{ $t('微熱') }}
-        </div>
-        <div :class="$style.CheckBox">
-          <img
-            :class="$style.CheckBoxIcon"
-            src="/flow/check_circle-24px.svg"
-            aria-hidden="true"
-            alt=" "
-          />
-          {{ $t('軽い咳') }}
-        </div>
-        <div :class="$style.CheckBox">
-          <img
-            :class="$style.CheckBoxIcon"
-            src="/flow/check_circle-24px.svg"
-            aria-hidden="true"
-            alt=" "
-          />
           {{ $t('感染の不安') }}
         </div>
+        <div :class="$style.CheckBox">
+          <img
+            :class="$style.CheckBoxIcon"
+            src="/flow/check_circle-24px.svg"
+            aria-hidden="true"
+            alt=" "
+          />
+          {{ $t('感染の予防法') }}
+        </div>
+      </div>
+      <div :class="$style.RowItems">
+        <p :class="$style.explanation"><span>などの</span><span>強い症状の</span><span>いずれかがある</span></p>
       </div>
     </div>
 
@@ -204,6 +192,7 @@
   flex-shrink: 0;
   width: calc(70% - 8px);
   flex-direction: row;
+  padding: 20px;
 
   &Icon {
     position: absolute;
@@ -232,20 +221,20 @@
   flex-grow: 1;
   text-align: center;
   margin: 0 4px;
-  &:first-of-type {
-    width: 26%;
-  }
-  &:last-of-type {
-    width: 74%;
+  flex-basis: 36%;
+  // &:first-of-type {
+  //   width: 26%;
+  // }
+  &:nth-of-type(2) {
+    flex-basis: calc(28% - 20px);
   }
 
-  @include largerThan($large) {
-    margin: 0 2em;
-  }
+  // @include largerThan($large) {
+  //   margin: 0 2em;
+  // }
 }
 
 .RowItemsHeader {
-  font-size: smaller;
 
   &Icon {
     display: block;
@@ -275,5 +264,17 @@
 
 .SmallerText {
   font-size: smaller;
+}
+
+.explanation {
+  text-align: center;
+  span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: calc(0.875rem + ((1vw - 7.68px) * 0.8929));
+    @include largerThan($large) {
+      font-size: 20px;
+    }
+  }
 }
 </style>

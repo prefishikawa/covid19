@@ -220,7 +220,7 @@
   "症状が良くならない場合は": "Trường hợp xuất hiện triệu chứng không ổn",
   "自宅で安静に過ごす": "Ở tại nhà",
   "一般の医療機関を受診": "Gặp bác sĩ đa khoa",
-  "{past}の出来ごとと症状": "Triệu chứng và các sự kiện đã phát sinh trong {quá khứ}",
+  "{past}の「できごと」と「症状」": "Triệu chứng và các sự kiện đã phát sinh trong {quá khứ}",
   "発症前{two}週間以内": "Triệu chứng và các sự kiện đã phát sinh trong vòng {two} tuần",
   "「新型コロナウイルス感染者」と": "\"Bệnh nhân nhiễm Covid-19\"",
   "{closeContact}をした方": "Những người tiếp xúc gần {closeContact}",

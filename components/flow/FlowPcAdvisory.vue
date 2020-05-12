@@ -77,7 +77,7 @@
     border-radius: 4px;
     height: 100%;
     padding: 30px 20px 20px 20px;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     text-align: center;
   }
 

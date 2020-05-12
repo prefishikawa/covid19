@@ -186,6 +186,10 @@
   box-shadow: 0 px2vw(1.2) px2vw(6) $gray-3;
 }
 
+.alignCenter {
+  text-align: center;
+}
+
 // 601-768 (769以上はPC版)
 @include largerThan($small) {
   // サイドバーが固定幅でコンテンツエリアが狭いため基準を大きくして調整する

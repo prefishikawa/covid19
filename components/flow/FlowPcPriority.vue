@@ -3,39 +3,41 @@
     <div :class="$style.FlowRow">
       <div :class="$style.FlowRowRowThree">
         <div>
-          <p>
-            <img
-              :class="$style.FlowRowRowThreeGeneralIcon"
-              src="/flow/accessibility-24px.svg"
-              aria-hidden="true"
-              alt=" "
-            />
-            {{ $t('誰でも') }}
-          </p>
+          <ul :class="$style.FlowRowRowThreeCareTargetList">
+            <li :class="$style.FlowRowRowThreeCareTargetListItem">
+              <img
+                :class="$style.FlowRowRowThreeCareTargetListItemIcon"
+                src="/flow/directions_walk-24px.svg"
+                aria-hidden="true"
+                alt=" "
+              />
+              {{ $t('ご高齢の方') }}
+            </li>
+            <li :class="$style.FlowRowRowThreeCareTargetListItem">
+              <img
+                :class="$style.FlowRowRowThreeCareTargetListItemIcon"
+                src="/flow/accessible-24px.svg"
+                aria-hidden="true"
+                alt=" "
+              />
+              {{ $t('基礎疾患のある方') }}
+            </li>
+            <li :class="$style.FlowRowRowThreeCareTargetListItem">
+              <img
+                :class="$style.FlowRowRowThreeCareTargetListItemIcon"
+                src="/flow/pregnant_woman-24px.svg"
+                aria-hidden="true"
+                alt=" "
+              />
+              {{ $t('妊娠中の方') }}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
     <div :class="[$style.FlowRow, $style.FlowRowRowCheck]">
       <div :class="$style.FlowRowCondition">
-        <p>{{ $t('息苦しさ') }}</p>
-        <img
-          :class="$style.FlowRowConditionIcon"
-          src="/flow/check_circle-24px.svg"
-          aria-hidden="true"
-          alt=" "
-        />
-      </div>
-      <div :class="$style.FlowRowCondition">
-        <p>{{ $t('強いだるさ') }}</p>
-        <img
-          :class="$style.FlowRowConditionIcon"
-          src="/flow/check_circle-24px.svg"
-          aria-hidden="true"
-          alt=" "
-        />
-      </div>
-      <div :class="$style.FlowRowCondition">
-        <p>{{ $t('高熱') }}</p>
+        <p>{{ $t('発熱や咳') }}</p>
         <img
           :class="$style.FlowRowConditionIcon"
           src="/flow/check_circle-24px.svg"
@@ -44,8 +46,12 @@
         />
       </div>
     </div>
-    <div :class="$style.FlowRowRowThree">
-      <p :class="$style.explanation"><span>などの</span><span>強い症状の</span><span>いずれかがある</span></p>
+    <div :class="$style.FlowRow">
+      <div :class="$style.FlowRowRowThree">
+        <div :class="$style.FlowRowRowThree">
+          <p :class="$style.explanation"><span>などの</span><span>比較的軽い</span><span>風邪症状がある</span></p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -78,7 +84,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 20px;
+      // margin-top: 20px;
 
       &General {
         &Icon {
