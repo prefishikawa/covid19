@@ -126,7 +126,7 @@
         </em>
         <span :class="$style.FlowText">{{ $t('かつ') }}</span>
         <em :class="$style.FlowSymptom">
-          <span>発熱<br><span>37.5℃<br>以上</span></span>
+          <span>発熱<br><span>37.5℃以上</span></span>
           <img
             :class="$style.FlowSymptomIcon"
             src="/flow/check_circle-24px.svg"

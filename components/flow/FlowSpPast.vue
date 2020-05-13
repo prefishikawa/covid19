@@ -49,7 +49,7 @@
         {{ $t('または') }}
       </p>
       <p :class="$style.symptom">
-        {{ $t('呼吸器症状') }}
+        呼吸器<br>症状
       </p>
     </div>
     <p :class="[$style.type, $style.hr]">
@@ -95,7 +95,7 @@
     </p>
     <div :class="[$style.rectContainer, $style.req]">
       <p :class="$style.symptom">
-        {{ $t('呼吸器症状') }}
+        呼吸器<br>症状
       </p>
       <p :class="$style.op">
         {{ $t('かつ') }}
