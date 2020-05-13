@@ -175,6 +175,10 @@ export default Vue.extend({
           link: this.localePath('/about')
         },
         {
+          title: this.$t('SNSによる情報発信'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/sns.html'
+        },
+        {
           title: this.$t('石川県公式ホームページ'),
           link: 'https://www.pref.ishikawa.lg.jp/'
         }
