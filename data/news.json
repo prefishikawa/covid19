@@ -1,5 +1,5 @@
 {
-    "date": "2020/05/14 21:23",
+    "date": "2020/05/15 10:43",
     "newsItems": [
         {
             "date": "2020/5/14",
@@ -8,16 +8,16 @@
         },
         {
             "date": "2020/5/14",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/monitoring.html",
+            "text": "石川県の感染状況等に関するモニタリング指標について掲載しました"
+        },
+        {
+            "date": "2020/5/14",
             "url": "https://www.pref.ishikawa.lg.jp/kousei/korona-kihu-itiran.html",
             "text": "医療物資の提供者について掲載しました"
         },
         {
-            "date": "2020/5/12",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
-            "text": "相談窓口一覧を更新しました"
-        },
-        {
-            "date": "2020/5/12",
+            "date": "2020/5/13",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
             "text": "事業者向け支援制度について更新しました"
         }
