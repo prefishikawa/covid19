@@ -119,12 +119,8 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/kansen/kaiken.html'
         },
         {
-          title: this.$t('石川県緊急事態措置（特措法に基づく措置）'),
-          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/sochi.html'
-        },
-        {
-          title: this.$t('石川県緊急事態宣言'),
-          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/sengen.html'
+          title: this.$t('感染拡大防止に係る取組'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/efforts.html'
         },
         {
           title: this.$t('対策本部会議の開催状況'),
@@ -163,7 +159,7 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/eventcancel.html'
         },
         {
-          title: this.$t('その他の新型コロナウイルス感染症関連情報'),
+          title: this.$t('その他の関連情報'),
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/others.html'
         },
         {
