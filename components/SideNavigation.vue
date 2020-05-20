@@ -101,6 +101,10 @@ export default Vue.extend({
           link: this.localePath('/')
         },
         {
+          title: this.$t('モニタリング指標'),
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/monitoring.html'
+        },
+        {
           icon: 'CovidIcon',
           title: this.$t('新型コロナウイルス感染症の相談・受診の目安'),
           link: this.localePath('/flow'),
@@ -119,12 +123,20 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/kansen/kaiken.html'
         },
         {
+          title: this.$t('対策本部会議の開催状況'),
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html'
+        },
+        {
           title: this.$t('感染拡大防止に係る取組'),
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/efforts.html'
         },
         {
-          title: this.$t('対策本部会議の開催状況'),
-          link: 'https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html'
+          title: this.$t('支援制度'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/support.html'
+        },
+        {
+          title: this.$t('相談窓口一覧'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf'
         },
         {
           title: this.$t('県民のみなさまへ'),
@@ -135,36 +147,12 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/biz.html'
         },
         {
-          title: this.$t('農林漁業者のみなさまへ'),
-          link: 'https://www.pref.ishikawa.lg.jp/nousei/sikin/index.html'
-        },
-        {
           title: this.$t('医療機関のみなさまへ'),
           link: 'https://www.pref.ishikawa.lg.jp/kansen/corona.html#2'
         },
         {
-          title: this.$t('個人向け支援制度について'),
-          link: 'https://www.pref.ishikawa.lg.jp/zaisei/covid19/shien.html'
-        },
-        {
-          title: this.$t('運転免許関連の手続等について'),
-          link: 'http://www2.police.pref.ishikawa.lg.jp/application/application01/application01.html'
-        },
-        {
-          title: this.$t('臨時休館・休園する県有施設'),
-          link: 'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/shisetsu.html'
-        },
-        {
-          title: this.$t('延期・中止する県主催イベント'),
-          link: 'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/eventcancel.html'
-        },
-        {
           title: this.$t('その他の関連情報'),
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/others.html'
-        },
-        {
-          title: this.$t('相談窓口一覧'),
-          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf'
         },
         {
           title: this.$t('当サイトについて'),
