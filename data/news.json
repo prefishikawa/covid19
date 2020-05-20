@@ -1,5 +1,5 @@
 {
-    "date": "2020/05/20 10:43",
+    "date": "2020/05/20 11:06",
     "newsItems": [
         {
             "date": "2020/5/20",
@@ -15,6 +15,11 @@
             "date": "2020/5/19",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
             "text": "新型コロナウイルス感染症に関する相談窓口"
+        },
+        {
+            "date": "2020/5/19",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
+            "text": "対策本部会議の開催状況について"
         }
     ]
 }
