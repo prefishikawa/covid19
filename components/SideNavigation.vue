@@ -96,16 +96,17 @@ export default Vue.extend({
     items(): Item[] {
       return [
         {
-          icon: 'mdi-chart-timeline-variant',
+          icon: 'GraphIcon',
           title: this.$t('県内の最新感染動向'),
           link: this.localePath('/')
         },
         {
+          icon: 'MonitorIcon',
           title: this.$t('モニタリング指標'),
           link: 'https://www.pref.ishikawa.lg.jp/kansen/monitoring.html'
         },
         {
-          icon: 'CovidIcon',
+          icon: 'VirusIcon',
           title: this.$t('新型コロナウイルス感染症の相談・受診の目安'),
           link: this.localePath('/flow'),
           divider: true

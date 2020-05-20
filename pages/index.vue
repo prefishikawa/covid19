@@ -1,7 +1,8 @@
 <template>
   <div class="MainPage">
     <div class="Header mb-3">
-      <page-header :icon="headerItem.icon">
+      <page-header>
+        <graph-icon aria-hidden="true" />
         {{ headerItem.title }}
       </page-header>
       <div class="UpdatedAt">
@@ -53,9 +54,11 @@ import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNum
 import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
+import GraphIcon from '@/static/graph.svg'
 
 export default Vue.extend({
   components: {
+    GraphIcon,
     PageHeader,
     WhatsNew,
     StaticInfo,
@@ -109,6 +112,13 @@ export default Vue.extend({
     @include lessThan($small) {
       flex-direction: column;
       align-items: baseline;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+      opacity: 0.7;
     }
   }
 
