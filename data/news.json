@@ -1,6 +1,11 @@
 {
-    "date": "2020/05/20 14:23",
+    "date": "2020/05/21 10:08",
     "newsItems": [
+        {
+            "date": "2020/5/21",
+            "url": "https://www.ishikawa.jrc.or.jp/info_notification/post4103",
+            "text": "啓発動画「新型コロナウイルスの3つの顔を知ろう！～負のスパイラルを断ち切るために～」"
+        },
         {
             "date": "2020/5/20",
             "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
@@ -10,16 +15,6 @@
             "date": "2020/5/20",
             "url": "https://www.pref.ishikawa.lg.jp/kikaku/kansenkakudaibousitorikumi.html",
             "text": "感染拡大防止に係る取組（休業要請など）"
-        },
-        {
-            "date": "2020/5/20",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/kouhou/shisetsu.html",
-            "text": "臨時休館・休園する県有施設一覧"
-        },
-        {
-            "date": "2020/5/19",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
-            "text": "対策本部会議の開催状況"
         }
     ]
 }
