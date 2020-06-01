@@ -44,32 +44,7 @@
       <dl :class="$style.telCenter">
         <dt>石川県感染拡大防止県民相談センター</dt>
         <dd>076-225-1921</dd>
-        <dt>南加賀保健福祉センター</dt>
-        <dd>0761-22-0796</dd>
-        <dt>石川中央保健福祉センター</dt>
-        <dd>076-275-2250</dd>
-        <dt>能登中部保健福祉センター</dt>
-        <dd>0767-53-2482</dd>
-        <dt>能登北部保健福祉センター</dt>
-        <dd>0768-22-2011</dd>
-        <dt>金沢市保健所</dt>
-        <dd>076-234-5116</dd>
-        <dt>石川県健康福祉部健康推進課</dt>
-        <dd>076-225-1438</dd>
       </dl>
-
-      <div :class="$style.windowLink">
-        <a
-          href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#contacts"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>{{ $t('各保健所の電話番号等はこちら') }}</span>
-          <v-icon size="18">
-            mdi-open-in-new
-          </v-icon>
-        </a>
-      </div>
     </div>
   </div>
 </template>
