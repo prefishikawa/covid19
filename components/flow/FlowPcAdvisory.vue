@@ -21,8 +21,6 @@
 
       <div :class="$style.AdvisoryContents">
         <dl>
-          <dt>石川県感染拡大防止県民相談センター</dt>
-          <dd>076-225-1921</dd>
           <dt>南加賀保健福祉センター</dt>
           <dd>0761-22-0796</dd>
           <dt>石川中央保健福祉センター</dt>
