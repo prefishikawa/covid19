@@ -18,6 +18,9 @@
       <p :class="$style.fzLarge">
         {{ $t('一般相談窓口') }}
       </p>
+      <p :class="[$style.open, $style.fzSmall]">
+        <span>9:00～18:00</span>
+      </p>
       <dl :class="$style.telCenter">
         <dt>石川県感染拡大防止県民相談センター</dt>
         <dd>076-225-1921</dd>
@@ -59,6 +62,21 @@ export default {
       margin-right: px2vw(11);
       flex-grow: 10;
     }
+  }
+}
+.open {
+  margin-top: px2vw(20);
+  display: flex;
+  justify-content: center;
+
+  > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray-5;
+    color: $green-1;
+    padding: px2vw(20) px2vw(40);
+    border-radius: px2vw(6);
   }
 }
 // suspect
