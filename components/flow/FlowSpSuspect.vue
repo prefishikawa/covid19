@@ -15,9 +15,9 @@
     <p :class="$style.duration">などの相談</p>
 
     <div :class="$style.callcenter">
-      <p :class="$style.fzLarge">
+      <h4 id="consult" :class="[$style.heading, $style.fzXLarge]">
         {{ $t('一般相談窓口') }}
-      </p>
+      </h4>
       <p :class="[$style.open, $style.fzSmall]">
         <span>9:00～18:00</span>
       </p>
@@ -65,7 +65,7 @@ export default {
   }
 }
 .open {
-  margin-top: px2vw(20);
+  margin-top: px2vw(20) !important;
   display: flex;
   justify-content: center;
 

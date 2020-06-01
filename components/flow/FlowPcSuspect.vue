@@ -41,13 +41,11 @@
       <div :class="$style.LargerText">
         {{ $t('一般相談窓口') }}
       </div>
-      <div>
         <div :class="[$style.SubtleBoxContainer, $style.SubtleWhiteBox]">
           <span :class="$style.AdvisoryWhiteBoxSentense">
             9:00～18:00
           </span>
         </div>
-      </div>
       <dl :class="$style.telCenter">
         <dt>石川県感染拡大防止県民相談センター</dt>
         <dd>076-225-1921</dd>
@@ -174,15 +172,17 @@
   border-radius: 4px;
   text-align: center;
   padding: 20px 10px;
-  margin: 24px auto;
+  margin: 12px auto !important;
 }
 
 .SubtleWhiteBox {
   background-color: $gray-5;
+  width: 100%;
   max-width: 160px;
   padding: 8px;
   color: $green-1;
   font-weight: bold;
+  font-size: 14px;
 
   &Sentense {
     color: $green-1;
@@ -256,7 +256,7 @@
 }
 
 .LargerText {
-  font-size: larger;
+  font-size: 20px;
   font-weight: bold;
   @media print {
     width: 65%;
