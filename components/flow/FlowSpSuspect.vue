@@ -15,7 +15,7 @@
     <p :class="$style.duration">などの相談</p>
 
     <div :class="$style.callcenter">
-      <h4 id="consult" :class="[$style.heading, $style.fzXLarge]">
+      <h4 :class="[$style.heading, $style.fzXLarge]">
         {{ $t('一般相談窓口') }}
       </h4>
       <p :class="[$style.open, $style.fzSmall]">
