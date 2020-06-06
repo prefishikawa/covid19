@@ -1,6 +1,11 @@
 {
-    "date": "2020/06/05 20:43",
+    "date": "2020/06/06 13:06",
     "newsItems": [
+        {
+            "date": "2020/6/6",
+            "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
+            "text": "知事記者会見"
+        },
         {
             "date": "2020/6/5",
             "url": "https://www.pref.ishikawa.lg.jp/kankou/syukuhakuwari_2020.html",
