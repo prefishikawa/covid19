@@ -1,6 +1,11 @@
 {
-    "date": "2020/06/11 00:06",
+    "date": "2020/06/12 15:43",
     "newsItems": [
+        {
+            "date": "2020/6/12",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/support.html",
+            "text": "農林漁業者向け支援制度について（支援制度PRチラシ）"
+        },
         {
             "date": "2020/6/11",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
@@ -10,16 +15,6 @@
             "date": "2020/6/6",
             "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
             "text": "知事記者会見"
-        },
-        {
-            "date": "2020/6/5",
-            "url": "https://shukuhakuwari.com/",
-            "text": "泊まって応援！県民限定宿泊割（県内宿泊応援事業）について"
-        },
-        {
-            "date": "2020/6/5",
-            "url": "https://www.pref.ishikawa.lg.jp/syoko/documents/tirashi.pdf",
-            "text": "「石川県経営持続支援金」制度のお知らせ"
         }
     ]
 }
