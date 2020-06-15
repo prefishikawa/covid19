@@ -1,6 +1,11 @@
 {
-    "date": "2020/06/12 19:23",
+    "date": "2020/06/15 10:23",
     "newsItems": [
+        {
+            "date": "2020/6/15",
+            "url": "http://j-livehouse.org/guideline/",
+            "text": "ライブハウス用の感染拡大予防ガイドライン"
+        },
         {
             "date": "2020/6/12",
             "url": "https://www.pref.ishikawa.lg.jp/roudou/kikaku-roufuku/teleworking/webinar.html",
