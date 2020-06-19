@@ -1,6 +1,11 @@
 {
-    "date": "2020/06/18 19:23",
+    "date": "2020/06/19 15:43",
     "newsItems": [
+        {
+            "date": "2020/6/19",
+            "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/cocoa_00138.html",
+            "text": "新型コロナウイルス接触確認アプリ（COCOA）COVID-19 Contact-Confirming Application"
+        },
         {
             "date": "2020/6/18",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/support.html",
@@ -10,11 +15,6 @@
             "date": "2020/6/18",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
             "text": "相談窓口一覧"
-        },
-        {
-            "date": "2020/6/16",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
-            "text": "事業者向け支援制度について"
         }
     ]
 }
