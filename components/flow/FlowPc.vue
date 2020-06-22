@@ -297,12 +297,7 @@ export default {
     z-index: 1;
   }
 
-  &Suspect {
-    .CardBlockIcon {
-      bottom: 40%;
-    }
-  }
-
+  &Suspect,
   &Days2 {
     .CardBlockIcon {
       bottom: 40%;
@@ -357,11 +352,21 @@ export default {
 .Priority {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  .CardBlockInner {
+    .CardBlockIcon {
+      bottom: 38%;
+    }
+  }
 }
 
 .Days {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  .CardBlockInner {
+    .CardBlockIcon {
+      bottom: 38%;
+    }
+  }
 }
 
 .Suspect {

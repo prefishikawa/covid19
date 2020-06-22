@@ -152,6 +152,10 @@ export default Vue.extend({
           link: 'https://www.pref.ishikawa.lg.jp/kansen/corona.html#2'
         },
         {
+          title: this.$t('感染症対策への応援'),
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/furusatonouzei/coronakifu.html'
+        },
+        {
           title: this.$t('その他の関連情報'),
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/others.html'
         },
