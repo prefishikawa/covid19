@@ -1,6 +1,11 @@
 {
-    "date": "2020/06/24 09:32",
+    "date": "2020/06/25 11:07",
     "newsItems": [
+        {
+            "date": "2020/6/25",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/documents/ishikawa_new_lifestyle.pdf",
+            "text": "新しい生活様式チェックリスト（家庭版）"
+        },
         {
             "date": "2020/6/24",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/support.html",
@@ -10,11 +15,6 @@
             "date": "2020/6/19",
             "url": "https://www.pref.ishikawa.lg.jp/kikaku/kansenkakudaibousitorikumi.html#cocoa",
             "text": "新型コロナウイルス接触確認アプリ（COCOA）の活用について"
-        },
-        {
-            "date": "2020/6/18",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
-            "text": "相談窓口一覧"
         }
     ]
 }
