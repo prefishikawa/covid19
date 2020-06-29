@@ -1,20 +1,20 @@
 {
-    "date": "2020/06/26 13:07",
+    "date": "2020/06/29 17:43",
     "newsItems": [
+        {
+            "date": "2020/6/29",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
+            "text": "事業者向け支援制度一覧"
+        },
+        {
+            "date": "2020/6/29",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/support.html",
+            "text": "農林漁業者向け支援制度について（支援制度PRチラシ）"
+        },
         {
             "date": "2020/6/26",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
             "text": "相談窓口一覧"
-        },
-        {
-            "date": "2020/6/25",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/bizsupport.html",
-            "text": "事業者向け支援制度について"
-        },
-        {
-            "date": "2020/6/25",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/documents/ishikawa_new_lifestyle.pdf",
-            "text": "新しい生活様式チェックリスト（家庭版）"
         }
     ]
 }
