@@ -1,6 +1,11 @@
 {
-    "date": "2020/06/29 17:43",
+    "date": "2020/06/30 09:16",
     "newsItems": [
+        {
+            "date": "2020/6/30",
+            "url": "https://ishikawa-shienkin.jp/keieijizoku/",
+            "text": "石川県経営持続支援金について"
+        },
         {
             "date": "2020/6/29",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
@@ -10,11 +15,6 @@
             "date": "2020/6/29",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/support.html",
             "text": "農林漁業者向け支援制度について（支援制度PRチラシ）"
-        },
-        {
-            "date": "2020/6/26",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
-            "text": "相談窓口一覧"
         }
     ]
 }
