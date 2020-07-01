@@ -1,20 +1,20 @@
 {
-    "date": "2020/06/30 09:16",
+    "date": "2020/07/01 10:08",
     "newsItems": [
+        {
+            "date": "2020/7/1",
+            "url": "https://www.pref.ishikawa.lg.jp/syoko/corona/setsubi/2020.html",
+            "text": "コロナ時代に適応する設備導入支援事業の公募について"
+        },
+        {
+            "date": "2020/7/1",
+            "url": "https://www.pref.ishikawa.lg.jp/syoko/corona/shinseihin/2020.html",
+            "text": "新たな需要を取り込む新技術・新製品開発支援事業の公募について"
+        },
         {
             "date": "2020/6/30",
             "url": "https://ishikawa-shienkin.jp/keieijizoku/",
             "text": "石川県経営持続支援金について"
-        },
-        {
-            "date": "2020/6/29",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
-            "text": "事業者向け支援制度一覧"
-        },
-        {
-            "date": "2020/6/29",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/support.html",
-            "text": "農林漁業者向け支援制度について（支援制度PRチラシ）"
         }
     ]
 }
