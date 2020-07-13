@@ -1,20 +1,20 @@
 {
-    "date": "2020/07/10 09:42",
+    "date": "2020/07/13 10:08",
     "newsItems": [
+        {
+            "date": "2020/7/13",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/senmonkakaigi.html",
+            "text": "対策専門家会議の開催状況"
+        },
+        {
+            "date": "2020/7/13",
+            "url": "https://www.pref.ishikawa.lg.jp/muse/20200624.html",
+            "text": "文化芸術に関する各種支援について"
+        },
         {
             "date": "2020/7/10",
             "url": "https://www.pref.ishikawa.lg.jp/kikaku/kansenkakudaibousitorikumi.html",
             "text": "新型コロナウイルス感染拡大防止に係る取組について"
-        },
-        {
-            "date": "2020/7/6",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/keiho.pdf",
-            "text": "経営継続補助金（農林漁業者向け）について"
-        },
-        {
-            "date": "2020/7/3",
-            "url": "https://www.ishikawa.jrc.or.jp/info_notification/post4174",
-            "text": "啓発動画「『新しい生活様式』における熱中症の予防・手当」"
         }
     ]
 }
