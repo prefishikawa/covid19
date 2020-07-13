@@ -112,12 +112,8 @@ export default Vue.extend({
           divider: true
         },
         {
-          title: this.$t('知事からのメッセージ'),
-          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/governor_msg.html'
-        },
-        {
           title: this.$t('知事記者会見'),
-          link: 'https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html'
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/governor_msg.html'
         },
         {
           title: this.$t('健康福祉部長記者会見'),
@@ -126,6 +122,10 @@ export default Vue.extend({
         {
           title: this.$t('対策本部会議の開催状況'),
           link: 'https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html'
+        },
+        {
+          title: this.$t('対策専門家会議の開催状況'),
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/senmonkakaigi.html'
         },
         {
           title: this.$t('感染拡大防止に係る取組'),
