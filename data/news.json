@@ -1,6 +1,11 @@
 {
-    "date": "2020/07/14 11:43",
+    "date": "2020/07/29 11:09",
     "newsItems": [
+        {
+            "date": "2020/7/29",
+            "url": "https://www.pref.ishikawa.lg.jp/roudou/kikaku-roufuku/teleworking/webinar.html",
+            "text": "テレワーク導入支援動画"
+        },
         {
             "date": "2020/7/14",
             "url": "https://www.pref.ishikawa.lg.jp/kikaku/covid19/livingwithcovid-19.html#syuwa",
