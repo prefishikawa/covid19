@@ -1,25 +1,20 @@
 {
-    "date": "2020/07/29 11:09",
+    "date": "2020/08/03 21:07",
     "newsItems": [
+        {
+            "date": "2020/8/3",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/byoushou.html",
+            "text": "新型コロナウイルス感染症に係る病床の確保について"
+        },
+        {
+            "date": "2020/8/3",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/support.html",
+            "text": "農林漁業者向け支援制度について（支援制度PRチラシ）"
+        },
         {
             "date": "2020/7/29",
             "url": "https://www.pref.ishikawa.lg.jp/roudou/kikaku-roufuku/teleworking/webinar.html",
             "text": "テレワーク導入支援動画"
-        },
-        {
-            "date": "2020/7/14",
-            "url": "https://www.pref.ishikawa.lg.jp/kikaku/covid19/livingwithcovid-19.html#syuwa",
-            "text": "「新しい生活様式」の周知用手話動画"
-        },
-        {
-            "date": "2020/7/13",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/senmonkakaigi.html",
-            "text": "対策専門家会議の開催状況"
-        },
-        {
-            "date": "2020/7/13",
-            "url": "https://www.pref.ishikawa.lg.jp/muse/20200624.html",
-            "text": "文化芸術に関する各種支援について"
         }
     ]
 }
