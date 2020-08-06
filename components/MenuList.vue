@@ -122,8 +122,8 @@ export default Vue.extend({
   }
 
   &.-border {
-    margin-bottom: 12px;
-    padding-bottom: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
     border-bottom: 1px solid $gray-4;
   }
 
@@ -133,45 +133,58 @@ export default Vue.extend({
   //     color: #333 !important;
   //   }
   // }
-}
 
-.MenuList-Link {
-  display: flex;
-  align-items: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  color: $gray-1;
-
-  &:link,
-  &:hover,
-  &:focus,
-  &:visited,
-  &:active {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  &:hover {
-    font-weight: bold;
-  }
-
-  &:focus {
-    font-weight: bold;
-    outline: dotted $gray-3 1px;
-  }
-
-  &.nuxt-link-exact-active {
-    font-weight: bold;
+  .MenuList-Link {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: $gray-1;
 
     &:link,
     &:hover,
+    &:focus,
     &:visited,
     &:active {
-      color: $green-1;
+      color: inherit;
+      text-decoration: none;
     }
+
+    &:hover {
+      font-weight: bold;
+    }
+
     &:focus {
-      color: $green-1;
+      font-weight: bold;
       outline: dotted $gray-3 1px;
+    }
+
+    &.nuxt-link-exact-active {
+      font-weight: bold;
+
+      &:link,
+      &:hover,
+      &:visited,
+      &:active {
+        color: $green-1;
+      }
+      &:focus {
+        color: $green-1;
+        outline: dotted $gray-3 1px;
+      }
+    }
+  }
+
+  &:first-child,
+  &:nth-child(2) {
+    .MenuList-Link {
+      padding-bottom: 6px;
+    }
+  }
+  &:nth-child(2),
+  &:nth-child(3) {
+    .MenuList-Link {
+      padding-top: 6px;
     }
   }
 }
