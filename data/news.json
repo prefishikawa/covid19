@@ -1,6 +1,11 @@
 {
-    "date": "2020/08/12 18:43",
+    "date": "2020/08/13 13:10",
     "newsItems": [
+        {
+            "date": "2020/8/13",
+            "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
+            "text": "知事記者会見"
+        },
         {
             "date": "2020/8/12",
             "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
