@@ -123,7 +123,7 @@ export default Vue.extend({
           divider: true
         },
         {
-          title: this.$t('知事記者会見'),
+          title: this.$t('知事記者会見等'),
           link: 'https://www.pref.ishikawa.lg.jp/kenmin/covid19/governor_msg.html'
         },
         {
