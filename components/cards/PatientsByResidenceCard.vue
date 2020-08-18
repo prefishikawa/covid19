@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
-      :title="$t('陽性患者数(居住地別)')"
+      :title="$t('陽性患者数（居住地別）')"
       :title-id="'number-of-confirmed-cases-by-residence'"
       :chart-id="'time-bar-chart-patients-by-residence'"
       :chart-data="patientsGraph"

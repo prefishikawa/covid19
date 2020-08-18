@@ -101,6 +101,11 @@ export default Vue.extend({
           link: this.localePath('/')
         },
         {
+          icon: 'MemoIcon',
+          title: this.$t('県内の患者発生状況'),
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html'
+        },
+        {
           icon: 'MonitorIcon',
           title: this.$t('モニタリング指標'),
           link: 'https://www.pref.ishikawa.lg.jp/kansen/monitoring.html'

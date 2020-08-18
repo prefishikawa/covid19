@@ -36,6 +36,7 @@ import GraphIcon from '@/static/graph.svg'
 import MonitorIcon from '@/static/monitor.svg'
 import VirusIcon from '@/static/virus.svg'
 import BedIcon from '@/static/bed.svg'
+import MemoIcon from '@/static/memo.svg'
 
 type MenuItem = {
   icon?: string
@@ -51,7 +52,8 @@ export default Vue.extend({
     GraphIcon,
     MonitorIcon,
     VirusIcon,
-    BedIcon
+    BedIcon,
+    MemoIcon
   },
   props: {
     items: {
