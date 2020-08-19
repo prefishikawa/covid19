@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
-      :title="$t('陽性患者数（居住地別）')"
+      :title="$t('検査陽性者数（居住地別）')"
       :title-id="'number-of-confirmed-cases-by-residence'"
       :chart-id="'time-bar-chart-patients-by-residence'"
       :chart-data="patientsGraph"
@@ -24,7 +24,7 @@ export default {
     TimeBarChart
   },
   data() {
-    // 居住地別陽性患者数グラフ
+    // 居住地別検査陽性者数（公表日別）グラフ
     const patientsGraph = formatGraph(Data.data[0].data)
 
     const data = {

@@ -280,7 +280,7 @@ $data['main_summary'] = [
   'value' => xlsxToArray(__DIR__.'/downloads/検査実施サマリ.xlsx', '検査実施サマリ', 'A2')[0][0],
   'children' => [
     [
-      'attr' => '陽性患者数',
+      'attr' => '検査陽性者数（公表日別）',
       'value' => $better_patients_summary['data']['感染者数']->sum(),
       'children' => [
         [

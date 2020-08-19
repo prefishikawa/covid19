@@ -65,8 +65,8 @@ const dir = './data/'
 const files = {
   contacts: 'contacts.json', // コールセンター相談件数
   inspectionPersons: '170003_ishikawa_covid19_test_count.json', // 検査実施人数
-  patientsSummary: 'patients_summary.json', // 陽性患者数
-  patients: '170003_ishikawa_covid19_patients.json', // 陽性患者の属性
+  patientsSummary: 'patients_summary.json', // 検査陽性者数（公表日別）
+  patients: '170003_ishikawa_covid19_patients.json', // 検査陽性者の属性
   cityPatients: '170003_ishikawa_covid19_city_town_patients.json', // 市区町村別患者数
   generalConsultation: 'general_consultation.json', // 一般相談件数
   news: 'news.json' // 一般相談件数

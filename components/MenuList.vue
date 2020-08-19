@@ -124,8 +124,8 @@ export default Vue.extend({
   }
 
   &.-border {
-    margin-bottom: 8px;
-    padding-bottom: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
     border-bottom: 1px solid $gray-4;
   }
 
@@ -179,16 +179,11 @@ export default Vue.extend({
 
   &:first-child,
   &:nth-child(2),
-  &:nth-child(3) {
-    .MenuList-Link {
-      padding-bottom: 9px;
-    }
-  }
-  &:nth-child(2),
   &:nth-child(3),
   &:nth-child(4) {
     .MenuList-Link {
       padding-top: 9px;
+      padding-bottom: 9px;
     }
   }
 }

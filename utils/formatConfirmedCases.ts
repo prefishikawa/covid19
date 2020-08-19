@@ -20,7 +20,7 @@ type DataType = {
           value: number
         }
       ]
-      // attr: '陽性患者数'
+      // attr: '検査陽性者数（公表日別）'
       // value: number
       // children: [
       //   {
