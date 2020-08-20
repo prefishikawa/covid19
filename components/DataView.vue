@@ -20,6 +20,7 @@
         <slot />
       </div>
       <div class="DataView-Description">
+        <slot name="additionalDescription" />
         <slot name="footer-description" />
       </div>
       <div class="DataView-Footer">
@@ -180,14 +181,35 @@ export default Vue.extend({
   }
 
   &-Description {
-    margin: 10px 0 0;
+    margin: 10px 0 20px;
     font-size: 12px;
     color: $gray-3;
 
+    p {
+      margin: 0;
+    }
+
     ul,
     ol {
-      list-style-type: none;
-      padding: 0;
+      list-style: disc inside;
+      padding-left: 1em;
+
+      li {
+        margin-left: 1.5em;
+        text-indent: -1.5em;
+      }
+    }
+
+    i {
+      display: inline-block;
+      width: 2.5em;
+      height: 1em;
+      &:first-child {
+        background: #1b4d30;
+      }
+      &:last-child {
+        background: #c5e2c6;
+      }
     }
   }
 

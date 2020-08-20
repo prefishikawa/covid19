@@ -10,17 +10,17 @@
       :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_test_count.csv'"
       :source="$t('データベースはこちら')"
     >
-      <template v-slot:description>
-        <ul>
-          <li>
-            {{
-              $t(
-                '（注）速報値として公開するものであり、後日確定データとして修正される場合あり'
-              )
-            }}
-          </li>
-        </ul>
-      </template>
+      <template v-slot:additionalDescription>
+          <span>{{ $t('（注）') }}</span>
+          <div>
+            <p><i/>：行政検査　<i/>：保険適用検査 </p>
+          </div>
+          <ul>
+            <li>令和2年7月27日以降は保険適用の件数を含む</li>
+            <li>令和2年7月26日までの保険適用の件数は同27日に一括して計上</li>
+            <li>速報値として公開するものであり、後日確定データとして修正される場合がある</li>
+          </ul>
+        </template>
     </time-bar-chart>
   </v-col>
 </template>
@@ -28,8 +28,8 @@
 <script>
 // import Data from '@/data/data.json'
 import InspectionPersons from '@/data/170003_ishikawa_covid19_test_count.json'
-import formatGraph from '@/utils/formatGraph'
-import TimeBarChart from '@/components/TimeBarChart.vue'
+import formatGraph from '@/utils/formatNumberOfInspectionsGraph'
+import TimeBarChart from '@/components/TimeBarChartInspectionPersons.vue'
 
 export default {
   components: {
@@ -37,11 +37,16 @@ export default {
   },
   data() {
     // 検査実施件数グラフ
-    const inspectionPersonsGraph = formatGraph(InspectionPersons.data)
     const inspectionPersonsDate = InspectionPersons.date
+    const inspectionPersonsGraph = formatGraph(InspectionPersons.data)
+    // const adminInspection = InspectionPersons.data.map((d) => d.admin_inspection)
+    // const insuranceCoverage = InspectionPersons.data.map((d) => d.insurance_coverage)
+
     const data = {
       inspectionPersonsDate,
-      inspectionPersonsGraph
+      inspectionPersonsGraph,
+      // adminInspection,
+      // insuranceCoverage
     }
     return data
   }

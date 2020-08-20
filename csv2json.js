@@ -65,8 +65,8 @@ const dir = './data/'
 const files = {
   contacts: 'contacts.json', // コールセンター相談件数
   inspectionPersons: '170003_ishikawa_covid19_test_count.json', // 検査実施人数
-  patientsSummary: 'patients_summary.json', // 検査陽性者数（公表日別）
-  patients: '170003_ishikawa_covid19_patients.json', // 検査陽性者の属性
+  patientsSummary: 'patients_summary.json', // 陽性患者数
+  patients: '170003_ishikawa_covid19_patients.json', // 陽性患者の属性
   cityPatients: '170003_ishikawa_covid19_city_town_patients.json', // 市区町村別患者数
   generalConsultation: 'general_consultation.json', // 一般相談件数
   news: 'news.json' // 一般相談件数
@@ -209,9 +209,14 @@ function inspectionPersons(json, jsonObject) {
     const date = new Date(`${row['実施_年月日']}`)
     const formattedDate = dateFormat.format(date, 'yyyy-MM-dd')
     const testCount = parseInt(row['検査実施_件数'])
+    const adminInspection = parseInt(row['行政検査_件数']) // 行政検査_件数
+    const insuranceCoverage = parseInt(row['保険適用検査_件数']) // 保険適用検査_件数
     const dataItem = {
       日付: `${formattedDate}T00:00:00.000+09:00`,
-      小計: testCount
+      小計: testCount,
+      行政検査: adminInspection,
+      保険適用検査: insuranceCoverage
+
     }
     jsonObject.data.push(dataItem)
   })
