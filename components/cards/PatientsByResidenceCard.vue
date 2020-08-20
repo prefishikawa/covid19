@@ -9,6 +9,7 @@
       :unit="$t('人')"
       :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_city_town_patients.csv'"
       :source="$t('データベースはこちら')"
+      :show-button="false"
     />
   </v-col>
 </template>
