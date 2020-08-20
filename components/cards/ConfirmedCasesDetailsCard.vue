@@ -9,6 +9,9 @@
         :aria-label="$t('検査陽性者の状況')"
         v-bind="confirmedCases"
       />
+      <template v-slot:footer>
+        <open-data-link :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_city_town_patients.csv'" />
+      </template>
     </data-view>
   </v-col>
 </template>
@@ -28,11 +31,13 @@ import InspectionsSummary from '@/data/170003_ishikawa_covid19_city_town_patient
 import formatConfirmedCases from '@/utils/formatConfirmedCases'
 import DataView from '@/components/DataView.vue'
 import ConfirmedCasesDetailsTable from '@/components/ConfirmedCasesDetailsTable.vue'
+import OpenDataLink from '@/components/OpenDataLink.vue'
 
 export default {
   components: {
     DataView,
-    ConfirmedCasesDetailsTable
+    ConfirmedCasesDetailsTable,
+    OpenDataLink
   },
   data() {
     // 検査陽性者の状況

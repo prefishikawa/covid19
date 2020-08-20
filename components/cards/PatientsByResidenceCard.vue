@@ -4,12 +4,12 @@
       :title="$t('検査陽性者数（居住地別）')"
       :title-id="'number-of-confirmed-cases-by-residence'"
       :chart-id="'time-bar-chart-patients-by-residence'"
-      :chart-data="patientsGraph"
+      :chart-data="patientsGraph1"
       :date="Data.date"
       :unit="$t('人')"
-      :show-button="false"
-    >
-    </time-bar-chart>
+      :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_city_town_patients.csv'"
+      :source="$t('データベースはこちら')"
+    />
   </v-col>
 </template>
 
@@ -24,12 +24,12 @@ export default {
     TimeBarChart
   },
   data() {
-    // 居住地別検査陽性者数（公表日別）グラフ
-    const patientsGraph = formatGraph(Data.data[0].data)
+    // 検査陽性者数（居住地別）
+    const patientsGraph1 = formatGraph(Data.data[0].data)
 
     const data = {
       Data,
-      patientsGraph
+      patientsGraph1
     }
     return data
   }

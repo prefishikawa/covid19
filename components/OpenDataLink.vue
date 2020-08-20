@@ -1,6 +1,6 @@
 <template>
   <a class="OpenDataLink" :href="url" target="_blank" rel="noopener noreferrer">
-    {{ $t('オープンデータを入手') }}
+    {{ $t('データベースはこちら') }}
     <v-icon
       class="ExternalLinkIcon"
       size="15"
@@ -15,7 +15,6 @@
 
 <style lang="scss">
 .OpenDataLink {
-  display:none;
   text-decoration: none;
   .ExternalLinkIcon {
     vertical-align: text-bottom;

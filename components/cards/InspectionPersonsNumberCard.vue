@@ -7,6 +7,8 @@
       :chart-data="inspectionPersonsGraph"
       :date="inspectionPersonsDate"
       :unit="$t('件.reports')"
+      :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_test_count.csv'"
+      :source="$t('データベースはこちら')"
     >
       <template v-slot:description>
         <ul>

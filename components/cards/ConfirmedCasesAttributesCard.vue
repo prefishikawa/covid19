@@ -7,8 +7,8 @@
       :chart-option="{}"
       :date="Patients.date"
       :info="sumInfoOfPatients"
-      :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'"
-      :source="$t('オープンデータを入手')"
+      :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_patients.csv'"
+      :source="$t('データベースはこちら')"
       :custom-sort="customSort"
     />
   </v-col>

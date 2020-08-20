@@ -7,7 +7,7 @@
       :chart-data="contactsGraph"
       :date="Data.date"
       :unit="$t('件.reports')"
-      :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000071'"
+      :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_call_center.csv'"
     />
     <!-- 件.reports = 窓口相談件数 -->
   </v-col>
