@@ -1,6 +1,11 @@
 {
-    "date": "2020/08/18 18:09",
+    "date": "2020/08/20 15:12",
     "newsItems": [
+        {
+            "date": "2020/8/20",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/traveler.pdf",
+            "text": "石川県への旅行をお考えの皆様へ"
+        },
         {
             "date": "2020/8/18",
             "url": "https://www.pref.ishikawa.lg.jp/documents/200818.pdf",
@@ -10,11 +15,6 @@
             "date": "2020/8/13",
             "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
             "text": "知事記者会見"
-        },
-        {
-            "date": "2020/8/12",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
-            "text": "対策本部会議の開催状況"
         }
     ]
 }
