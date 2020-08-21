@@ -1,6 +1,11 @@
 {
-    "date": "2020/08/20 15:12",
+    "date": "2020/08/21 10:10",
     "newsItems": [
+        {
+            "date": "2020/8/21",
+            "url": "http://www.pref.ishikawa.lg.jp/kousei/iroukin-sienkin.html",
+            "text": "新型コロナ緊急包括支援交付金（慰労金・支援金）の申請について"
+        },
         {
             "date": "2020/8/20",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/traveler.pdf",
@@ -10,11 +15,6 @@
             "date": "2020/8/18",
             "url": "https://www.pref.ishikawa.lg.jp/documents/200818.pdf",
             "text": "知事からのメッセージ（県民の皆様・事業者の皆様へのお願い）"
-        },
-        {
-            "date": "2020/8/13",
-            "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
-            "text": "知事記者会見"
         }
     ]
 }
