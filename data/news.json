@@ -1,6 +1,11 @@
 {
-    "date": "2020/08/25 15:10",
+    "date": "2020/08/26 09:26",
     "newsItems": [
+        {
+            "date": "2020/8/25",
+            "url": "https://www.pref.ishikawa.lg.jp/kikaku/kansenkakudaibousitorikumi.html",
+            "text": "新型コロナウイルス感染拡大防止に係る取組について"
+        },
         {
             "date": "2020/8/25",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
