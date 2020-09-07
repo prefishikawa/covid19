@@ -42,7 +42,7 @@ export default {
   data() {
     // 検査陽性者の状況
     // const confirmedCases = formatConfirmedCases(Data.main_summary)
-    const confirmedCases = formatConfirmedCases(InspectionsSummary)
+    const confirmedCases = formatConfirmedCases(InspectionsSummary,)
 
     const data = {
       InspectionsSummary,

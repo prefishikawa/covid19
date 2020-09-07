@@ -8,15 +8,15 @@ type DataType = {
           value: number
         },
         {
-          attr: '退院'
-          value: number
-        },
-        {
-          attr: '死亡'
+          attr: '退院等'
           value: number
         },
         {
           attr: '治療中'
+          value: number
+        },
+        {
+          attr: '死亡'
           value: number
         }
       ]
@@ -52,9 +52,9 @@ type DataType = {
 
 type ConfirmedCasesType = {
   感染者: number
-  退院: number
-  死亡: number
+  退院等: number
   治療中: number
+  死亡: number
   // 入院中: number
   // 軽症中等症: number
   // 重症: number
@@ -68,9 +68,9 @@ type ConfirmedCasesType = {
 export default (data: DataType) => {
   const formattedData: ConfirmedCasesType = {
     感染者: data.data[0].summary[0].value,
-    退院: data.data[0].summary[1].value,
-    死亡: data.data[0].summary[2].value,
-    治療中: data.data[0].summary[3].value,
+    退院等: data.data[0].summary[1].value,
+    治療中: data.data[0].summary[2].value,
+    死亡: data.data[0].summary[3].value
     // 軽症中等症: data.children[0].children[0].children[0].value,
     // 重症: data.children[0].children[0].children[1].value,
     // 死亡: data.children[0].children[2].value,

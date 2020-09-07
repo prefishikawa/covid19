@@ -23,6 +23,11 @@ const ISSHIFTJIS = true
  */
 const openDataSource = [
   {
+    name: 'city_patients',
+    url:
+      'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_city_town_patients.csv'
+  },
+  {
     name: 'call_center',
     url:
       'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_call_center.csv'
@@ -38,14 +43,14 @@ const openDataSource = [
       'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_test_count.csv'
   },
   {
-    name: 'city_patients',
-    url:
-      'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_city_town_patients.csv'
-  },
-  {
     name: 'general_consultation',
     url:
       'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_counter.csv'
+  },
+  {
+    name: 'total_deaths',
+    url:
+      'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_total.csv'
   },
   {
     name: 'news',
@@ -63,12 +68,14 @@ const dir = './data/'
  * jsonのファイル名
  */
 const files = {
+  cityPatients: '170003_ishikawa_covid19_city_town_patients.json', // 市区町村別患者数
   contacts: 'contacts.json', // コールセンター相談件数
   inspectionPersons: '170003_ishikawa_covid19_test_count.json', // 検査実施人数
   patientsSummary: 'patients_summary.json', // 陽性患者数
   patients: '170003_ishikawa_covid19_patients.json', // 陽性患者の属性
-  cityPatients: '170003_ishikawa_covid19_city_town_patients.json', // 市区町村別患者数
   generalConsultation: 'general_consultation.json', // 一般相談件数
+  // totalDeaths: 'total_deaths.json',
+  totalDeaths: '170003_ishikawa_covid19_city_town_patients.json',
   news: 'news.json' // 一般相談件数
 }
 
@@ -89,16 +96,22 @@ const main = async () => {
   }
 
   // 各JSONを作成
+  const cityPatientsJson = Object.assign({}, jsonObjectBase)
   const contactsJson = Object.assign({}, jsonObjectBase)
   const inspectionPersonsJson = Object.assign({}, jsonObjectBase)
   const patientsJson = Object.assign({}, jsonObjectBase)
   const patientsSummaryJson = Object.assign({}, jsonObjectBase)
-  const cityPatientsJson = Object.assign({}, jsonObjectBase)
   const generalConsultationJson = Object.assign({}, jsonObjectBase)
+  const totalDeathsJson = Object.assign({}, jsonObjectBase)
   const newsJson = Object.assign({}, jsonObjectBase)
   // LINQの設定
   const linq = Enumerable.from(openDataSource)
   // 各JSONの処理
+  cityPatients(
+    linq.where(x => x.name === 'city_patients').first().json,
+    linq.where(x => x.name === 'total_deaths').first().json,
+    cityPatientsJson
+  )
   contacts(linq.where(x => x.name === 'call_center').first().json, contactsJson)
   inspectionPersons(
     linq.where(x => x.name === 'test_count').first().json,
@@ -109,22 +122,23 @@ const main = async () => {
     linq.where(x => x.name === 'patients').first().json,
     patientsSummaryJson
   )
-  cityPatients(
-    linq.where(x => x.name === 'city_patients').first().json,
-    cityPatientsJson
-  )
   generalConsultation(
     linq.where(x => x.name === 'general_consultation').first().json, 
     generalConsultationJson
   )
+  // totalDeaths(
+  //   linq.where(x => x.name === 'total_deaths').first().json,
+  //   totalDeathsJson
+  // )
   news(linq.where(x => x.name === 'news').first().json, newsJson)
   // 書き出し
+  writeFile(cityPatientsJson, files.cityPatients)
   writeFile(contactsJson, files.contacts)
   writeFile(inspectionPersonsJson, files.inspectionPersons)
   writeFile(patientsJson, files.patients)
   writeFile(patientsSummaryJson, files.patientsSummary)
-  writeFile(cityPatientsJson, files.cityPatients)
   writeFile(generalConsultationJson, files.generalConsultation)
+  // writeFile(totalDeathsJson, files.totalDeaths)
   writeFile(newsJson, files.news)
 }
 
@@ -286,7 +300,8 @@ function patientsSummary(json, jsonObject) {
  * @param {Object} json 元の情報があるJSONオブジェクト
  * @param {Object} jsonObject 書き出すJSONオブジェクト
  */
-function cityPatients(json, jsonObject) {
+function cityPatients(json, json2, jsonObject) {
+  console.log()
   jsonObject.data = []
   detailObj = {}
   detailObj.data = []
@@ -297,26 +312,44 @@ function cityPatients(json, jsonObject) {
       地区ID  : row['地区ID'],
       居住地  : row['居住地'],
       感染者  : row['感染者'],
-      退院    : row['退院'],
-      死亡    : row['死亡'],
+      退院等    : row['退院等'],
+      // 死亡    : row['死亡'],
       治療中  :row['治療中']
     }
     x1 += parseInt(row['感染者'])
-    x2 += parseInt(row['退院'])
-    x3 += parseInt(row['死亡'])
-    x4 += parseInt(row['治療中'])
+    x2 += parseInt(row['退院等'])
+    // x3 += parseInt(row['死亡'])
+    x3 += parseInt(row['治療中'])
 
     detailObj.data.push(newObj)
   })
 
+  x4 = parseInt(json2[0].合計死亡者数)
+
   detailObj.summary.push(
     {attr  : "感染者", value : x1 },
-    {attr  : "退院", value : x2 },
-    {attr  : "死亡", value : x3 },
-    {attr  : "治療中", value : x4 }
+    {attr  : "退院等", value : x2 - x4 },
+    {attr  : "治療中", value : x3 },
+    {attr  : "死亡", value : x4 }
   )
   jsonObject.data.push(detailObj)
 
+}
+
+
+/**
+ * 合計死亡者数をJSONにします
+ * @param {Object} json 元の情報があるJSONオブジェクト
+ * @param {Object} jsonObject 書き出すJSONオブジェクト
+ */
+function totalDeaths(json, jsonObject) {
+  jsonObject.data = []
+  Enumerable.from(json).forEach(row => {
+    const newObj = {
+      total_deaths  : row['合計死亡者数']
+    }
+    jsonObject.data.push(newObj)
+  })
 }
 
 /**
