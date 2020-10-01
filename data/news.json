@@ -1,6 +1,11 @@
 {
-    "date": "2020/09/25 14:24",
+    "date": "2020/10/01 21:15",
     "newsItems": [
+        {
+            "date": "2020/9/30",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/traveler.pdf",
+            "text": "石川県への旅行をお考えの皆様へ"
+        },
         {
             "date": "2020/9/23",
             "url": "https://www.pref.ishikawa.lg.jp/ansin/kansenboushi.html",
