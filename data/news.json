@@ -1,25 +1,20 @@
 {
-    "date": "2020/10/01 21:15",
+    "date": "2020/10/05 20:11",
     "newsItems": [
         {
-            "date": "2020/9/30",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/traveler.pdf",
-            "text": "石川県への旅行をお考えの皆様へ"
+            "date": "2020/10/5",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
+            "text": "事業者向け支援制度一覧"
         },
         {
-            "date": "2020/9/23",
-            "url": "https://www.pref.ishikawa.lg.jp/ansin/kansenboushi.html",
-            "text": "高齢者施設等における感染防止対策について"
+            "date": "2020/10/5",
+            "url": "https://ishikawa-gotoeat-cpn.com/",
+            "text": "石川県 Go To Eat キャンペーン公式サイト"
         },
         {
-            "date": "2020/9/19",
-            "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
-            "text": "知事記者会見"
-        },
-        {
-            "date": "2020/9/19",
-            "url": "https://www.pref.ishikawa.lg.jp/kikaku/kansenkakudaibousitorikumi.html",
-            "text": "感染拡大防止に係る取組について"
+            "date": "2020/10/5",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
+            "text": "相談窓口一覧"
         }
     ]
 }
