@@ -1,6 +1,11 @@
 {
-    "date": "2020/10/06 18:29",
+    "date": "2020/10/11 09:35",
     "newsItems": [
+        {
+            "date": "2020/10/11",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
+            "text": "相談窓口一覧"
+        },
         {
             "date": "2020/10/6",
             "url": "https://www.ishikawa-nu.ac.jp/2020/10/11719/",
@@ -10,11 +15,6 @@
             "date": "2020/10/5",
             "url": "https://ishikawa-gotoeat-cpn.com/",
             "text": "石川県 Go To Eat キャンペーン公式サイト"
-        },
-        {
-            "date": "2020/10/5",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
-            "text": "事業者向け支援制度一覧"
         }
     ]
 }
