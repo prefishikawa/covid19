@@ -7,7 +7,7 @@
       <span :class="$style.fzMedium">{{ $t('入院となります') }}</span>
     </p>
     <p :class="[$style.facility, $style.fzXLarge]">
-      {{ $t('感染症指定医療機関等') }}
+      {{ $t('入院協力医療機関等') }}
     </p>
   </div>
 </template>

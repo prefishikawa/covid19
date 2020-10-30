@@ -4,11 +4,11 @@
       <i18n
         :class="$style.Catch"
         tag="p"
-        path="帰国者・接触者外来 {advice} と判断された場合"
+        path="{advice}"
       >
         <template v-slot:advice>
           <span :class="$style.Emphasis">
-            {{ $t('受診が必要') }}
+            {{ $t('かかりつけ医等に電話で相談・受診') }}
           </span>
         </template>
       </i18n>
@@ -16,9 +16,9 @@
     <div :class="$style.Row">
       <div :class="[$style.Card, $style.CardLarge, $style.CardGray]">
         <template v-if="!langsWithoutOutpatient.includes($i18n.locale)">
-          <p :class="$style.Outpatient">
-            {{ $t('帰国者・接触者外来') }}
-          </p>
+          <!-- <p :class="$style.Outpatient">
+            {{ $t('医師による判断') }}
+          </p> -->
           <p :class="$style.Judge">
             {{ $t('医師による判断') }}
           </p>
@@ -151,6 +151,6 @@ export default {
 }
 
 .Emphasis {
-  font-size: 28px;
+  font-size: 1.5rem;
 }
 </style>

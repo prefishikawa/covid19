@@ -170,12 +170,20 @@
   margin-top: px2vw(10);
 }
 
+.mt30 {
+  margin-top: px2vw(30);
+}
+
 .mb10 {
   margin-bottom: px2vw(10);
 }
 
 .underline {
   border-bottom: px2vw(4) solid $green-1;
+}
+
+.black {
+  color: #4d4d4d;
 }
 
 .break {

@@ -21,7 +21,7 @@
       <p :class="[$style.open, $style.fzSmall]">
         <span>9:00～18:00</span>
       </p>
-      <dl :class="$style.telCenter">
+      <dl id="contact" :class="$style.telCenter">
         <dt>石川県感染拡大防止県民相談センター</dt>
         <dd>076-225-1921</dd>
       </dl>

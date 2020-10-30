@@ -64,11 +64,11 @@
         <i18n
           :class="$style.TitleSmall"
           tag="span"
-          path="{advisory}による相談結果"
+          path="{advisory}"
         >
           <template v-slot:advisory>
             <span :class="$style.TitleLarge">
-              {{ $t('帰国者・接触者 相談センター') }}
+              {{ $t('発熱等の症状がある場合の相談・受診の流れ') }}
             </span>
           </template>
         </i18n>
@@ -281,7 +281,7 @@ export default {
   }
 
   &Large {
-    @include font-size(28);
+    font-size: 1.5rem;
   }
 }
 

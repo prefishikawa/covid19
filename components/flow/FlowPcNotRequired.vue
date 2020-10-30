@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.flowContainer">
-    <h3 :class="$style.sectionTitle">
+    <!-- <h3 :class="$style.sectionTitle">
       <i18n path="帰国者・接触者外来 {advice} と判断された場合" tag="p">
         <template v-slot:advice>
           <strong>
@@ -8,7 +8,7 @@
           </strong>
         </template>
       </i18n>
-    </h3>
+    </h3> -->
     <div :class="$style.actionContainer">
       <ul :class="$style.actions">
         <li :class="$style.actionsList">
@@ -27,24 +27,25 @@
             aria-hidden="true"
             alt=" "
           />
-          {{ $t('一般の医療機関を受診') }}
+          {{ $t('症状に応じた治療を受ける') }}
         </li>
       </ul>
       <div :class="$style.nextAction">
-        <i18n path="{getWorse}{advisory}に相談" :class="$style.content">
+        <i18n path="{getWorse}{advisory}" :class="$style.content">
           <template v-slot:getWorse>
             <span>{{ $t('症状が良くならない場合は') }}</span>
           </template>
           <template v-slot:advisory>
             <strong :class="$style.badLink">
-              <a href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#center" target="_blank">
-                {{ $t('帰国者・接触者相談センター') }}
-                <v-icon size="18">
+              <!-- <a href="#advisory"> -->
+                {{ $t('受診した医療機関等') }}
+                <!-- <v-icon size="18">
                   mdi-open-in-new
                 </v-icon><br>
-                <span>{{ $t('（新型コロナ受診相談窓口）') }}</span>
-              </a>
+                <span>{{ $t('（新型コロナ受診相談窓口）') }}</span> -->
+              <!-- </a> -->
             </strong>
+            <span>に再度ご相談ください</span>
           </template>
         </i18n>
       </div>
@@ -125,7 +126,9 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-around;
+    // justify-content: space-around;
+    justify-content: center;
+    font-feature-settings: 'palt';
   }
 
   strong {

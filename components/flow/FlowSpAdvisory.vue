@@ -1,44 +1,23 @@
 <template>
   <div :class="$style.container">
     <h4 id="consult" :class="[$style.heading, $style.fzXLarge]">
-      {{ $t('帰国者・接触者 相談センター') }}
-      <small :class="[$style.break, $style.fzRegular, $style.mt5]">{{
-        $t('（新型コロナ受診相談窓口）')
-      }}</small>
+      {{ $t('発熱患者等の受診相談先') }}
     </h4>
+    <p :class="[$style.break, $style.fzRegular, $style.mt30, $style.alignCenter]">
+        まずは、<span :class="$style.fzXLarge">かかりつけ医など</span>の身近な医療機関に<span :class="$style.fzXLarge">電話で相談</span>
+    </p>
+    <p :class="[$style.break, $style.fzRegular, $style.mt30]">
+      相談する医療機関に迷う場合は「石川県発熱患者等受診相談センター」に電話相談
+    </p>
+    <p :class="[$style.break, $style.fzRegular, $style.mt30, $style.alignCenter]">
+      石川県発熱患者等受診相談センター
+    </p>
     <p :class="[$style.open, $style.fzSmall]">
       <span>{{ $t('24時間対応') }}</span>
     </p>
-    <dl :class="$style.telCenter">
-      <dt>南加賀保健福祉センター</dt>
-      <dd>0761-22-0796</dd>
-      <dt>石川中央保健福祉センター</dt>
-      <dd>076-275-2250</dd>
-      <dt>能登中部保健福祉センター</dt>
-      <dd>0767-53-2482</dd>
-      <dt>能登北部保健福祉センター</dt>
-      <dd>0768-22-2011</dd>
-      <dt>金沢市保健所</dt>
-      <dd>076-234-5106</dd>
-      <dt>石川県健康福祉部健康推進課</dt>
-      <dd>076-225-1670</dd>
-    </dl>
-    <dl>
-      <div :class="$style.daytime">
-        <dd :class="[$style.link, $style.fzNumeric, $style.AdvisoryLink]">
-          <a
-            href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#center"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {{ $t('各保健所の電話番号等はこちら') }}
-            <v-icon size="16">
-              mdi-open-in-new
-            </v-icon>
-          </a>
-        </dd>
-      </div>
-    </dl>
+    <p :class="[$style.break, $style.fzRegular, $style.mt10, $style.alignCenter]">
+      0120 - 540 - 004
+    </p>
   </div>
 </template>
 

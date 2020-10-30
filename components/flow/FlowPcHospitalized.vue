@@ -10,7 +10,7 @@
       {{ $t('入院となります') }}
     </p>
     <p :class="$style.FlowPcHospitalizedsubHeading">
-      {{ $t('感染症指定医療機関等') }}
+      {{ $t('入院協力医療機関等') }}
     </p>
   </div>
 </template>

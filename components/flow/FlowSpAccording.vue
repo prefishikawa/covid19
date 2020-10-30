@@ -1,31 +1,28 @@
 <template>
   <div :class="[$style.container, $style.according]">
-    <i18n tag="div" :class="$style.heading" path="{advisory}による相談結果">
+    <i18n tag="div" :class="$style.heading" path="{advisory}">
       <template v-slot:advisory>
         <span :class="[$style.fzLarge, $style.break]">
-          {{ $t('帰国者・接触者 相談センター') }}
+          {{ $t('発熱等の症状がある場合の相談・受診の流れ') }}
         </span>
       </template>
     </i18n>
     <i18n
       tag="p"
       :class="$style.diag"
-      path="帰国者・接触者外来 {advice} と判断された場合"
+      path="{advice}"
     >
       <template v-slot:advice>
-        <span :class="[$style.fzXLLarge, $style.break]">
-          {{ $t('受診が必要') }}
-        </span>
+        <!-- <span :class="[$style.fzXLLarge, $style.break]"> -->
+          {{ $t('かかりつけ医等に電話で相談・受診') }}
+        <!-- </span> -->
       </template>
     </i18n>
     <p :class="$style.decision">
       <template v-if="!langsWithoutOutpatient.includes($i18n.locale)">
-        <span :class="$style.fzSmall">
-          {{ $t('帰国者・接触者外来') }}
+        <span :class="$style.fzLarge">
+          {{ $t('医師による判断') }}
         </span>
-        <span :class="[$style.fzLarge, $style.break]">{{
-          $t('医師による判断')
-        }}</span>
       </template>
       <template v-else>
         <span :class="[$style.fzLarge, $style.break]">
@@ -79,8 +76,9 @@
         <!-- eslint-enable -->
       </span>
       <span :class="$style.break">
-        {{ $t('石川県保健環境センター等') }}
+        {{ $t('または') }}
       </span>
+      <span :class="$style.fzXLLarge">{{ $t('抗原検査') }}</span>
     </p>
     <div :class="[$style.rectContainer, $style.double]">
       <a
@@ -108,7 +106,7 @@
         </div>
       </a>
     </div>
-    <i18n
+    <!-- <i18n
       id="not_required"
       tag="p"
       :class="[$style.diag, $style.hr]"
@@ -119,7 +117,18 @@
           {{ $t('受診が不要') }}
         </span>
       </template>
-    </i18n>
+    </i18n> -->
+
+    <div :class="[$style.diag, $style.hr]">
+      <!-- <div :class="$style.heading">
+        <span :class="[$style.icon, $style.top]">
+          <apartment-icon aria-hidden="true" />
+        </span>
+        <span :class="[$style.fzMedium, $style.black]">
+          {{ $t('症状に応じた治療を受ける') }}
+        </span>
+      </div> -->
+    </div>
     <div :class="[$style.rectContainer, $style.double]">
       <div :class="[$style.rect, $style.solution]">
         <div :class="$style.icon" aria-hidden="true">
@@ -129,13 +138,13 @@
       </div>
       <div :class="[$style.rect, $style.solution]">
         <div :class="$style.icon" aria-hidden="true">
-          <apartment-icon />
+          <apartment-icon aria-hidden="true" />
         </div>
-        <p>{{ $t('一般の医療機関を受診') }}</p>
+        <p>{{ $t('症状に応じた治療を受ける') }}</p>
       </div>
       <div :class="[$style.rect, $style.consult]">
         <p>
-          <i18n path="{getWorse}{advisory}に相談">
+          <i18n path="{getWorse}{advisory}">
             <template v-slot:getWorse>
               <i18n path="症状が良くならない場合は">
                 <span>{{ $t('症状が良くならない場合は') }}</span>
@@ -143,13 +152,19 @@
             </template>
             <template v-slot:advisory>
               <strong :class="$style.advisory">
-              <a href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#center" target="_blank">
-                {{ $t('帰国者・接触者相談センター（新型コロナ受診相談窓口）') }}
-                <v-icon size="16">
+              <!-- <a
+                v-scroll-to="{
+                  el: '#consult'
+                }"
+                href="#consult"
+              > -->
+                {{ $t('受診した医療機関等') }}
+                <!-- <v-icon size="16">
                   mdi-open-in-new
-                </v-icon>
-              </a>
+                </v-icon> -->
+              <!-- </a> -->
               </strong>
+              <span>に再度ご相談ください</span>
             </template>
           </i18n>
         </p>
