@@ -4,7 +4,7 @@
       {{ $t('発熱患者等の受診相談先') }}
     </h4>
     <p :class="[$style.break, $style.fzRegular, $style.mt30, $style.alignCenter]">
-        まずは、<span :class="$style.fzXLarge">かかりつけ医など</span>の身近な医療機関に<span :class="$style.fzXLarge">電話で相談</span>
+        まずは、<span :class="$style.fzXLarge">かかりつけ医など</span>の身近な医療機関に<span :class="$style.fzXLarge">電話相談</span>
     </p>
     <p :class="[$style.break, $style.fzRegular, $style.mt30]">
       相談する医療機関に迷う場合は「石川県発熱患者等受診相談センター」に電話相談
@@ -16,7 +16,7 @@
       <span>{{ $t('24時間対応') }}</span>
     </p>
     <p :class="[$style.break, $style.fzRegular, $style.mt10, $style.alignCenter]">
-      0120 - 540 - 004
+      <a href="tel:0120540004">0120-540-004</a>
     </p>
   </div>
 </template>

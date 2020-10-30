@@ -146,8 +146,8 @@
         <p>
           <i18n path="{getWorse}{advisory}">
             <template v-slot:getWorse>
-              <i18n path="症状が良くならない場合は">
-                <span>{{ $t('症状が良くならない場合は') }}</span>
+              <i18n path="症状が改善しない場合は">
+                <span>{{ $t('症状が改善しない場合は') }}</span>
               </i18n>
             </template>
             <template v-slot:advisory>

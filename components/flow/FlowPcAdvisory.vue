@@ -8,7 +8,7 @@
           }}</span>
         </div>
         <div :class="[$style.AdvisoryContentsColsSentense, 'mt-4']">
-          <strong>まずは、<span>かかりつけ医など</span>の身近な医療機関に<span>電話で相談</span></strong>
+          <strong>まずは、<span>かかりつけ医など</span>の身近な医療機関に<span>電話相談</span></strong>
         </div>
         <div :class="[$style.AdvisoryContentsColsSentense, $style.AdvisoryContentsColsSentenseL, 'mt-4']">
           <p>相談する医療機関に迷う場合は「石川県発熱患者等受診相談センター」に電話相談</p>
@@ -32,7 +32,7 @@
                 {{ $t('24時間対応') }}
               </span>
             </div>
-            <div>0120 - 540 - 004</div>
+            <div>0120-540-004</div>
           </div>
 
         </div>

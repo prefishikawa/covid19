@@ -217,7 +217,7 @@
   "帰国者・接触者外来 {advice} と判断された場合": "Khi có chẩn đoán là COVID-19 ngoại khoa {advice}",
   "受診が不要": "Không cần khám",
   "{getWorse}{advisory}に相談": "Hãy gọi {advisory} nếu triệu chứng {getWorse} ",
-  "症状が良くならない場合は": "Trường hợp xuất hiện triệu chứng không ổn",
+  "症状が改善しない場合は": "Trường hợp xuất hiện triệu chứng không ổn",
   "自宅で安静に過ごす": "Ở tại nhà",
   "症状に応じた治療を受ける": "Gặp bác sĩ đa khoa",
   "{past}の「できごと」と「症状」": "Triệu chứng và các sự kiện đã phát sinh trong {quá khứ}",

@@ -23,7 +23,7 @@
       </p>
       <dl id="contact" :class="$style.telCenter">
         <dt>石川県感染拡大防止県民相談センター</dt>
-        <dd>076-225-1921</dd>
+        <dd><a href="tel:0762251921">076-225-1921</a></dd>
       </dl>
     </div>
   </div>

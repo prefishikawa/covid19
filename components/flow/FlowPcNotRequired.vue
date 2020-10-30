@@ -33,7 +33,7 @@
       <div :class="$style.nextAction">
         <i18n path="{getWorse}{advisory}" :class="$style.content">
           <template v-slot:getWorse>
-            <span>{{ $t('症状が良くならない場合は') }}</span>
+            <span>{{ $t('症状が改善しない場合は') }}</span>
           </template>
           <template v-slot:advisory>
             <strong :class="$style.badLink">
