@@ -123,7 +123,7 @@ const main = async () => {
     patientsSummaryJson
   )
   generalConsultation(
-    linq.where(x => x.name === 'general_consultation').first().json, 
+    linq.where(x => x.name === 'general_consultation').first().json,
     generalConsultationJson
   )
   // totalDeaths(
