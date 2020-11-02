@@ -1,8 +1,13 @@
 {
-    "date": "2020/10/13 10:45",
+    "date": "2020/11/02 10:28",
     "newsItems": [
         {
-            "date": "2020/10/13",
+            "date": "2020/10/30",
+            "url": "https://stopcovid19.pref.ishikawa.jp/flow",
+            "text": "発熱時等の相談・受診の流れ"
+        },
+        {
+            "date": "2020/10/30",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
             "text": "相談窓口一覧"
         },
@@ -10,11 +15,6 @@
             "date": "2020/10/6",
             "url": "https://www.ishikawa-nu.ac.jp/2020/10/11719/",
             "text": "啓発動画「今すぐできる！お家の中の感染予防策」"
-        },
-        {
-            "date": "2020/10/5",
-            "url": "https://ishikawa-gotoeat-cpn.com/",
-            "text": "石川県 Go To Eat キャンペーン公式サイト"
         }
     ]
 }
