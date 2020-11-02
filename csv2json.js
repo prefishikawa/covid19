@@ -440,5 +440,3 @@ const main2 = () => {
 }
 
 main2()
-
-console.log('test')
