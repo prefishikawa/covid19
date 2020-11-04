@@ -67,6 +67,9 @@
         :unit="displayInfo.unit"
       />
     </template>
+    <template v-slot:additionalDescription>
+      <slot name="additionalDescription" />
+    </template>
     <template v-slot:footer>
       <open-data-link v-show="url" :url="url" />
     </template>

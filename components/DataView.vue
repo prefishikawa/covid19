@@ -30,7 +30,7 @@
             {{ $t('{date} 更新', { date }) }}
           </div>
         </div>
-    
+
         <data-view-share
           v-if="this.$route.query.embed != 'true'"
           :title="title"

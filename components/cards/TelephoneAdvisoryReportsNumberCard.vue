@@ -1,14 +1,34 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
-      :title="$t('帰国者・接触者相談センター相談件数')"
+      :title="$t('発熱患者等受診相談センター相談件数')"
       :title-id="'number-of-reports-to-covid19-telephone-advisory-center'"
       :chart-id="'time-bar-chart-contacts'"
       :chart-data="contactsGraph"
       :date="Data.date"
       :unit="$t('件.reports')"
       :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_call_center.csv'"
-    />
+    >
+      <template v-slot:additionalDescription>
+        <span>{{ $t('（注）') }}</span>
+        <ul>
+          <li>
+            {{
+              $t(
+                '保険所への相談件数を一部含む'
+              )
+            }}
+          </li>
+          <li>
+            {{
+              $t(
+                '令和2年10月29日までの件数は帰国者・接触者相談センターへの相談件数を示す'
+              )
+            }}
+          </li>
+        </ul>
+      </template>
+    </time-bar-chart>
     <!-- 件.reports = 窓口相談件数 -->
   </v-col>
 </template>
