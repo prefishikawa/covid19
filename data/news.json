@@ -1,15 +1,15 @@
 {
-    "date": "2020/11/12 14:27",
+    "date": "2020/11/17 15:07",
     "newsItems": [
+        {
+            "date": "2020/11/17",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/sns.html",
+            "text": "新型コロナ情報を発信するSNSアカウントにご登録ください"
+        },
         {
             "date": "2020/10/31",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
             "text": "事業者向け支援制度一覧"
-        },
-        {
-            "date": "2020/10/30",
-            "url": "https://stopcovid19.pref.ishikawa.jp/flow",
-            "text": "発熱時等の相談・受診の流れ"
         },
         {
             "date": "2020/10/30",
