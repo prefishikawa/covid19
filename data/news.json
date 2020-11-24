@@ -1,6 +1,11 @@
 {
-    "date": "2020/11/17 15:07",
+    "date": "2020/11/24 18:32",
     "newsItems": [
+        {
+            "date": "2020/11/20",
+            "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
+            "text": "知事記者会見"
+        },
         {
             "date": "2020/11/17",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/sns.html",
@@ -10,11 +15,6 @@
             "date": "2020/10/31",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/menu_biz.pdf",
             "text": "事業者向け支援制度一覧"
-        },
-        {
-            "date": "2020/10/30",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
-            "text": "相談窓口一覧"
         }
     ]
 }
