@@ -160,7 +160,7 @@ export default Vue.extend({
         },
         {
           title: this.$t('医療機関のみなさまへ'),
-          link: 'https://www.pref.ishikawa.lg.jp/kansen/corona.html#2'
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/corona.html#iryou'
         },
         {
           title: this.$t('感染症対策への応援'),
