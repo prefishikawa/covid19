@@ -45,6 +45,14 @@
             <language-selector />
           </div>
         </div> -->
+        <div class="SideNavigation-banner-CallCenter">
+          <a href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#soudan_jusin" target="_blank">
+            <img
+              src="/c_banner.png"
+              :alt="相談する医療機関に迷う場合は発熱患者等受診相談センター"
+            />
+          </a>
+        </div>
         <menu-list :items="items" @click="$emit('closeNavi', $event)" />
       </nav>
 
@@ -218,7 +226,7 @@ export default Vue.extend({
   padding-left: 52px;
   @include largerThan($small) {
     height: auto;
-    padding: 20px;
+    padding: 20px 20px 7px;
   }
   @include lessThan($small) {
     display: flex;
@@ -344,6 +352,10 @@ export default Vue.extend({
   @include lessThan($small) {
     padding-top: 50px;
   }
+}
+
+.SideNavigation-banner-CallCenter {
+  margin-bottom: 26px;
 }
 
 // .SideNavigation-LanguageLabel {
