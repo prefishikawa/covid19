@@ -355,7 +355,10 @@ export default Vue.extend({
 }
 
 .SideNavigation-banner-CallCenter {
-  margin-bottom: 26px;
+  margin-bottom: 2px;
+  @include largerThan($small) {
+    margin-bottom: 26px;
+  }
 }
 
 // .SideNavigation-LanguageLabel {
