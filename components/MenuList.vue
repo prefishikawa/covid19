@@ -106,9 +106,12 @@ export default Vue.extend({
 .MenuList {
   // margin-top: 24px;
   padding: 12px 0;
+  border-top: 1px solid $gray-4;
   border-bottom: 1px solid $gray-4;
+  margin-top: 24px;
 
   @include largerThan($small) {
+    margin-top: 0;
     border-top: 1px solid $gray-4;
   }
 }
