@@ -6,7 +6,7 @@ name: Node.js CI
 on:
   push:
     branches:
-      - master
+      - main
 
   # schedule:
   #   - cron: "*/3 0-15,21-23 * * *"
@@ -40,6 +40,6 @@ jobs:
             || true
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
