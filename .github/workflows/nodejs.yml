@@ -8,8 +8,8 @@ on:
     branches:
       - master
 
-  schedule:
-    - cron: "*/3 0-15,21-23 * * *"
+  # schedule:
+  #   - cron: "*/3 0-15,21-23 * * *"
 
 jobs:
   build-run-deploy:
