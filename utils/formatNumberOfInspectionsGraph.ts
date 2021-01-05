@@ -39,7 +39,7 @@ export default (data: DataType[]) => {
         admSum += adminInspection
         insSum += insuranceCoverage
         graphData.push({
-          label: `${date.getMonth() + 1}/${date.getDate()}`,
+          label: `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`,
           transition: subTotal,
           cumulative: patSum,
           adminInspection: adminInspection,
