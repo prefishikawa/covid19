@@ -1,25 +1,20 @@
 {
-    "date": "2020/12/29 13:21",
+    "date": "2021/01/08 10:56",
     "newsItems": [
+        {
+            "date": "2021/1/7",
+            "url": "https://www.pref.ishikawa.lg.jp/documents/r3ny.pdf",
+            "text": "県民・事業者の皆様へのお願い"
+        },
+        {
+            "date": "2021/1/7",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
+            "text": "対策本部会議の開催状況"
+        },
         {
             "date": "2020/12/29",
             "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
             "text": "知事記者会見"
-        },
-        {
-            "date": "2020/12/28",
-            "url": "https://www.pref.ishikawa.lg.jp/documents/ye_ny.pdf",
-            "text": "年末年始に向けてのお願い"
-        },
-        {
-            "date": "2020/12/23",
-            "url": "https://www.pref.ishikawa.lg.jp/documents/ye_ny01.pdf",
-            "text": "年末年始に向けてのお願い"
-        },
-        {
-            "date": "2020/12/23",
-            "url": "https://www.pref.ishikawa.lg.jp/documents/ye_ny02.pdf",
-            "text": "年末年始の相談体制等について"
         }
     ]
 }
