@@ -1,6 +1,11 @@
 {
-    "date": "2021/01/08 11:53",
+    "date": "2021/01/13 20:14",
     "newsItems": [
+        {
+            "date": "2021/1/13",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210113.pdf",
+            "text": "緊急事態宣言対象区域の拡大に係る知事コメント"
+        },
         {
             "date": "2021/1/7",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/r3ny.pdf",
@@ -10,11 +15,6 @@
             "date": "2021/1/7",
             "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
             "text": "対策本部会議の開催状況"
-        },
-        {
-            "date": "2020/12/29",
-            "url": "https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html",
-            "text": "知事記者会見"
         }
     ]
 }
