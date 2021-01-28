@@ -137,15 +137,17 @@ export default Vue.extend({
       font-size: 1rem;
       padding: 4px 8px;
 
-      &:hover {
-        background-color: $white;
-        border-radius: 4px;
-      }
-
       .ExternalLink {
         // color: $gray-2 !important;
         color: #000 !important;
         text-decoration: none;
+
+        &:hover {
+          // background-color: $white;
+          // border-radius: 4px;
+          // color: #999 !important;
+          opacity: 0.6;
+        }
       }
 
       > span {
