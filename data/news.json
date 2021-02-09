@@ -1,6 +1,11 @@
 {
-    "date": "2021/02/03 18:00",
+    "date": "2021/02/09 17:41",
     "newsItems": [
+        {
+            "date": "2021/2/9",
+            "url": "https://www.ishikawa.jrc.or.jp/info_notification/post4674",
+            "text": "イラストで理解する 絵本「新型コロナウイルスの感染対策」"
+        },
         {
             "date": "2021/2/1",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
@@ -10,11 +15,6 @@
             "date": "2021/1/21",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210121.pdf",
             "text": "感染拡大警報発出に伴う県民・事業者の皆様へのお願い"
-        },
-        {
-            "date": "2021/1/21",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
-            "text": "対策本部会議の開催状況"
         }
     ]
 }
