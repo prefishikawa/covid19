@@ -1,6 +1,11 @@
 {
-    "date": "2021/02/09 17:41",
+    "date": "2021/02/10 14:55",
     "newsItems": [
+        {
+            "date": "2021/2/10",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210210.pdf",
+            "text": "いま、石川県で若者の新型コロナ感染者が急増しています"
+        },
         {
             "date": "2021/2/9",
             "url": "https://www.ishikawa.jrc.or.jp/info_notification/post4674",
@@ -10,11 +15,6 @@
             "date": "2021/2/1",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
             "text": "相談窓口一覧"
-        },
-        {
-            "date": "2021/1/21",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210121.pdf",
-            "text": "感染拡大警報発出に伴う県民・事業者の皆様へのお願い"
         }
     ]
 }
