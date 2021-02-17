@@ -1,6 +1,11 @@
 {
-    "date": "2021/02/17 18:37",
+    "date": "2021/02/17 18:55",
     "newsItems": [
+        {
+            "date": "2021/2/17",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210217.pdf",
+            "text": "飲食店への営業時間短縮要請〔2021/2/22～3/7〕について"
+        },
         {
             "date": "2021/2/17",
             "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
@@ -10,11 +15,6 @@
             "date": "2021/2/12",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210212.pdf",
             "text": "「飲食」「若者」感染拡大特別警報を発出しました"
-        },
-        {
-            "date": "2021/2/9",
-            "url": "https://www.ishikawa.jrc.or.jp/info_notification/post4674",
-            "text": "イラストで理解する 絵本「新型コロナウイルスの感染対策」"
         }
     ]
 }
