@@ -121,12 +121,17 @@ export default Vue.extend({
         {
           icon: 'BedIcon',
           title: this.$t('病床の確保について'),
-          link: 'https://www.pref.ishikawa.lg.jp/kansen/byoushou.html',
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/byoushou.html'
+        },
+        {
+          icon: 'VaccineIcon',
+          title: this.$t('新型コロナワクチンについて'),
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/covid19-vaccine.html',
           divider: true
         },
         {
           icon: 'VirusIcon',
-          title: this.$t('新型コロナウイルス感染症の相談・受診の目安'),
+          title: this.$t('相談・受診の目安'),
           link: this.localePath('/flow'),
           divider: true
         },
