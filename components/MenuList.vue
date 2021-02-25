@@ -145,7 +145,7 @@ export default Vue.extend({
     display: flex;
     align-items: center;
     padding-top: 13px;
-    padding-bottom: 12px;
+    padding-bottom: 13px;
     color: $gray-1;
 
     &:link,
@@ -184,7 +184,7 @@ export default Vue.extend({
 
   &:first-child {
     .MenuList-Link {
-      padding-top: 10px;
+      padding-top: 9px;
       padding-bottom: 9px;
     }
   }
@@ -199,8 +199,8 @@ export default Vue.extend({
   }
   &:nth-child(6) {
     .MenuList-Link {
-      padding-top: 13px;
-      padding-bottom: 8px;
+      padding-top: 12px;
+      padding-bottom: 9px;
     }
   }
   &:nth-child(7) {
