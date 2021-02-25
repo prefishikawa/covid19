@@ -10,21 +10,13 @@
       :url="'https://www.pref.ishikawa.lg.jp/kansen/documents/170003_ishikawa_covid19_call_center.csv'"
     >
       <template v-slot:additionalDescription>
-        <span>{{ $t('（注）') }}</span>
+        <span>（注）</span>
         <ul>
           <li>
-            {{
-              $t(
-                '保健所への相談件数を一部含む'
-              )
-            }}
+            保健所への相談件数を一部含む
           </li>
           <li>
-            {{
-              $t(
-                '令和2年10月29日までの件数は帰国者・接触者相談センターへの相談件数を示す'
-              )
-            }}
+            令和2年10月29日までの件数は帰国者・接触者相談センターへの相談件数を示す
           </li>
         </ul>
       </template>
