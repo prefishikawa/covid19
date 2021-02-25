@@ -126,8 +126,7 @@ export default Vue.extend({
         {
           icon: 'VaccineIcon',
           title: this.$t('新型コロナワクチンについて'),
-          link: 'https://www.pref.ishikawa.lg.jp/kansen/covid19-vaccine.html',
-          divider: true
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/covid19-vaccine.html'
         },
         {
           icon: 'VirusIcon',

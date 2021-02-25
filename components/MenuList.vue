@@ -199,10 +199,10 @@ export default Vue.extend({
   }
   &:nth-child(5) {
     .MenuList-Link {
-      padding-bottom: 13px;
+      padding-bottom: 9px;
       @include largerThan($huge) {
         padding-top: 9px;
-        padding-bottom: 9px;
+        padding-bottom: 6px;
       }
     }
   }
