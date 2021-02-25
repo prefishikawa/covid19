@@ -182,7 +182,13 @@ export default Vue.extend({
     }
   }
 
-  &:first-child,
+  &:first-child {
+    .MenuList-Link {
+      padding-top: 10px;
+      padding-bottom: 9px;
+    }
+  }
+
   &:nth-child(2),
   &:nth-child(3),
   &:nth-child(4) {
@@ -193,8 +199,8 @@ export default Vue.extend({
   }
   &:nth-child(6) {
     .MenuList-Link {
-      padding-top: 12px;
-      padding-bottom: 9px;
+      padding-top: 13px;
+      padding-bottom: 8px;
     }
   }
   &:nth-child(7) {
