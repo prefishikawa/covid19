@@ -145,7 +145,7 @@ export default Vue.extend({
     display: flex;
     align-items: center;
     padding-top: 13px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
     color: $gray-1;
 
     &:link,
