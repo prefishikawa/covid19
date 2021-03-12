@@ -45,14 +45,14 @@
             <language-selector />
           </div>
         </div> -->
-        <!-- <div class="SideNavigation-banner-CallCenter">
+        <div class="SideNavigation-banner-CallCenter">
           <a href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#soudan_jusin" target="_blank">
             <img
               src="/c_banner.png"
               alt="相談する医療機関に迷う場合は発熱患者等受診相談センター"
             />
           </a>
-        </div> -->
+        </div>
         <menu-list :items="items" @click="$emit('closeNavi', $event)" />
       </nav>
 

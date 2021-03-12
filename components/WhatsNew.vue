@@ -7,7 +7,7 @@
         </v-icon>
         {{ $t('最新のお知らせ') }}
       </h3>
-      <span class="WhatsNew-link-to-emergency-page">
+      <!--<span class="WhatsNew-link-to-emergency-page"> -->
         <!-- <v-icon size="20" class="WhatsNew-link-to-emergency-page-icon">
           mdi-bullhorn
         </v-icon> -->
@@ -15,9 +15,9 @@
           url="https://www.pref.ishikawa.lg.jp/kansen/monitoring.html"
           :label="$t('現在 ステージⅡ（感染拡大警報）')"
         /> -->
-        <a class="ExternalLink" href="https://www.pref.ishikawa.lg.jp/kansen/monitoring.html" target="_blank">現在 <strong>ステージⅡ（感染拡大警報）</strong><i aria-label="別タブで開く" role="img" class="v-icon notranslate ExternalLinkIcon mdi mdi-open-in-new theme--light" style="font-size: 15px;"></i>
-        </a>
-      </span>
+        <!-- <a class="ExternalLink" href="https://www.pref.ishikawa.lg.jp/kansen/monitoring.html" target="_blank">現在 <strong>ステージⅡ（感染拡大警報）</strong><i aria-label="別タブで開く" role="img" class="v-icon notranslate ExternalLinkIcon mdi mdi-open-in-new theme--light" style="font-size: 15px;"></i>
+        </a> -->
+      <!-- </span> -->
     </div>
     <ul class="WhatsNew-list">
       <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">
