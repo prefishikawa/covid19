@@ -48,8 +48,8 @@
         <div class="SideNavigation-banner-CallCenter">
           <a href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#soudan_jusin" target="_blank">
             <img
-              src="/c_banner.png"
-              alt="相談する医療機関に迷う場合は発熱患者等受診・コロナワクチン副反応相談センター"
+              src="/c_banner_dt.png"
+              alt="発熱患者等の受信相談　相談する医療機関に迷う場合はすぐにお電話を　0123-540-004"
             />
           </a>
         </div>
