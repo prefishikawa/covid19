@@ -441,6 +441,7 @@ export default Vue.extend({
 }
 
 .banner_note {
+  display: none;
   @include largerThan($small) {
     display: block;
   }
