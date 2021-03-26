@@ -48,7 +48,18 @@
         <div class="SideNavigation-banner-CallCenter">
           <a href="https://www.pref.ishikawa.lg.jp/kansen/corona.html#soudan_jusin" target="_blank">
             <img
-              src="/c_banner_dt.png"
+              class="banner_note"
+              src="/c_banner_note.png"
+              alt="発熱患者等の受信相談　相談する医療機関に迷う場合はすぐにお電話を　0123-540-004"
+            />
+            <img
+              class="banner_pc"
+              src="/c_banner_pc.png"
+              alt="発熱患者等の受信相談　相談する医療機関に迷う場合はすぐにお電話を　0123-540-004"
+            />
+            <img
+              class="banner_sp"
+              src="/c_banner_sp.png"
               alt="発熱患者等の受信相談　相談する医療機関に迷う場合はすぐにお電話を　0123-540-004"
             />
           </a>
@@ -420,6 +431,28 @@ export default Vue.extend({
 .SideNavigation-LicenseLink {
   &:focus {
     outline: 1px dotted $gray-3;
+  }
+}
+
+.banner_sp {
+  @include largerThan($small) {
+    display: none;
+  }
+}
+
+.banner_note {
+  @include largerThan($small) {
+    display: block;
+  }
+  @include largerThan($huge) {
+    display: none;
+  }
+}
+
+.banner_pc {
+  display: none;
+  @include largerThan($huge) {
+    display: block;
   }
 }
 </style>
