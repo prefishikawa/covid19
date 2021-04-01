@@ -1,6 +1,11 @@
 {
-    "date": "2021/04/01 18:32",
+    "date": "2021/04/01 19:00",
     "newsItems": [
+        {
+            "date": "2021/4/1",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210401.pdf",
+            "text": "県民・事業者の皆様へのお願い"
+        },
         {
             "date": "2021/4/1",
             "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
@@ -10,11 +15,6 @@
             "date": "2021/3/20",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/contacts.pdf",
             "text": "相談窓口一覧"
-        },
-        {
-            "date": "2021/3/12",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210312.pdf",
-            "text": "ステージⅠ（感染要注意）へ移行しました"
         }
     ]
 }
