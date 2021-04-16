@@ -1,6 +1,11 @@
 {
-    "date": "2021/04/12 19:00",
+    "date": "2021/04/16 20:21",
     "newsItems": [
+        {
+            "date": "2021/4/16",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210416.pdf",
+            "text": "県民・事業者の皆様へのお願い"
+        },
         {
             "date": "2021/4/12",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210412.pdf",
@@ -10,11 +15,6 @@
             "date": "2021/4/12",
             "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
             "text": "対策本部会議の開催状況"
-        },
-        {
-            "date": "2021/4/5",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210405.pdf",
-            "text": "感染拡大注意報発出に伴う県民・事業者の皆様へのお願い"
         }
     ]
 }
