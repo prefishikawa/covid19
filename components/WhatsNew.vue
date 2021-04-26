@@ -15,7 +15,7 @@
           url="https://www.pref.ishikawa.lg.jp/kansen/monitoring.html"
           :label="$t('現在 ステージⅡ（感染拡大警報）')"
         /> -->
-        <a class="ExternalLink" href="https://www.pref.ishikawa.lg.jp/kansen/monitoring.html" target="_blank">現在 <strong>現在 ステージⅢ（感染まん延特別警報）</strong><i aria-label="別タブで開く" role="img" class="v-icon notranslate ExternalLinkIcon mdi mdi-open-in-new theme--light" style="font-size: 15px;"></i>
+        <a class="ExternalLink" href="https://www.pref.ishikawa.lg.jp/kansen/monitoring.html" target="_blank">現在 <strong>ステージⅢ（感染まん延特別警報）</strong><i aria-label="別タブで開く" role="img" class="v-icon notranslate ExternalLinkIcon mdi mdi-open-in-new theme--light" style="font-size: 15px;"></i>
         </a>
       </span>
     </div>
