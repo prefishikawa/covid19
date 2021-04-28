@@ -1,6 +1,11 @@
 {
-    "date": "2021/04/26 20:54",
+    "date": "2021/04/28 10:17",
     "newsItems": [
+        {
+            "date": "2021/4/27",
+            "url": "https://www.pref.ishikawa.lg.jp/kinyuu/keieishien/kyouryokukin3.html",
+            "text": "飲食店への営業時間短縮要請に関する石川県新型コロナウイルス感染拡大防止協力金（第3次）について"
+        },
         {
             "date": "2021/4/26",
             "url": "https://www.pref.ishikawa.lg.jp/documents/jitan210426.pdf",
@@ -10,11 +15,6 @@
             "date": "2021/4/26",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210426.pdf",
             "text": "感染まん延特別警報発出に伴う県民・事業者の皆様へのお願い"
-        },
-        {
-            "date": "2021/4/26",
-            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
-            "text": "対策本部会議の開催状況"
         }
     ]
 }
