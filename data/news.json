@@ -1,15 +1,20 @@
 {
-    "date": "2021/05/14 23:56",
+    "date": "2021/06/08 19:48",
     "newsItems": [
+        {
+            "date": "2021/6/8",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210608.pdf",
+            "text": "「ステージ2（感染拡大警報）」へ移行（「石川緊急事態宣言」は継続）"
+        },
+        {
+            "date": "2021/6/8",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
+            "text": "新型コロナウイルス感染症対策本部会議の開催状況について"
+        },
         {
             "date": "2021/5/14",
             "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/jitan210514.pdf",
             "text": "飲食店への営業時間短縮要請・集客施設への営業時間短縮要請等〔2021年5月16日～6月13日〕について"
-        },
-        {
-            "date": "2021/5/14",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/kouhou/shisetsu.html",
-            "text": "県有施設の臨時休館・臨時休園〔2021年5月12日～6月13日〕の状況について"
         },
         {
             "date": "2021/5/14",
