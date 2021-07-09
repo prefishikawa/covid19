@@ -1,10 +1,15 @@
 {
-    "date": "2021/06/30 19:56",
+    "date": "2021/07/09 19:56",
     "newsItems": [
         {
-            "date": "2021/6/30",
-            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210630.pdf",
-            "text": "「ステージ1（感染要注意）」への移行"
+            "date": "2021/7/9",
+            "url": "https://www.pref.ishikawa.lg.jp/kenmin/covid19/documents/210709.pdf",
+            "text": "「石川県感染拡大警戒宣言」の発出（「ステージ2（感染拡大注意報）」へ移行）"
+        },
+        {
+            "date": "2021/7/9",
+            "url": "https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html",
+            "text": "新型コロナウイルス感染症対策本部会議の開催について"
         },
         {
             "date": "2021/6/14",
